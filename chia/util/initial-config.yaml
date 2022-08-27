@@ -419,7 +419,7 @@ full_node:
   # List of trusted DNS seeders to bootstrap from.
   # If you modify this, please change the hardcode as well from FullNode.set_server()
   dns_servers:
-    - "introducer.agem.ae:5980"
+    - "introducer.agem.ae"
   farmer_peer:
       host: *self_hostname
       port: 5947
@@ -427,7 +427,7 @@ full_node:
       host: *self_hostname
       port: 5946
   introducer_peer:
-      host: agem.ae:5980
+      host: agem.ae
       port: 5980
   wallet_peer:
     host: *self_hostname
