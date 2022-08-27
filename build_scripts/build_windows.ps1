@@ -25,6 +25,15 @@ git status
 Set-Location -Path "dist\daemon" -PassThru
 
 Write-Output "   ---"
+Write-Output "Rename chia.exe to lotus.exe"
+# editbin.exe needs to be in the path
+Rename-Item chia.exe lotus.exe
+Write-Output "   ---"
+
+git status
+Set-Location -Path "dist\daemon" -PassThru
+
+Write-Output "   ---"
 Write-Output "Increase the stack for lotus command for (chia plots create) chiapos limitations"
 # editbin.exe needs to be in the path
 editbin.exe /STACK:8000000 chia.exe
