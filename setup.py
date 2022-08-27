@@ -119,17 +119,17 @@ kwargs = dict(
     entry_points={
         "console_scripts": [
             "lotus = chia.cmds.chia:main",
-            "chia_daemon = chia.daemon.server:main",
-            "chia_wallet = chia.server.start_wallet:main",
-            "chia_full_node = chia.server.start_full_node:main",
-            "chia_harvester = chia.server.start_harvester:main",
-            "chia_farmer = chia.server.start_farmer:main",
-            "chia_introducer = chia.server.start_introducer:main",
-            "chia_crawler = chia.seeder.start_crawler:main",
-            "chia_seeder = chia.seeder.dns_server:main",
-            "chia_timelord = chia.server.start_timelord:main",
-            "chia_timelord_launcher = chia.timelord.timelord_launcher:main",
-            "chia_full_node_simulator = chia.simulator.start_simulator:main",
+            "lotus_daemon = chia.daemon.server:main",
+            "lotus_wallet = chia.server.start_wallet:main",
+            "lotus_full_node = chia.server.start_full_node:main",
+            "lotus_harvester = chia.server.start_harvester:main",
+            "lotus_farmer = chia.server.start_farmer:main",
+            "lotus_introducer = chia.server.start_introducer:main",
+            "lotus_crawler = chia.seeder.start_crawler:main",
+            "lotus_seeder = chia.seeder.dns_server:main",
+            "lotus_timelord = chia.server.start_timelord:main",
+            "lotus_timelord_launcher = chia.timelord.timelord_launcher:main",
+            "lotus_full_node_simulator = chia.simulator.start_simulator:main",
         ]
     },
     package_data={
