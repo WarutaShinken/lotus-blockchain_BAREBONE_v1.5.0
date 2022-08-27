@@ -7,52 +7,52 @@ from typing import Any, Callable, Dict, List, Optional, Set, Tuple
 
 from blspy import G1Element, PrivateKey
 
-from chia.consensus.block_rewards import calculate_base_farmer_reward
-from chia.pools.pool_wallet import PoolWallet
-from chia.pools.pool_wallet_info import FARMING_TO_POOL, PoolState, PoolWalletInfo, create_pool_state
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.protocols.wallet_protocol import CoinState
-from chia.server.outbound_message import NodeType, make_msg
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin, coin_as_list
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.types.spend_bundle import SpendBundle
-from chia.util.bech32m import decode_puzzle_hash, encode_puzzle_hash
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.config import load_config
-from chia.util.ints import uint8, uint32, uint64, uint16, uint128
-from chia.util.keychain import KeyringIsLocked, bytes_to_mnemonic, generate_mnemonic
-from chia.util.path import path_from_root
-from chia.util.ws_message import WsRpcMessage, create_payload_dict
-from chia.wallet.cat_wallet.cat_constants import DEFAULT_CATS
-from chia.wallet.cat_wallet.cat_wallet import CATWallet
-from chia.wallet.derive_keys import (
+<PUSSY1>consensus.block_rewards import calculate_base_farmer_reward
+<PUSSY1>pools.pool_wallet import PoolWallet
+<PUSSY1>pools.pool_wallet_info import FARMING_TO_POOL, PoolState, PoolWalletInfo, create_pool_state
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>protocols.wallet_protocol import CoinState
+<PUSSY1>server.outbound_message import NodeType, make_msg
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.coin import Coin, coin_as_list
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.bech32m import decode_puzzle_hash, encode_puzzle_hash
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.config import load_config
+<PUSSY1>util.ints import uint8, uint32, uint64, uint16, uint128
+<PUSSY1>util.keychain import KeyringIsLocked, bytes_to_mnemonic, generate_mnemonic
+<PUSSY1>util.path import path_from_root
+<PUSSY1>util.ws_message import WsRpcMessage, create_payload_dict
+<PUSSY1>wallet.cat_wallet.cat_constants import DEFAULT_CATS
+<PUSSY1>wallet.cat_wallet.cat_wallet import CATWallet
+<PUSSY1>wallet.derive_keys import (
     MAX_POOL_WALLETS,
     master_sk_to_farmer_sk,
     master_sk_to_pool_sk,
     master_sk_to_singleton_owner_sk,
     match_address_to_sk,
 )
-from chia.wallet.did_wallet.did_info import DID_HRP
-from chia.wallet.did_wallet.did_wallet import DIDWallet
-from chia.wallet.nft_wallet import nft_puzzles
-from chia.wallet.nft_wallet.nft_info import NFT_HRP, NFTInfo
-from chia.wallet.nft_wallet.nft_puzzles import get_metadata_and_phs
-from chia.wallet.nft_wallet.nft_wallet import NFTWallet, NFTCoinInfo
-from chia.wallet.nft_wallet.uncurry_nft import UncurriedNFT
-from chia.wallet.outer_puzzles import AssetType
-from chia.wallet.puzzle_drivers import PuzzleInfo
-from chia.wallet.rl_wallet.rl_wallet import RLWallet
-from chia.wallet.trade_record import TradeRecord
-from chia.wallet.trading.offer import Offer
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.transaction_type import TransactionType
-from chia.wallet.util.wallet_types import AmountWithPuzzlehash, WalletType
-from chia.wallet.wallet_info import WalletInfo
-from chia.wallet.wallet_node import WalletNode
+<PUSSY1>wallet.did_wallet.did_info import DID_HRP
+<PUSSY1>wallet.did_wallet.did_wallet import DIDWallet
+<PUSSY1>wallet.nft_wallet import nft_puzzles
+<PUSSY1>wallet.nft_wallet.nft_info import NFT_HRP, NFTInfo
+<PUSSY1>wallet.nft_wallet.nft_puzzles import get_metadata_and_phs
+<PUSSY1>wallet.nft_wallet.nft_wallet import NFTWallet, NFTCoinInfo
+<PUSSY1>wallet.nft_wallet.uncurry_nft import UncurriedNFT
+<PUSSY1>wallet.outer_puzzles import AssetType
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo
+<PUSSY1>wallet.rl_wallet.rl_wallet import RLWallet
+<PUSSY1>wallet.trade_record import TradeRecord
+<PUSSY1>wallet.trading.offer import Offer
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.transaction_type import TransactionType
+<PUSSY1>wallet.util.wallet_types import AmountWithPuzzlehash, WalletType
+<PUSSY1>wallet.wallet_info import WalletInfo
+<PUSSY1>wallet.wallet_node import WalletNode
 
 # Timeout for response from wallet/full node for sending a transaction
 TIMEOUT = 30
@@ -618,7 +618,7 @@ class WalletRpcApi:
             if request["mode"] == "new":
                 owner_puzzle_hash: bytes32 = await self.service.wallet_state_manager.main_wallet.get_puzzle_hash(True)
 
-                from chia.pools.pool_wallet_info import initial_pool_state_from_dict
+                <PUSSY1>pools.pool_wallet_info import initial_pool_state_from_dict
 
                 async with self.service.wallet_state_manager.lock:
                     # We assign a pseudo unique id to each pool wallet, so that each one gets its own deterministic

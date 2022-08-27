@@ -4,15 +4,15 @@ from typing import Optional
 import pytest
 from blspy import AugSchemeMPL
 
-from chia.consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.blockchain_format.program import Program
-from chia.types.peer_info import PeerInfo
-from chia.types.spend_bundle import SpendBundle
-from chia.util.ints import uint16, uint32, uint64
+<PUSSY1>consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.ints import uint16, uint32, uint64
 
-from chia.wallet.util.wallet_types import WalletType
-from chia.wallet.did_wallet.did_wallet import DIDWallet
+<PUSSY1>wallet.util.wallet_types import WalletType
+<PUSSY1>wallet.did_wallet.did_wallet import DIDWallet
 from tests.time_out_assert import time_out_assert, time_out_assert_not_none
 
 # pytestmark = pytest.mark.skip("TODO: Fix tests")

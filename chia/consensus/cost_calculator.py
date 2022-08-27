@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from chia.types.spend_bundle_conditions import SpendBundleConditions
-from chia.util.ints import uint16, uint64
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.spend_bundle_conditions import SpendBundleConditions
+<PUSSY1>util.ints import uint16, uint64
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

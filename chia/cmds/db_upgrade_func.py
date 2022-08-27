@@ -7,10 +7,10 @@ from time import time
 import textwrap
 import os
 
-from chia.util.config import load_config, lock_and_load_config, save_config
-from chia.util.path import mkdir, path_from_root
-from chia.util.ints import uint32
-from chia.types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.config import load_config, lock_and_load_config, save_config
+<PUSSY1>util.path import mkdir, path_from_root
+<PUSSY1>util.ints import uint32
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
 
 
 # if either the input database or output database file is specified, the

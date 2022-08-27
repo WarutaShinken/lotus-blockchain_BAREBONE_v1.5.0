@@ -7,9 +7,9 @@ from concurrent.futures.process import ProcessPoolExecutor
 from multiprocessing.context import BaseContext
 from typing import IO, List, Tuple, Optional
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.constants import ConsensusConstants
-from chia.full_node.weight_proof import (
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>full_node.weight_proof import (
     _validate_sub_epoch_summaries,
     vars_to_bytes,
     validate_sub_epoch_sampling,
@@ -18,14 +18,14 @@ from chia.full_node.weight_proof import (
     chunks,
     _validate_vdf_batch,
 )
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
 
-from chia.types.weight_proof import (
+<PUSSY1>types.weight_proof import (
     WeightProof,
 )
 
-from chia.util.ints import uint32
-from chia.util.setproctitle import getproctitle, setproctitle
+<PUSSY1>util.ints import uint32
+<PUSSY1>util.setproctitle import getproctitle, setproctitle
 
 log = logging.getLogger(__name__)
 

@@ -4,13 +4,13 @@ import json
 import logging
 import pytest
 
-from chia.daemon.server import WebSocketServer
-from chia.server.outbound_message import NodeType
-from chia.types.peer_info import PeerInfo
+<PUSSY1>daemon.server import WebSocketServer
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>types.peer_info import PeerInfo
 from tests.block_tools import BlockTools
-from chia.util.ints import uint16
-from chia.util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE
-from chia.util.ws_message import create_payload
+<PUSSY1>util.ints import uint16
+<PUSSY1>util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE
+<PUSSY1>util.ws_message import create_payload
 from tests.core.node_height import node_height_at_least
 from tests.time_out_assert import time_out_assert_custom_interval, time_out_assert
 

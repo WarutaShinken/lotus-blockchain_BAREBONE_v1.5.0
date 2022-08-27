@@ -1,9 +1,9 @@
 from itertools import permutations
 
 from benchmarks.utils import rand_hash
-from chia.types.blockchain_format.coin import hash_coin_ids
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.hash import std_hash
+<PUSSY1>types.blockchain_format.coin import hash_coin_ids
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.hash import std_hash
 
 
 def test_hash_coin_ids_empty() -> None:

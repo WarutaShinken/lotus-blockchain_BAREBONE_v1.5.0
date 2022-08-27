@@ -5,35 +5,35 @@ from concurrent.futures import Executor
 from multiprocessing.context import BaseContext
 import time
 from concurrent.futures.process import ProcessPoolExecutor
-from chia.util.inline_executor import InlineExecutor
+<PUSSY1>util.inline_executor import InlineExecutor
 from typing import Dict, List, Optional, Set, Tuple
 from blspy import GTElement
 from chiabip158 import PyBIP158
 
-from chia.util import cached_bls
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.cost_calculator import NPCResult
-from chia.full_node.bundle_tools import simple_solution_generator
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.mempool import Mempool
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from chia.full_node.pending_tx_cache import PendingTxCache
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.blockchain_format.sized_bytes import bytes32, bytes48
-from chia.types.coin_record import CoinRecord
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.mempool_item import MempoolItem
-from chia.types.spend_bundle import SpendBundle
-from chia.util.cached_bls import LOCAL_CACHE
-from chia.util.condition_tools import pkm_pairs
-from chia.util.errors import Err, ValidationError
-from chia.util.generator_tools import additions_for_npc
-from chia.util.ints import uint32, uint64
-from chia.util.lru_cache import LRUCache
-from chia.util.setproctitle import getproctitle, setproctitle
-from chia.full_node.mempool_check_conditions import mempool_check_time_locks
+<PUSSY1>util import cached_bls
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>full_node.bundle_tools import simple_solution_generator
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.mempool import Mempool
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions
+<PUSSY1>full_node.pending_tx_cache import PendingTxCache
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32, bytes48
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.mempool_item import MempoolItem
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.cached_bls import LOCAL_CACHE
+<PUSSY1>util.condition_tools import pkm_pairs
+<PUSSY1>util.errors import Err, ValidationError
+<PUSSY1>util.generator_tools import additions_for_npc
+<PUSSY1>util.ints import uint32, uint64
+<PUSSY1>util.lru_cache import LRUCache
+<PUSSY1>util.setproctitle import getproctitle, setproctitle
+<PUSSY1>full_node.mempool_check_conditions import mempool_check_time_locks
 
 log = logging.getLogger(__name__)
 

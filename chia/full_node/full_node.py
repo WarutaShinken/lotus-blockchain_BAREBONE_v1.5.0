@@ -14,69 +14,69 @@ import aiosqlite
 import sqlite3
 from blspy import AugSchemeMPL
 
-import chia.server.ws_connection as ws  # lgtm [py/import-and-import-from]
-from chia.consensus.block_creation import unfinished_block_to_full_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain import Blockchain, ReceiveBlockResult, StateChangeSummary
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.cost_calculator import NPCResult
-from chia.consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
-from chia.consensus.make_sub_epoch_summary import next_sub_epoch_summary
-from chia.consensus.multiprocess_validation import PreValidationResult
-from chia.consensus.pot_iterations import calculate_sp_iters
-from chia.full_node.block_store import BlockStore
-from chia.full_node.hint_management import get_hints_and_subscription_coin_ids
-from chia.full_node.lock_queue import LockQueue, LockClient
-from chia.full_node.bundle_tools import detect_potential_template_generator
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.full_node_store import FullNodeStore, FullNodeStorePeakResult
-from chia.full_node.hint_store import HintStore
-from chia.full_node.mempool_manager import MempoolManager
-from chia.full_node.signage_point import SignagePoint
-from chia.full_node.sync_store import SyncStore
-from chia.full_node.weight_proof import WeightProofHandler
-from chia.protocols import farmer_protocol, full_node_protocol, timelord_protocol, wallet_protocol
-from chia.protocols.full_node_protocol import (
+import <PUSSY5>server.ws_connection as ws  # lgtm [py/import-and-import-from]
+<PUSSY1>consensus.block_creation import unfinished_block_to_full_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain import Blockchain, ReceiveBlockResult, StateChangeSummary
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
+<PUSSY1>consensus.make_sub_epoch_summary import next_sub_epoch_summary
+<PUSSY1>consensus.multiprocess_validation import PreValidationResult
+<PUSSY1>consensus.pot_iterations import calculate_sp_iters
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>full_node.hint_management import get_hints_and_subscription_coin_ids
+<PUSSY1>full_node.lock_queue import LockQueue, LockClient
+<PUSSY1>full_node.bundle_tools import detect_potential_template_generator
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.full_node_store import FullNodeStore, FullNodeStorePeakResult
+<PUSSY1>full_node.hint_store import HintStore
+<PUSSY1>full_node.mempool_manager import MempoolManager
+<PUSSY1>full_node.signage_point import SignagePoint
+<PUSSY1>full_node.sync_store import SyncStore
+<PUSSY1>full_node.weight_proof import WeightProofHandler
+<PUSSY1>protocols import farmer_protocol, full_node_protocol, timelord_protocol, wallet_protocol
+<PUSSY1>protocols.full_node_protocol import (
     RequestBlocks,
     RespondBlock,
     RespondBlocks,
     RespondSignagePoint,
 )
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.protocols.wallet_protocol import CoinState, CoinStateUpdate
-from chia.server.node_discovery import FullNodePeers
-from chia.server.outbound_message import Message, NodeType, make_msg
-from chia.server.peer_store_resolver import PeerStoreResolver
-from chia.server.server import ChiaServer
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.pool_target import PoolTarget
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.blockchain_format.vdf import CompressibleVDFField, VDFInfo, VDFProof
-from chia.types.coin_record import CoinRecord
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.header_block import HeaderBlock
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.spend_bundle import SpendBundle
-from chia.types.transaction_queue_entry import TransactionQueueEntry
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util import cached_bls
-from chia.util.bech32m import encode_puzzle_hash
-from chia.util.check_fork_next_block import check_fork_next_block
-from chia.util.condition_tools import pkm_pairs
-from chia.util.config import PEER_DB_PATH_KEY_DEPRECATED, process_config_start_method
-from chia.util.db_wrapper import DBWrapper2
-from chia.util.errors import ConsensusError, Err, ValidationError
-from chia.util.ints import uint8, uint32, uint64, uint128
-from chia.util.path import mkdir, path_from_root
-from chia.util.safe_cancel_task import cancel_task_safe
-from chia.util.profiler import profile_task
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>protocols.wallet_protocol import CoinState, CoinStateUpdate
+<PUSSY1>server.node_discovery import FullNodePeers
+<PUSSY1>server.outbound_message import Message, NodeType, make_msg
+<PUSSY1>server.peer_store_resolver import PeerStoreResolver
+<PUSSY1>server.server import ChiaServer
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.pool_target import PoolTarget
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.blockchain_format.vdf import CompressibleVDFField, VDFInfo, VDFProof
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.transaction_queue_entry import TransactionQueueEntry
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util import cached_bls
+<PUSSY1>util.bech32m import encode_puzzle_hash
+<PUSSY1>util.check_fork_next_block import check_fork_next_block
+<PUSSY1>util.condition_tools import pkm_pairs
+<PUSSY1>util.config import PEER_DB_PATH_KEY_DEPRECATED, process_config_start_method
+<PUSSY1>util.db_wrapper import DBWrapper2
+<PUSSY1>util.errors import ConsensusError, Err, ValidationError
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>util.path import mkdir, path_from_root
+<PUSSY1>util.safe_cancel_task import cancel_task_safe
+<PUSSY1>util.profiler import profile_task
 from datetime import datetime
-from chia.util.db_synchronous import db_synchronous_on
-from chia.util.db_version import lookup_db_version, set_db_version_async
+<PUSSY1>util.db_synchronous import db_synchronous_on
+<PUSSY1>util.db_version import lookup_db_version, set_db_version_async
 
 
 # This is the result of calling peak_post_processing, which is then fed into peak_post_processing_2
@@ -214,7 +214,7 @@ class FullNode:
                                 await set_db_version_async(w_conn, 2)
                                 self.db_wrapper.db_version = 2
                         except sqlite3.OperationalError:
-                            # it could be a database created with "chia init", which is
+                            # it could be a database created with "lotus init", which is
                             # empty except it has the database_version table
                             pass
 
@@ -361,7 +361,7 @@ class FullNode:
             dns_servers = self.config["dns_servers"]
         elif self.config["port"] == 8444:
             # If `dns_servers` misses from the `config`, hardcode it if we're running mainnet.
-            dns_servers.append("dns-introducer.chia.net")
+            dns_servers.append("dns-introducer.<PUSSY5>net")
         try:
             self.full_node_peers = FullNodePeers(
                 self.server,

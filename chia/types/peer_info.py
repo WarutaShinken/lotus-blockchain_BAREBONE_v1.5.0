@@ -2,8 +2,8 @@ import ipaddress
 from dataclasses import dataclass
 from typing import Optional, Union
 
-from chia.util.ints import uint16, uint64
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>util.ints import uint16, uint64
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

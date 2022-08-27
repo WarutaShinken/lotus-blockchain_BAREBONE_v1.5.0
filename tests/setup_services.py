@@ -6,22 +6,22 @@ from pathlib import Path
 from secrets import token_bytes
 from typing import AsyncGenerator, Optional
 
-from chia.cmds.init_funcs import init
-from chia.consensus.constants import ConsensusConstants
-from chia.daemon.server import WebSocketServer, daemon_launch_lock_path, singleton
-from chia.server.start_farmer import service_kwargs_for_farmer
-from chia.server.start_full_node import service_kwargs_for_full_node
-from chia.server.start_harvester import service_kwargs_for_harvester
-from chia.server.start_introducer import service_kwargs_for_introducer
-from chia.server.start_service import Service
-from chia.server.start_timelord import service_kwargs_for_timelord
-from chia.server.start_wallet import service_kwargs_for_wallet
-from chia.simulator.start_simulator import service_kwargs_for_full_node_simulator
-from chia.timelord.timelord_launcher import kill_processes, spawn_process
-from chia.util.bech32m import encode_puzzle_hash
-from chia.util.config import lock_and_load_config, save_config
-from chia.util.ints import uint16
-from chia.util.keychain import bytes_to_mnemonic
+<PUSSY1>cmds.init_funcs import init
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>daemon.server import WebSocketServer, daemon_launch_lock_path, singleton
+<PUSSY1>server.start_farmer import service_kwargs_for_farmer
+<PUSSY1>server.start_full_node import service_kwargs_for_full_node
+<PUSSY1>server.start_harvester import service_kwargs_for_harvester
+<PUSSY1>server.start_introducer import service_kwargs_for_introducer
+<PUSSY1>server.start_service import Service
+<PUSSY1>server.start_timelord import service_kwargs_for_timelord
+<PUSSY1>server.start_wallet import service_kwargs_for_wallet
+<PUSSY1>simulator.start_simulator import service_kwargs_for_full_node_simulator
+<PUSSY1>timelord.timelord_launcher import kill_processes, spawn_process
+<PUSSY1>util.bech32m import encode_puzzle_hash
+<PUSSY1>util.config import lock_and_load_config, save_config
+<PUSSY1>util.ints import uint16
+<PUSSY1>util.keychain import bytes_to_mnemonic
 from tests.block_tools import BlockTools
 from tests.util.keyring import TempKeyring
 

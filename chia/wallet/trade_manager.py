@@ -4,28 +4,28 @@ import time
 import traceback
 from typing import Any, Dict, List, Optional, Set, Tuple, Union
 
-from chia.protocols.wallet_protocol import CoinState
-from chia.types.blockchain_format.coin import Coin, coin_as_list
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.spend_bundle import SpendBundle
-from chia.util.db_wrapper import DBWrapper
-from chia.util.hash import std_hash
-from chia.util.ints import uint32, uint64, uint128
-from chia.wallet.nft_wallet.nft_wallet import NFTWallet
-from chia.wallet.outer_puzzles import AssetType
-from chia.wallet.payment import Payment
-from chia.wallet.puzzle_drivers import PuzzleInfo
-from chia.wallet.trade_record import TradeRecord
-from chia.wallet.trading.offer import NotarizedPayment, Offer
-from chia.wallet.trading.trade_status import TradeStatus
-from chia.wallet.trading.trade_store import TradeStore
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.transaction_type import TransactionType
-from chia.wallet.util.wallet_types import WalletType
-from chia.wallet.wallet import Wallet
-from chia.wallet.wallet_coin_record import WalletCoinRecord
-from chia.wallet.puzzles.load_clvm import load_clvm
+<PUSSY1>protocols.wallet_protocol import CoinState
+<PUSSY1>types.blockchain_format.coin import Coin, coin_as_list
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint32, uint64, uint128
+<PUSSY1>wallet.nft_wallet.nft_wallet import NFTWallet
+<PUSSY1>wallet.outer_puzzles import AssetType
+<PUSSY1>wallet.payment import Payment
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo
+<PUSSY1>wallet.trade_record import TradeRecord
+<PUSSY1>wallet.trading.offer import NotarizedPayment, Offer
+<PUSSY1>wallet.trading.trade_status import TradeStatus
+<PUSSY1>wallet.trading.trade_store import TradeStore
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.transaction_type import TransactionType
+<PUSSY1>wallet.util.wallet_types import WalletType
+<PUSSY1>wallet.wallet import Wallet
+<PUSSY1>wallet.wallet_coin_record import WalletCoinRecord
+<PUSSY1>wallet.puzzles.load_clvm import load_clvm
 
 OFFER_MOD = load_clvm("settlement_payments.clvm")
 
@@ -39,7 +39,7 @@ class TradeManager:
     assets with this trade manager:
 
     Puzzle Drivers:
-      - See chia/wallet/outer_puzzles.py for a full description of how to build these
+      - See <PUSSY3>wallet/outer_puzzles.py for a full description of how to build these
       - The `solve` method must be able to be solved by a Solver that looks like this:
             Solver(
                 {

@@ -1,14 +1,14 @@
 from dataclasses import dataclass
 from typing import Any, Optional
 
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.util.ints import uint64
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.puzzle_drivers import PuzzleInfo, Solver
-from chia.wallet.puzzles.singleton_top_layer_v1_1 import (
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>util.ints import uint64
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo, Solver
+<PUSSY1>wallet.puzzles.singleton_top_layer_v1_1 import (
     SINGLETON_LAUNCHER_HASH,
     match_singleton_puzzle,
     puzzle_for_singleton,

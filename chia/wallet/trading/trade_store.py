@@ -4,13 +4,13 @@ from typing import List, Optional, Tuple
 import aiosqlite
 import logging
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.util.db_wrapper import DBWrapper
-from chia.util.errors import Err
-from chia.util.ints import uint8, uint32
-from chia.wallet.trade_record import TradeRecord
-from chia.wallet.trading.trade_status import TradeStatus
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint8, uint32
+<PUSSY1>wallet.trade_record import TradeRecord
+<PUSSY1>wallet.trading.trade_status import TradeStatus
 
 
 async def migrate_is_my_offer(log: logging.Logger, db_connection: aiosqlite.Connection) -> None:

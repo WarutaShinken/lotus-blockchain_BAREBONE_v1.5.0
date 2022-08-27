@@ -1,7 +1,7 @@
 from typing import Any, Callable, Dict, List, Optional
 
-from chia.timelord.timelord import Timelord
-from chia.util.ws_message import WsRpcMessage, create_payload_dict
+<PUSSY1>timelord.timelord import Timelord
+<PUSSY1>util.ws_message import WsRpcMessage, create_payload_dict
 
 
 class TimelordRpcApi:

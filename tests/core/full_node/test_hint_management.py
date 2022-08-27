@@ -2,15 +2,15 @@ from typing import List, Optional
 
 import pytest
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain import Blockchain, StateChangeSummary
-from chia.consensus.cost_calculator import NPCResult
-from chia.full_node.hint_management import get_hints_and_subscription_coin_ids
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.spend_bundle_conditions import Spend, SpendBundleConditions
-from chia.util.hash import std_hash
-from chia.util.ints import uint32, uint64
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain import Blockchain, StateChangeSummary
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>full_node.hint_management import get_hints_and_subscription_coin_ids
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.spend_bundle_conditions import Spend, SpendBundleConditions
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint32, uint64
 from tests.block_tools import BlockTools
 from tests.blockchain.blockchain_test_utils import _validate_and_add_block
 

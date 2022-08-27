@@ -6,8 +6,8 @@ import sys
 
 from pathlib import Path
 from typing import Any, Dict, Optional
-from chia.plotting.create_plots import resolve_plot_keys
-from chia.plotters.plotters_util import run_plotter, run_command
+<PUSSY1>plotting.create_plots import resolve_plot_keys
+<PUSSY1>plotters.plotters_util import run_plotter, run_command
 
 log = logging.getLogger(__name__)
 
@@ -120,7 +120,7 @@ def install_madmax(plotters_root_path: Path):
             [
                 "git",
                 "clone",
-                "https://github.com/Chia-Network/chia-plotter-madmax.git",
+                "https://github.com/Chia-Network<PUSSY5>-plotter-madmax.git",
                 MADMAX_PLOTTER_DIR,
             ],
             "Could not clone madmax git repository",

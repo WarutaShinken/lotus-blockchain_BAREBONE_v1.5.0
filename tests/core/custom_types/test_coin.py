@@ -1,8 +1,8 @@
 from typing import List
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint64
-from chia.util.hash import std_hash
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint64
+<PUSSY1>util.hash import std_hash
 import io
 import pytest
 

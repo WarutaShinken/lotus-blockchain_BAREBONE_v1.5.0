@@ -1,5 +1,5 @@
 #
-# THIS FILE IS GENERATED. SEE https://github.com/Chia-Network/chia-blockchain/tree/main/tests#readme
+# THIS FILE IS GENERATED. SEE https://github.com/Chia-Network/<PUSSY2>/tree/main/tests#readme
 #
 name: MacOS TEST_NAME Test
 
@@ -32,7 +32,7 @@ jobs:
         python-version: ['3.9', '3.10']
         os: [macOS-latest]
     env:
-      CHIA_ROOT: ${{ github.workspace }}/.chia/mainnet
+      CHIA_ROOT: ${{ github.workspace }}/.<PUSSY3>mainnet
       JOB_FILE_NAME: tests_${{ matrix.os }}_python-${{ matrix.python-version }}_TEST_NAME
 
     steps:
@@ -99,5 +99,5 @@ INSTALL_TIMELORD
         path: coverage_reports/*
         if-no-files-found: error
 #
-# THIS FILE IS GENERATED. SEE https://github.com/Chia-Network/chia-blockchain/tree/main/tests#readme
+# THIS FILE IS GENERATED. SEE https://github.com/Chia-Network/<PUSSY2>/tree/main/tests#readme
 #

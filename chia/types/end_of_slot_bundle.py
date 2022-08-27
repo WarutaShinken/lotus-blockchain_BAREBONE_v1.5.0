@@ -1,13 +1,13 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from chia.types.blockchain_format.slots import (
+<PUSSY1>types.blockchain_format.slots import (
     ChallengeChainSubSlot,
     InfusedChallengeChainSubSlot,
     RewardChainSubSlot,
     SubSlotProofs,
 )
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

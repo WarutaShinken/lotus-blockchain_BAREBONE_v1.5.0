@@ -14,17 +14,17 @@ import aiosqlite
 import click
 import zstd
 
-import chia.server.ws_connection as ws
-from chia.cmds.init_funcs import chia_init
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.full_node.full_node import FullNode
-from chia.protocols import full_node_protocol
-from chia.server.outbound_message import Message, NodeType
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.full_block import FullBlock
-from chia.types.peer_info import PeerInfo
-from chia.util.config import load_config
-from chia.util.ints import uint16
+import <PUSSY5>server.ws_connection as ws
+<PUSSY1>cmds.init_funcs import chia_init
+<PUSSY1>consensus.default_constants import DEFAULT_CONSTANTS
+<PUSSY1>full_node.full_node import FullNode
+<PUSSY1>protocols import full_node_protocol
+<PUSSY1>server.outbound_message import Message, NodeType
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.config import load_config
+<PUSSY1>util.ints import uint16
 from tests.block_tools import make_unfinished_block
 from tools.test_constants import test_constants as TEST_CONSTANTS
 

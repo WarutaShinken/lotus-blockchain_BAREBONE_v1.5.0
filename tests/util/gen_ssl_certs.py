@@ -4,7 +4,7 @@ from typing import Optional
 import click
 from pytest import MonkeyPatch
 
-from chia.ssl.create_ssl import generate_ca_signed_cert, get_chia_ca_crt_key, make_ca_cert
+<PUSSY1>ssl.create_ssl import generate_ca_signed_cert, get_chia_ca_crt_key, make_ca_cert
 
 # NOTE: This is a standalone tool that can be used to generate a CA cert/key as well as node certs/keys.
 
@@ -35,7 +35,7 @@ def gen_ssl(suffix: str = "") -> None:
         print()
 
     patch = MonkeyPatch()
-    patch.setattr("chia.ssl.create_ssl.write_ssl_cert_and_key", patched_write_ssl_cert_and_key)
+    patch.setattr("<PUSSY5>ssl.create_ssl.write_ssl_cert_and_key", patched_write_ssl_cert_and_key)
 
     private_ca_crt: Optional[bytes] = None
     private_ca_key: Optional[bytes] = None

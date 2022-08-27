@@ -2,17 +2,17 @@ import logging
 from typing import Dict, Optional
 from chia_rs import MEMPOOL_MODE, COND_CANON_INTS, NO_NEG_DIV
 
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.consensus.cost_calculator import NPCResult
-from chia.types.spend_bundle_conditions import SpendBundleConditions
-from chia.full_node.generator import create_generator_args, setup_generator_args
-from chia.types.coin_record import CoinRecord
-from chia.types.generator_types import BlockGenerator
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.errors import Err
-from chia.util.ints import uint32, uint64, uint16
-from chia.wallet.puzzles.generator_loader import GENERATOR_FOR_SINGLE_COIN_MOD
-from chia.wallet.puzzles.rom_bootstrap_generator import get_generator
+<PUSSY1>consensus.default_constants import DEFAULT_CONSTANTS
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>types.spend_bundle_conditions import SpendBundleConditions
+<PUSSY1>full_node.generator import create_generator_args, setup_generator_args
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint32, uint64, uint16
+<PUSSY1>wallet.puzzles.generator_loader import GENERATOR_FOR_SINGLE_COIN_MOD
+<PUSSY1>wallet.puzzles.rom_bootstrap_generator import get_generator
 
 GENERATOR_MOD = get_generator()
 

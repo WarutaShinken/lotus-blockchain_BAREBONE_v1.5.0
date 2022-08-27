@@ -1,7 +1,7 @@
 from typing import Any, Callable, Dict, List
 
-from chia.harvester.harvester import Harvester
-from chia.util.ws_message import WsRpcMessage, create_payload_dict
+<PUSSY1>harvester.harvester import Harvester
+<PUSSY1>util.ws_message import WsRpcMessage, create_payload_dict
 
 
 class HarvesterRpcApi:

@@ -4,21 +4,21 @@ from typing import Iterator
 import pytest
 
 from benchmarks.utils import rand_bytes, rand_g1, rand_g2, rand_hash, rand_vdf, rand_vdf_proof, rewards
-from chia.types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
-from chia.types.blockchain_format.pool_target import PoolTarget
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.blockchain_format.proof_of_space import ProofOfSpace
-from chia.types.blockchain_format.reward_chain_block import RewardChainBlock
-from chia.types.blockchain_format.slots import (
+<PUSSY1>types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
+<PUSSY1>types.blockchain_format.pool_target import PoolTarget
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.proof_of_space import ProofOfSpace
+<PUSSY1>types.blockchain_format.reward_chain_block import RewardChainBlock
+<PUSSY1>types.blockchain_format.slots import (
     ChallengeChainSubSlot,
     InfusedChallengeChainSubSlot,
     RewardChainSubSlot,
     SubSlotProofs,
 )
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.full_block import FullBlock
-from chia.util.full_block_utils import generator_from_block
-from chia.util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>util.full_block_utils import generator_from_block
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
 
 test_g2s = [rand_g2() for _ in range(10)]
 test_g1s = [rand_g1() for _ in range(10)]

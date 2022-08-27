@@ -5,10 +5,10 @@ import colorama
 import threading
 import yaml
 
-from chia.cmds.passphrase_funcs import prompt_for_passphrase, read_passphrase_from_file
-from chia.util.default_root import DEFAULT_KEYS_ROOT_PATH
-from chia.util.file_keyring import FileKeyring
-from chia.util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE, KeyringWrapper
+<PUSSY1>cmds.passphrase_funcs import prompt_for_passphrase, read_passphrase_from_file
+<PUSSY1>util.default_root import DEFAULT_KEYS_ROOT_PATH
+<PUSSY1>util.file_keyring import FileKeyring
+<PUSSY1>util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE, KeyringWrapper
 from cryptography.exceptions import InvalidTag
 from io import TextIOWrapper
 from pathlib import Path

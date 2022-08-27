@@ -16,7 +16,7 @@ import yaml
 from filelock import FileLock
 from typing_extensions import Literal
 
-from chia.util.path import mkdir
+<PUSSY1>util.path import mkdir
 
 PEER_DB_PATH_KEY_DEPRECATED = "peer_db_path"  # replaced by "peers_file_path"
 WALLET_PEERS_PATH_KEY_DEPRECATED = "wallet_peers_path"  # replaced by "wallet_peers_file_path"
@@ -110,7 +110,7 @@ def _load_config_maybe_locked(
         if not exit_on_error:
             raise ValueError("Config not found")
         print(f"can't find {path}")
-        print("** please run `chia init` to migrate or create new config files **")
+        print("** please run `lotus init` to migrate or create new config files **")
         # TODO: fix this hack
         sys.exit(-1)
     # This loop should not be necessary due to the config lock, but it's kept here just in case

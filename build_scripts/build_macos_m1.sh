@@ -22,16 +22,16 @@ sudo rm -rf dist
 mkdir dist
 
 echo "Create executables with pyinstaller"
-SPEC_FILE=$(python -c 'import chia; print(chia.PYINSTALLER_SPEC_PATH)')
+SPEC_FILE=$(python -c 'import chia; print(<PUSSY5>PYINSTALLER_SPEC_PATH)')
 pyinstaller --log-level=INFO "$SPEC_FILE"
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "pyinstaller failed!"
 	exit $LAST_EXIT_CODE
 fi
-cp -r dist/daemon ../chia-blockchain-gui/packages/gui
+cp -r dist/daemon ../<PUSSY2>-gui/packages/gui
 cd .. || exit
-cd chia-blockchain-gui || exit
+cd <PUSSY2>-gui || exit
 
 echo "npm build"
 lerna clean -y
@@ -48,13 +48,13 @@ fi
 # Change to the gui package
 cd packages/gui || exit
 
-# sets the version for chia-blockchain in package.json
+# sets the version for <PUSSY2> in package.json
 brew install jq
 cp package.json package.json.orig
 jq --arg VER "$CHIA_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
 electron-packager . Chia --asar.unpack="**/daemon/**" --platform=darwin \
---icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=net.chia.blockchain \
+--icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=net.<PUSSY5>blockchain \
 --appVersion=$CHIA_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 
@@ -96,7 +96,7 @@ ls -lh final_installer
 if [ "$NOTARIZE" ]; then
 	echo "Notarize $DMG_NAME on ci"
 	cd final_installer || exit
-  notarize-cli --file=$DMG_NAME --bundle-id net.chia.blockchain \
+  notarize-cli --file=$DMG_NAME --bundle-id net.<PUSSY5>blockchain \
 	--username "$APPLE_NOTARIZE_USERNAME" --password "$APPLE_NOTARIZE_PASSWORD"
   echo "Notarization step complete"
 else
@@ -107,7 +107,7 @@ fi
 #
 # Ask for username and password. password should be an app specific password.
 # Generate app specific password https://support.apple.com/en-us/HT204397
-# xcrun altool --notarize-app -f Chia-0.1.X.dmg --primary-bundle-id net.chia.blockchain -u username -p password
+# xcrun altool --notarize-app -f Chia-0.1.X.dmg --primary-bundle-id net.<PUSSY5>blockchain -u username -p password
 # xcrun altool --notarize-app; -should return REQUEST-ID, use it in next command
 #
 # Wait until following command return a success message".

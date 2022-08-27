@@ -1,13 +1,13 @@
 from typing import List, Optional
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.multiprocess_validation import PreValidationResult
-from chia.full_node.full_node_api import FullNodeAPI
-from chia.protocols.full_node_protocol import RespondBlock
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
-from chia.types.full_block import FullBlock
-from chia.util.api_decorators import api_request
-from chia.util.ints import uint8
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.multiprocess_validation import PreValidationResult
+<PUSSY1>full_node.full_node_api import FullNodeAPI
+<PUSSY1>protocols.full_node_protocol import RespondBlock
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>util.api_decorators import api_request
+<PUSSY1>util.ints import uint8
 
 
 class FullNodeSimulator(FullNodeAPI):

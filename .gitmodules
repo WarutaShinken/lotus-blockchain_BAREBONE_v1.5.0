@@ -2,7 +2,7 @@
 	path = mozilla-ca
 	url = https://github.com/Chia-Network/mozilla-ca.git
         branch = main
-[submodule "chia-blockchain-gui"]
-	path = chia-blockchain-gui
-	url = https://github.com/Chia-Network/chia-blockchain-gui.git
+[submodule "<PUSSY2>-gui"]
+	path = <PUSSY2>-gui
+	url = https://github.com/Chia-Network/<PUSSY2>-gui.git
 	branch = release/1.5.0

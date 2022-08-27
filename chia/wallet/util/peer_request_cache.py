@@ -1,11 +1,11 @@
 import asyncio
 from typing import Optional
 
-from chia.protocols.wallet_protocol import CoinState, RespondSESInfo
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.header_block import HeaderBlock
-from chia.util.ints import uint32, uint64
-from chia.util.lru_cache import LRUCache
+<PUSSY1>protocols.wallet_protocol import CoinState, RespondSESInfo
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>util.ints import uint32, uint64
+<PUSSY1>util.lru_cache import LRUCache
 
 
 class PeerRequestCache:

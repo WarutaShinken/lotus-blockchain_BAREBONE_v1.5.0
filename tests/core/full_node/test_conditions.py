@@ -14,15 +14,15 @@ from blspy import G2Element
 
 from clvm_tools.binutils import assemble
 
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.program import Program
-from chia.types.coin_record import CoinRecord
-from chia.types.coin_spend import CoinSpend
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.full_block import FullBlock
-from chia.types.spend_bundle import SpendBundle
-from chia.util.errors import Err
-from chia.util.ints import uint32
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint32
 from tests.block_tools import BlockTools
 from tests.util.keyring import TempKeyring
 

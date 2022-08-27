@@ -3,14 +3,14 @@ from pathlib import Path
 import aiosqlite
 import pytest
 
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.db_wrapper import DBWrapper
-from chia.util.ints import uint32, uint64
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.nft_wallet.nft_info import NFTCoinInfo
-from chia.wallet.wallet_nft_store import WalletNftStore
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.ints import uint32, uint64
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.nft_wallet.nft_info import NFTCoinInfo
+<PUSSY1>wallet.wallet_nft_store import WalletNftStore
 
 
 class TestNftStore:

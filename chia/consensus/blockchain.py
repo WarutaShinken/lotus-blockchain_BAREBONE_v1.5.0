@@ -10,47 +10,47 @@ from multiprocessing.context import BaseContext
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
-from chia.consensus.block_body_validation import validate_block_body
-from chia.consensus.block_header_validation import validate_unfinished_header_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.cost_calculator import NPCResult
-from chia.consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
-from chia.consensus.find_fork_point import find_fork_point_in_chain
-from chia.consensus.full_block_to_block_record import block_to_block_record
-from chia.consensus.multiprocess_validation import (
+<PUSSY1>consensus.block_body_validation import validate_block_body
+<PUSSY1>consensus.block_header_validation import validate_unfinished_header_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
+<PUSSY1>consensus.find_fork_point import find_fork_point_in_chain
+<PUSSY1>consensus.full_block_to_block_record import block_to_block_record
+<PUSSY1>consensus.multiprocess_validation import (
     PreValidationResult,
     _run_generator,
     pre_validate_blocks_multiprocessing,
 )
-from chia.full_node.block_height_map import BlockHeightMap
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.hint_store import HintStore
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from chia.types.block_protocol import BlockInfo
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.blockchain_format.vdf import VDFInfo
-from chia.types.coin_record import CoinRecord
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.header_block import HeaderBlock
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.types.unfinished_header_block import UnfinishedHeaderBlock
-from chia.types.weight_proof import SubEpochChallengeSegment
-from chia.util.errors import ConsensusError, Err
-from chia.util.generator_tools import get_block_header, tx_removals_and_additions
-from chia.util.inline_executor import InlineExecutor
-from chia.util.ints import uint16, uint32, uint64, uint128
-from chia.util.setproctitle import getproctitle, setproctitle
-from chia.util.streamable import recurse_jsonify
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.config import load_config
+<PUSSY1>full_node.block_height_map import BlockHeightMap
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.hint_store import HintStore
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions
+<PUSSY1>types.block_protocol import BlockInfo
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.blockchain_format.vdf import VDFInfo
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>types.unfinished_header_block import UnfinishedHeaderBlock
+<PUSSY1>types.weight_proof import SubEpochChallengeSegment
+<PUSSY1>util.errors import ConsensusError, Err
+<PUSSY1>util.generator_tools import get_block_header, tx_removals_and_additions
+<PUSSY1>util.inline_executor import InlineExecutor
+<PUSSY1>util.ints import uint16, uint32, uint64, uint128
+<PUSSY1>util.setproctitle import getproctitle, setproctitle
+<PUSSY1>util.streamable import recurse_jsonify
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>util.config import load_config
 
 log = logging.getLogger(__name__)
 

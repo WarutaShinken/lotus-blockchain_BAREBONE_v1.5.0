@@ -1,16 +1,16 @@
 import pathlib
 from typing import Dict
 
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.harvester.harvester import Harvester
-from chia.harvester.harvester_api import HarvesterAPI
-from chia.rpc.harvester_rpc_api import HarvesterRpcApi
-from chia.server.outbound_message import NodeType
-from chia.server.start_service import run_service
-from chia.types.peer_info import PeerInfo
-from chia.util.config import load_config_cli
-from chia.util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.default_constants import DEFAULT_CONSTANTS
+<PUSSY1>harvester.harvester import Harvester
+<PUSSY1>harvester.harvester_api import HarvesterAPI
+<PUSSY1>rpc.harvester_rpc_api import HarvesterRpcApi
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>server.start_service import run_service
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.config import load_config_cli
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
 
 # See: https://bugs.python.org/issue29288
 "".encode("idna")

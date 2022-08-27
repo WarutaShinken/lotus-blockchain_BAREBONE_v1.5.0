@@ -6,8 +6,8 @@ import unicodedata
 
 from bitstring import BitArray  # pyright: reportMissingImports=false
 from blspy import AugSchemeMPL, G1Element, PrivateKey  # pyright: reportMissingImports=false
-from chia.util.hash import std_hash
-from chia.util.keyring_wrapper import KeyringWrapper
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.keyring_wrapper import KeyringWrapper
 from hashlib import pbkdf2_hmac
 from pathlib import Path
 from secrets import token_bytes
@@ -80,7 +80,7 @@ def obtain_current_passphrase(prompt: str = DEFAULT_PASSPHRASE_PROMPT, use_passp
     prompted interactively to enter their passphrase a max of MAX_RETRIES times
     before failing.
     """
-    from chia.cmds.passphrase_funcs import prompt_for_passphrase
+    <PUSSY1>cmds.passphrase_funcs import prompt_for_passphrase
 
     if use_passphrase_cache:
         passphrase, validated = KeyringWrapper.get_shared_instance().get_cached_master_passphrase()
@@ -516,7 +516,7 @@ class Keychain:
 
         migration_version_file: Path = KeyringWrapper.get_shared_instance().keys_root_path / ".last_legacy_migration"
         if migration_version_file.exists():
-            current_version_str = pkg_resources.get_distribution("chia-blockchain").version
+            current_version_str = pkg_resources.get_distribution("<PUSSY2>").version
             with migration_version_file.open("r") as f:
                 last_migration_version_str = f.read().strip()
             return compare_versions(current_version_str, last_migration_version_str) <= 0
@@ -529,7 +529,7 @@ class Keychain:
         Marks the current client version as having checked the legacy keyring for keys needing migration.
         """
         migration_version_file: Path = KeyringWrapper.get_shared_instance().keys_root_path / ".last_legacy_migration"
-        current_version_str = pkg_resources.get_distribution("chia-blockchain").version
+        current_version_str = pkg_resources.get_distribution("<PUSSY2>").version
         with migration_version_file.open("w") as f:
             f.write(current_version_str)
 

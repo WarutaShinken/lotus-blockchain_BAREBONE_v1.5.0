@@ -6,11 +6,11 @@ from concurrent.futures.thread import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-import chia.server.ws_connection as ws  # lgtm [py/import-and-import-from]
-from chia.consensus.constants import ConsensusConstants
-from chia.plot_sync.sender import Sender
-from chia.plotting.manager import PlotManager
-from chia.plotting.util import (
+import <PUSSY5>server.ws_connection as ws  # lgtm [py/import-and-import-from]
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>plot_sync.sender import Sender
+<PUSSY1>plotting.manager import PlotManager
+<PUSSY1>plotting.util import (
     PlotRefreshEvents,
     PlotRefreshResult,
     PlotsRefreshParameter,
@@ -19,7 +19,7 @@ from chia.plotting.util import (
     remove_plot,
     remove_plot_directory,
 )
-from chia.util.streamable import dataclass_from_dict
+<PUSSY1>util.streamable import dataclass_from_dict
 
 log = logging.getLogger(__name__)
 

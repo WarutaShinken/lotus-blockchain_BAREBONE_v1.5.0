@@ -7,16 +7,16 @@ from typing import Any, Dict, List, Optional, Tuple
 import yaml
 
 from chia import __version__
-from chia.consensus.coinbase import create_puzzlehash_for_pk
-from chia.ssl.create_ssl import (
+<PUSSY1>consensus.coinbase import create_puzzlehash_for_pk
+<PUSSY1>ssl.create_ssl import (
     ensure_ssl_dirs,
     generate_ca_signed_cert,
     get_chia_ca_crt_key,
     make_ca_cert,
     write_ssl_cert_and_key,
 )
-from chia.util.bech32m import encode_puzzle_hash
-from chia.util.config import (
+<PUSSY1>util.bech32m import encode_puzzle_hash
+<PUSSY1>util.config import (
     create_default_chia_config,
     initial_config_file,
     load_config,
@@ -24,10 +24,10 @@ from chia.util.config import (
     save_config,
     unflatten_properties,
 )
-from chia.util.db_version import set_db_version
-from chia.util.keychain import Keychain
-from chia.util.path import mkdir, path_from_root
-from chia.util.ssl_check import (
+<PUSSY1>util.db_version import set_db_version
+<PUSSY1>util.keychain import Keychain
+<PUSSY1>util.path import mkdir, path_from_root
+<PUSSY1>util.ssl_check import (
     DEFAULT_PERMISSIONS_CERT_FILE,
     DEFAULT_PERMISSIONS_KEY_FILE,
     RESTRICT_MASK_CERT_FILE,
@@ -35,14 +35,14 @@ from chia.util.ssl_check import (
     check_and_fix_permissions_for_ssl_file,
     fix_ssl,
 )
-from chia.wallet.derive_keys import (
+<PUSSY1>wallet.derive_keys import (
     master_sk_to_pool_sk,
     master_sk_to_wallet_sk_intermediate,
     master_sk_to_wallet_sk_unhardened_intermediate,
     _derive_path,
     _derive_path_unhardened,
 )
-from chia.cmds.configure import configure
+<PUSSY1>cmds.configure import configure
 
 private_node_names: List[str] = ["full_node", "wallet", "farmer", "harvester", "timelord", "crawler", "daemon"]
 public_node_names: List[str] = ["full_node", "wallet", "farmer", "introducer", "timelord"]
@@ -74,7 +74,7 @@ def check_keys(new_root: Path, keychain: Optional[Keychain] = None) -> None:
         keychain = Keychain()
     all_sks = keychain.get_all_private_keys()
     if len(all_sks) == 0:
-        print("No keys are present in the keychain. Generate them with 'chia keys generate'")
+        print("No keys are present in the keychain. Generate them with 'lotus keys generate'")
         return None
 
     with lock_and_load_config(new_root, "config.yaml") as config:
@@ -436,7 +436,7 @@ def chia_init(
 
     print(f"Chia directory {root_path}")
     if root_path.is_dir() and Path(root_path / "config" / "config.yaml").exists():
-        # This is reached if CHIA_ROOT is set, or if user has run chia init twice
+        # This is reached if CHIA_ROOT is set, or if user has run lotus init twice
         # before a new update.
         if testnet:
             configure(
@@ -515,6 +515,6 @@ def chia_init(
             set_db_version(connection, 2)
 
     print("")
-    print("To see your keys, run 'chia keys show --show-mnemonic-seed'")
+    print("To see your keys, run 'lotus keys show --show-mnemonic-seed'")
 
     return 0

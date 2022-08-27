@@ -1,13 +1,13 @@
 import logging
 from typing import Dict, List, Optional
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.header_block import HeaderBlock
-from chia.types.weight_proof import SubEpochChallengeSegment, SubEpochSegments
-from chia.util.ints import uint32
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.weight_proof import SubEpochChallengeSegment, SubEpochSegments
+<PUSSY1>util.ints import uint32
 
 
 class BlockCache(BlockchainInterface):

@@ -2,11 +2,11 @@ import socket
 from pathlib import Path
 from ipaddress import ip_address, IPv4Network, IPv6Network
 from typing import Iterable, List, Tuple, Union, Any, Optional, Dict
-from chia.server.outbound_message import NodeType
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.peer_info import PeerInfo
-from chia.util.config import load_config
-from chia.util.ints import uint16
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.config import load_config
+<PUSSY1>util.ints import uint16
 
 
 def is_in_network(peer_host: str, networks: Iterable[Union[IPv4Network, IPv6Network]]) -> bool:
@@ -23,27 +23,27 @@ def is_localhost(peer_host: str) -> bool:
 
 def class_for_type(type: NodeType) -> Any:
     if type is NodeType.FULL_NODE:
-        from chia.full_node.full_node_api import FullNodeAPI
+        <PUSSY1>full_node.full_node_api import FullNodeAPI
 
         return FullNodeAPI
     elif type is NodeType.WALLET:
-        from chia.wallet.wallet_node_api import WalletNodeAPI
+        <PUSSY1>wallet.wallet_node_api import WalletNodeAPI
 
         return WalletNodeAPI
     elif type is NodeType.INTRODUCER:
-        from chia.introducer.introducer_api import IntroducerAPI
+        <PUSSY1>introducer.introducer_api import IntroducerAPI
 
         return IntroducerAPI
     elif type is NodeType.TIMELORD:
-        from chia.timelord.timelord_api import TimelordAPI
+        <PUSSY1>timelord.timelord_api import TimelordAPI
 
         return TimelordAPI
     elif type is NodeType.FARMER:
-        from chia.farmer.farmer_api import FarmerAPI
+        <PUSSY1>farmer.farmer_api import FarmerAPI
 
         return FarmerAPI
     elif type is NodeType.HARVESTER:
-        from chia.harvester.harvester_api import HarvesterAPI
+        <PUSSY1>harvester.harvester_api import HarvesterAPI
 
         return HarvesterAPI
     raise ValueError("No class for type")

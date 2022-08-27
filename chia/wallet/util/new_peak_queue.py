@@ -3,9 +3,9 @@ import dataclasses
 from enum import IntEnum
 from typing import Any, List
 
-from chia.protocols.wallet_protocol import CoinStateUpdate, NewPeakWallet
-from chia.server.ws_connection import WSChiaConnection
-from chia.types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>protocols.wallet_protocol import CoinStateUpdate, NewPeakWallet
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
 
 
 class NewPeakQueueTypes(IntEnum):

@@ -2,8 +2,8 @@ from typing import Any, Dict, Union
 
 import pytest
 
-from chia.types.blockchain_format.program import Program
-from chia.wallet.puzzle_drivers import PuzzleInfo, Solver
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo, Solver
 
 
 def test_puzzle_info() -> None:

@@ -2,13 +2,13 @@ from typing import Optional
 
 from clvm_tools.binutils import disassemble
 
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.util.ints import uint64
-from chia.wallet.cat_wallet.cat_utils import CAT_MOD, construct_cat_puzzle
-from chia.wallet.outer_puzzles import (
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>util.ints import uint64
+<PUSSY1>wallet.cat_wallet.cat_utils import CAT_MOD, construct_cat_puzzle
+<PUSSY1>wallet.outer_puzzles import (
     construct_puzzle,
     create_asset_id,
     get_inner_puzzle,
@@ -16,7 +16,7 @@ from chia.wallet.outer_puzzles import (
     match_puzzle,
     solve_puzzle,
 )
-from chia.wallet.puzzle_drivers import PuzzleInfo, Solver
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo, Solver
 
 
 def test_cat_outer_puzzle() -> None:

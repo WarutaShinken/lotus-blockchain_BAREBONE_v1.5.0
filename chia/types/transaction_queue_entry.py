@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from chia.server.ws_connection import WSChiaConnection
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.spend_bundle import SpendBundle
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.spend_bundle import SpendBundle
 
 
 @dataclass(frozen=True)

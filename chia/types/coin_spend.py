@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import List
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import SerializedProgram, INFINITE_COST
-from chia.util.chain_utils import additions_for_solution, fee_for_solution
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import SerializedProgram, INFINITE_COST
+<PUSSY1>util.chain_utils import additions_for_solution, fee_for_solution
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

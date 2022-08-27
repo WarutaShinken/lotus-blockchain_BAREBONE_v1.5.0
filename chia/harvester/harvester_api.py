@@ -5,20 +5,20 @@ from typing import List, Tuple
 
 from blspy import AugSchemeMPL, G1Element, G2Element
 
-from chia.consensus.pot_iterations import calculate_iterations_quality, calculate_sp_interval_iters
-from chia.harvester.harvester import Harvester
-from chia.plotting.util import PlotInfo, parse_plot_info
-from chia.protocols import harvester_protocol
-from chia.protocols.farmer_protocol import FarmingInfo
-from chia.protocols.harvester_protocol import Plot, PlotSyncResponse
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.server.outbound_message import make_msg
-from chia.server.ws_connection import WSChiaConnection
-from chia.types.blockchain_format.proof_of_space import ProofOfSpace
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.api_decorators import api_request, peer_required
-from chia.util.ints import uint8, uint32, uint64
-from chia.wallet.derive_keys import master_sk_to_local_sk
+<PUSSY1>consensus.pot_iterations import calculate_iterations_quality, calculate_sp_interval_iters
+<PUSSY1>harvester.harvester import Harvester
+<PUSSY1>plotting.util import PlotInfo, parse_plot_info
+<PUSSY1>protocols import harvester_protocol
+<PUSSY1>protocols.farmer_protocol import FarmingInfo
+<PUSSY1>protocols.harvester_protocol import Plot, PlotSyncResponse
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>server.outbound_message import make_msg
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>types.blockchain_format.proof_of_space import ProofOfSpace
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.api_decorators import api_request, peer_required
+<PUSSY1>util.ints import uint8, uint32, uint64
+<PUSSY1>wallet.derive_keys import master_sk_to_local_sk
 
 
 class HarvesterAPI:

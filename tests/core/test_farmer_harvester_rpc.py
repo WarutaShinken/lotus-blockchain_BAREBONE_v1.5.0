@@ -10,12 +10,12 @@ from typing import Any, Awaitable, Callable, Dict, List, Union, cast
 import pytest
 import pytest_asyncio
 
-from chia.consensus.coinbase import create_puzzlehash_for_pk
-from chia.plot_sync.receiver import Receiver
-from chia.plotting.util import add_plot_directory
-from chia.protocols import farmer_protocol
-from chia.protocols.harvester_protocol import Plot
-from chia.rpc.farmer_rpc_api import (
+<PUSSY1>consensus.coinbase import create_puzzlehash_for_pk
+<PUSSY1>plot_sync.receiver import Receiver
+<PUSSY1>plotting.util import add_plot_directory
+<PUSSY1>protocols import farmer_protocol
+<PUSSY1>protocols.harvester_protocol import Plot
+<PUSSY1>rpc.farmer_rpc_api import (
     FarmerRpcApi,
     FilterItem,
     PaginatedRequestData,
@@ -23,19 +23,19 @@ from chia.rpc.farmer_rpc_api import (
     PlotPathRequestData,
     plot_matches_filter,
 )
-from chia.rpc.farmer_rpc_client import FarmerRpcClient
-from chia.rpc.harvester_rpc_api import HarvesterRpcApi
-from chia.rpc.harvester_rpc_client import HarvesterRpcClient
-from chia.rpc.rpc_server import start_rpc_server
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.bech32m import decode_puzzle_hash, encode_puzzle_hash
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.config import load_config, lock_and_load_config, save_config
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint16, uint32, uint64
-from chia.util.misc import get_list_or_len
-from chia.util.streamable import dataclass_from_dict
-from chia.wallet.derive_keys import master_sk_to_wallet_sk, master_sk_to_wallet_sk_unhardened
+<PUSSY1>rpc.farmer_rpc_client import FarmerRpcClient
+<PUSSY1>rpc.harvester_rpc_api import HarvesterRpcApi
+<PUSSY1>rpc.harvester_rpc_client import HarvesterRpcClient
+<PUSSY1>rpc.rpc_server import start_rpc_server
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.bech32m import decode_puzzle_hash, encode_puzzle_hash
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.config import load_config, lock_and_load_config, save_config
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint16, uint32, uint64
+<PUSSY1>util.misc import get_list_or_len
+<PUSSY1>util.streamable import dataclass_from_dict
+<PUSSY1>wallet.derive_keys import master_sk_to_wallet_sk, master_sk_to_wallet_sk_unhardened
 from tests.block_tools import get_plot_dir
 from tests.plot_sync.test_delta import dummy_plot
 from tests.setup_nodes import setup_harvester_farmer, test_constants

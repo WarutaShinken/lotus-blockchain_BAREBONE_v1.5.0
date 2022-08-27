@@ -8,39 +8,39 @@ import pytest
 import pytest_asyncio
 from blspy import G2Element
 
-from chia.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from chia.consensus.coinbase import create_puzzlehash_for_pk
-from chia.rpc.full_node_rpc_api import FullNodeRpcApi
-from chia.rpc.full_node_rpc_client import FullNodeRpcClient
-from chia.rpc.rpc_server import start_rpc_server
-from chia.rpc.wallet_rpc_api import WalletRpcApi
-from chia.rpc.wallet_rpc_client import WalletRpcClient
-from chia.server.server import ChiaServer
-from chia.simulator.full_node_simulator import FullNodeSimulator
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_record import CoinRecord
-from chia.types.coin_spend import CoinSpend
-from chia.types.peer_info import PeerInfo
-from chia.types.spend_bundle import SpendBundle
-from chia.util.bech32m import decode_puzzle_hash, encode_puzzle_hash
-from chia.util.config import lock_and_load_config, save_config
-from chia.util.hash import std_hash
-from chia.util.ints import uint16, uint32, uint64
-from chia.wallet.cat_wallet.cat_constants import DEFAULT_CATS
-from chia.wallet.cat_wallet.cat_wallet import CATWallet
-from chia.wallet.derive_keys import master_sk_to_wallet_sk, master_sk_to_wallet_sk_unhardened
-from chia.wallet.did_wallet.did_wallet import DIDWallet
-from chia.wallet.nft_wallet.nft_wallet import NFTWallet
-from chia.wallet.trading.trade_status import TradeStatus
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.transaction_sorting import SortKey
-from chia.wallet.util.compute_memos import compute_memos
-from chia.wallet.util.wallet_types import WalletType
-from chia.wallet.wallet import Wallet
-from chia.wallet.wallet_node import WalletNode
+<PUSSY1>consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+<PUSSY1>consensus.coinbase import create_puzzlehash_for_pk
+<PUSSY1>rpc.full_node_rpc_api import FullNodeRpcApi
+<PUSSY1>rpc.full_node_rpc_client import FullNodeRpcClient
+<PUSSY1>rpc.rpc_server import start_rpc_server
+<PUSSY1>rpc.wallet_rpc_api import WalletRpcApi
+<PUSSY1>rpc.wallet_rpc_client import WalletRpcClient
+<PUSSY1>server.server import ChiaServer
+<PUSSY1>simulator.full_node_simulator import FullNodeSimulator
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.bech32m import decode_puzzle_hash, encode_puzzle_hash
+<PUSSY1>util.config import lock_and_load_config, save_config
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint16, uint32, uint64
+<PUSSY1>wallet.cat_wallet.cat_constants import DEFAULT_CATS
+<PUSSY1>wallet.cat_wallet.cat_wallet import CATWallet
+<PUSSY1>wallet.derive_keys import master_sk_to_wallet_sk, master_sk_to_wallet_sk_unhardened
+<PUSSY1>wallet.did_wallet.did_wallet import DIDWallet
+<PUSSY1>wallet.nft_wallet.nft_wallet import NFTWallet
+<PUSSY1>wallet.trading.trade_status import TradeStatus
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.transaction_sorting import SortKey
+<PUSSY1>wallet.util.compute_memos import compute_memos
+<PUSSY1>wallet.util.wallet_types import WalletType
+<PUSSY1>wallet.wallet import Wallet
+<PUSSY1>wallet.wallet_node import WalletNode
 from tests.block_tools import BlockTools
 from tests.pools.test_pool_rpc import wallet_is_synced
 from tests.time_out_assert import time_out_assert
@@ -735,7 +735,7 @@ async def test_offer_endpoints(wallet_rpc_environment: WalletRpcTestEnvironment)
 
 @pytest.mark.asyncio
 async def test_did_endpoints(wallet_rpc_environment: WalletRpcTestEnvironment):
-    from chia.wallet.did_wallet.did_info import DID_HRP
+    <PUSSY1>wallet.did_wallet.did_info import DID_HRP
 
     env: WalletRpcTestEnvironment = wallet_rpc_environment
 
@@ -831,7 +831,7 @@ async def test_did_endpoints(wallet_rpc_environment: WalletRpcTestEnvironment):
 @pytest.mark.asyncio
 async def test_nft_endpoints(wallet_rpc_environment: WalletRpcTestEnvironment):
 
-    from chia.wallet.nft_wallet.nft_info import NFT_HRP
+    <PUSSY1>wallet.nft_wallet.nft_info import NFT_HRP
 
     env: WalletRpcTestEnvironment = wallet_rpc_environment
     wallet_1_node: WalletNode = env.wallet_1.node
@@ -850,7 +850,7 @@ async def test_nft_endpoints(wallet_rpc_environment: WalletRpcTestEnvironment):
         None,
         None,
         "0xD4584AD463139FA8C0D9F68F4B59F185",
-        ["https://www.chia.net/img/branding/chia-logo.svg"],
+        ["https://www.<PUSSY5>net/img/branding<PUSSY5>-logo.svg"],
     )
     assert res["success"]
 

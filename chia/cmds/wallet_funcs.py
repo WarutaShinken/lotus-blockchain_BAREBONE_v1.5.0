@@ -8,25 +8,25 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional, Tuple, Union
 
 import aiohttp
 
-from chia.cmds.cmds_util import transaction_submitted_msg, transaction_status_msg
-from chia.cmds.show import print_connections
-from chia.cmds.units import units
-from chia.rpc.wallet_rpc_client import WalletRpcClient
-from chia.server.outbound_message import NodeType
-from chia.server.start_wallet import SERVICE_NAME
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.bech32m import bech32_decode, decode_puzzle_hash, encode_puzzle_hash
-from chia.util.config import load_config
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.ints import uint16, uint32, uint64, uint128
-from chia.wallet.did_wallet.did_info import DID_HRP
-from chia.wallet.nft_wallet.nft_info import NFT_HRP, NFTInfo
-from chia.wallet.trade_record import TradeRecord
-from chia.wallet.trading.offer import Offer
-from chia.wallet.trading.trade_status import TradeStatus
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.transaction_type import TransactionType
-from chia.wallet.util.wallet_types import WalletType
+<PUSSY1>cmds.cmds_util import transaction_submitted_msg, transaction_status_msg
+<PUSSY1>cmds.show import print_connections
+<PUSSY1>cmds.units import units
+<PUSSY1>rpc.wallet_rpc_client import WalletRpcClient
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>server.start_wallet import SERVICE_NAME
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.bech32m import bech32_decode, decode_puzzle_hash, encode_puzzle_hash
+<PUSSY1>util.config import load_config
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>util.ints import uint16, uint32, uint64, uint128
+<PUSSY1>wallet.did_wallet.did_info import DID_HRP
+<PUSSY1>wallet.nft_wallet.nft_info import NFT_HRP, NFTInfo
+<PUSSY1>wallet.trade_record import TradeRecord
+<PUSSY1>wallet.trading.offer import Offer
+<PUSSY1>wallet.trading.trade_status import TradeStatus
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.transaction_type import TransactionType
+<PUSSY1>wallet.util.wallet_types import WalletType
 
 CATNameResolver = Callable[[bytes32], Awaitable[Optional[Tuple[Optional[uint32], str]]]]
 
@@ -243,7 +243,7 @@ async def send(args: dict, wallet_client: WalletRpcClient, fingerprint: int) -> 
             return None
 
     print("Transaction not yet submitted to nodes")
-    print(f"Do 'chia wallet get_transaction -f {fingerprint} -tx 0x{tx_id}' to get status")
+    print(f"Do 'lotus wallet get_transaction -f {fingerprint} -tx 0x{tx_id}' to get status")
 
 
 async def get_address(args: dict, wallet_client: WalletRpcClient, fingerprint: int) -> None:
@@ -398,7 +398,7 @@ async def make_offer(args: dict, wallet_client: WalletRpcClient, fingerprint: in
                     with open(pathlib.Path(filepath), "w") as file:
                         file.write(offer.to_bech32())
                     print(f"Created offer with ID {trade_record.trade_id}")
-                    print(f"Use chia wallet get_offers --id {trade_record.trade_id} -f {fingerprint} to view status")
+                    print(f"Use lotus wallet get_offers --id {trade_record.trade_id} -f {fingerprint} to view status")
                 else:
                     print("Error creating offer")
 
@@ -576,7 +576,7 @@ async def take_offer(args: dict, wallet_client: WalletRpcClient, fingerprint: in
         if confirmation in ["y", "yes"]:
             trade_record = await wallet_client.take_offer(offer, fee=fee)
             print(f"Accepted offer with ID {trade_record.trade_id}")
-            print(f"Use chia wallet get_offers --id {trade_record.trade_id} -f {fingerprint} to view its status")
+            print(f"Use lotus wallet get_offers --id {trade_record.trade_id} -f {fingerprint} to view its status")
 
 
 async def cancel_offer(args: dict, wallet_client: WalletRpcClient, fingerprint: int) -> None:
@@ -592,7 +592,7 @@ async def cancel_offer(args: dict, wallet_client: WalletRpcClient, fingerprint: 
         await wallet_client.cancel_offer(id, secure=secure, fee=fee)
         print(f"Cancelled offer with ID {trade_record.trade_id}")
         if secure:
-            print(f"Use chia wallet get_offers --id {trade_record.trade_id} -f {fingerprint} to view cancel status")
+            print(f"Use lotus wallet get_offers --id {trade_record.trade_id} -f {fingerprint} to view cancel status")
 
 
 def wallet_coin_unit(typ: WalletType, address_prefix: str) -> Tuple[str, int]:
@@ -680,7 +680,7 @@ async def get_wallet(wallet_client: WalletRpcClient, fingerprint: int = None) ->
     else:
         fingerprints = await wallet_client.get_public_keys()
     if len(fingerprints) == 0:
-        print("No keys loaded. Run 'chia keys generate' or import a key")
+        print("No keys loaded. Run 'lotus keys generate' or import a key")
         return None
     if len(fingerprints) == 1:
         fingerprint = fingerprints[0]
@@ -757,7 +757,7 @@ async def execute_with_wallet(
         if isinstance(e, aiohttp.ClientConnectorError):
             print(
                 f"Connection error. Check if the wallet is running at {wallet_rpc_port}. "
-                "You can run the wallet via:\n\tchia start wallet"
+                "You can run the wallet via:\n\tlotus start wallet"
             )
         else:
             print(f"Exception from 'wallet' {e}")

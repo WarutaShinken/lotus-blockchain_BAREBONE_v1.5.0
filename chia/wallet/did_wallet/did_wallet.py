@@ -7,30 +7,30 @@ import re
 from typing import Dict, Optional, List, Any, Set, Tuple
 from blspy import AugSchemeMPL, G1Element, G2Element
 from secrets import token_bytes
-from chia.protocols import wallet_protocol
-from chia.protocols.wallet_protocol import CoinState
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.types.spend_bundle import SpendBundle
-from chia.util.ints import uint64, uint32, uint8, uint128
-from chia.wallet.util.transaction_type import TransactionType
-from chia.util.condition_tools import conditions_dict_for_solution, pkm_pairs_for_conditions_dict
-from chia.wallet.did_wallet.did_info import DIDInfo
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.wallet_types import WalletType
-from chia.wallet.util.compute_memos import compute_memos
-from chia.wallet.wallet import Wallet
-from chia.wallet.wallet_coin_record import WalletCoinRecord
-from chia.wallet.wallet_info import WalletInfo
-from chia.wallet.derivation_record import DerivationRecord
-from chia.wallet.did_wallet import did_wallet_puzzles
-from chia.wallet.derive_keys import master_sk_to_wallet_sk_unhardened
-from chia.wallet.coin_selection import select_coins
-from chia.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
+<PUSSY1>protocols import wallet_protocol
+<PUSSY1>protocols.wallet_protocol import CoinState
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.ints import uint64, uint32, uint8, uint128
+<PUSSY1>wallet.util.transaction_type import TransactionType
+<PUSSY1>util.condition_tools import conditions_dict_for_solution, pkm_pairs_for_conditions_dict
+<PUSSY1>wallet.did_wallet.did_info import DIDInfo
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.wallet_types import WalletType
+<PUSSY1>wallet.util.compute_memos import compute_memos
+<PUSSY1>wallet.wallet import Wallet
+<PUSSY1>wallet.wallet_coin_record import WalletCoinRecord
+<PUSSY1>wallet.wallet_info import WalletInfo
+<PUSSY1>wallet.derivation_record import DerivationRecord
+<PUSSY1>wallet.did_wallet import did_wallet_puzzles
+<PUSSY1>wallet.derive_keys import master_sk_to_wallet_sk_unhardened
+<PUSSY1>wallet.coin_selection import select_coins
+<PUSSY1>wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
     puzzle_for_pk,
     DEFAULT_HIDDEN_PUZZLE_HASH,
     calculate_synthetic_secret_key,

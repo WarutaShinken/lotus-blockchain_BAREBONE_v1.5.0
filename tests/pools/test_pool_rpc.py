@@ -10,26 +10,26 @@ import pytest
 import pytest_asyncio
 from blspy import G1Element
 
-from chia.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from chia.full_node.full_node_api import FullNodeAPI
-from chia.pools.pool_puzzles import SINGLETON_LAUNCHER_HASH
-from chia.pools.pool_wallet_info import PoolSingletonState, PoolWalletInfo
-from chia.protocols import full_node_protocol
-from chia.protocols.full_node_protocol import RespondBlock
-from chia.rpc.rpc_server import start_rpc_server
-from chia.rpc.wallet_rpc_api import WalletRpcApi
-from chia.rpc.wallet_rpc_client import WalletRpcClient
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.peer_info import PeerInfo
-from chia.util.bech32m import encode_puzzle_hash
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.config import load_config
-from chia.util.ints import uint16, uint32
-from chia.wallet.derive_keys import find_authentication_sk, find_owner_sk
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.wallet_types import WalletType
-from chia.wallet.wallet_node import WalletNode
+<PUSSY1>consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+<PUSSY1>full_node.full_node_api import FullNodeAPI
+<PUSSY1>pools.pool_puzzles import SINGLETON_LAUNCHER_HASH
+<PUSSY1>pools.pool_wallet_info import PoolSingletonState, PoolWalletInfo
+<PUSSY1>protocols import full_node_protocol
+<PUSSY1>protocols.full_node_protocol import RespondBlock
+<PUSSY1>rpc.rpc_server import start_rpc_server
+<PUSSY1>rpc.wallet_rpc_api import WalletRpcApi
+<PUSSY1>rpc.wallet_rpc_client import WalletRpcClient
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.bech32m import encode_puzzle_hash
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.config import load_config
+<PUSSY1>util.ints import uint16, uint32
+<PUSSY1>wallet.derive_keys import find_authentication_sk, find_owner_sk
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.wallet_types import WalletType
+<PUSSY1>wallet.wallet_node import WalletNode
 from tests.block_tools import BlockTools, get_plot_dir
 from tests.setup_nodes import setup_simulators_and_wallets
 from tests.time_out_assert import time_out_assert

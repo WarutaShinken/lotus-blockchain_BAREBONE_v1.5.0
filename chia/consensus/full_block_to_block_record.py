@@ -1,20 +1,20 @@
 from typing import List, Optional, Union
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.deficit import calculate_deficit
-from chia.consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
-from chia.consensus.make_sub_epoch_summary import make_sub_epoch_summary
-from chia.consensus.pot_iterations import is_overflow_block
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.slots import ChallengeBlockInfo
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.full_block import FullBlock
-from chia.types.header_block import HeaderBlock
-from chia.util.errors import Err
-from chia.util.ints import uint8, uint32, uint64
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.deficit import calculate_deficit
+<PUSSY1>consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
+<PUSSY1>consensus.make_sub_epoch_summary import make_sub_epoch_summary
+<PUSSY1>consensus.pot_iterations import is_overflow_block
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.slots import ChallengeBlockInfo
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint8, uint32, uint64
 
 
 def block_to_block_record(

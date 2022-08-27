@@ -4,11 +4,11 @@ from typing import Dict, List, Optional, Any
 
 import aiohttp
 
-from chia.server.server import NodeType, ssl_context_for_client
-from chia.server.ssl_context import private_ssl_ca_paths
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.ints import uint16
+<PUSSY1>server.server import NodeType, ssl_context_for_client
+<PUSSY1>server.ssl_context import private_ssl_ca_paths
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.ints import uint16
 
 
 class RpcClient:

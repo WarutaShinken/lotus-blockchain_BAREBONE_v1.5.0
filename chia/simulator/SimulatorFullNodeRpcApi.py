@@ -1,8 +1,8 @@
 from typing import Any, Dict, Optional
 
-from chia.rpc.full_node_rpc_api import FullNodeRpcApi
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.util.bech32m import decode_puzzle_hash
+<PUSSY1>rpc.full_node_rpc_api import FullNodeRpcApi
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol
+<PUSSY1>util.bech32m import decode_puzzle_hash
 
 
 class SimulatorFullNodeRpcApi(FullNodeRpcApi):

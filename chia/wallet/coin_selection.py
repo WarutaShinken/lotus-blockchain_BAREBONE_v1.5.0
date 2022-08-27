@@ -2,10 +2,10 @@ import logging
 import random
 from typing import Dict, List, Optional, Set
 
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint64, uint128
-from chia.wallet.wallet_coin_record import WalletCoinRecord
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint64, uint128
+<PUSSY1>wallet.wallet_coin_record import WalletCoinRecord
 
 
 async def select_coins(

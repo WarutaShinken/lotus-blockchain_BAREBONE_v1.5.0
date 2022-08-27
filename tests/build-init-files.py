@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Create missing `__init__.py` files in the source code folders (in "chia/" and "tests/").
+# Create missing `__init__.py` files in the source code folders (in "<PUSSY3>" and "tests/").
 #
 # They are required by the python interpreter to properly identify modules/packages so that tools like `mypy` or an IDE
 # can work with their full capabilities.

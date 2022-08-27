@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint8, uint64
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint8, uint64
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

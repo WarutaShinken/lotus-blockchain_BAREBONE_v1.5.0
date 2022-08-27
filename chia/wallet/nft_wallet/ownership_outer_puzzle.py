@@ -3,10 +3,10 @@ from typing import Any, List, Optional, Tuple, Union
 
 from clvm_tools.binutils import disassemble
 
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.wallet.puzzle_drivers import PuzzleInfo, Solver
-from chia.wallet.puzzles.load_clvm import load_clvm
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo, Solver
+<PUSSY1>wallet.puzzles.load_clvm import load_clvm
 
 OWNERSHIP_LAYER_MOD = load_clvm("nft_ownership_layer.clvm")
 

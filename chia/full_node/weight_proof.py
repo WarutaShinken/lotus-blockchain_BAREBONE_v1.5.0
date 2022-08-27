@@ -9,28 +9,28 @@ from concurrent.futures.process import ProcessPoolExecutor
 import tempfile
 from typing import Dict, IO, List, Optional, Tuple
 
-from chia.consensus.block_header_validation import validate_finished_header_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.deficit import calculate_deficit
-from chia.consensus.full_block_to_block_record import header_block_to_sub_block_record
-from chia.consensus.pot_iterations import (
+<PUSSY1>consensus.block_header_validation import validate_finished_header_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.deficit import calculate_deficit
+<PUSSY1>consensus.full_block_to_block_record import header_block_to_sub_block_record
+<PUSSY1>consensus.pot_iterations import (
     calculate_ip_iters,
     calculate_iterations_quality,
     calculate_sp_iters,
     is_overflow_block,
 )
-from chia.util.chunks import chunks
-from chia.consensus.vdf_info_computation import get_signage_point_vdf_info
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.slots import ChallengeChainSubSlot, RewardChainSubSlot
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.header_block import HeaderBlock
-from chia.types.weight_proof import (
+<PUSSY1>util.chunks import chunks
+<PUSSY1>consensus.vdf_info_computation import get_signage_point_vdf_info
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.slots import ChallengeChainSubSlot, RewardChainSubSlot
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.weight_proof import (
     SubEpochChallengeSegment,
     SubEpochData,
     SubSlotData,
@@ -38,11 +38,11 @@ from chia.types.weight_proof import (
     SubEpochSegments,
     RecentChainData,
 )
-from chia.util.block_cache import BlockCache
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint32, uint64, uint128
-from chia.util.setproctitle import getproctitle, setproctitle
-from chia.util.streamable import dataclass_from_dict, recurse_jsonify
+<PUSSY1>util.block_cache import BlockCache
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>util.setproctitle import getproctitle, setproctitle
+<PUSSY1>util.streamable import dataclass_from_dict, recurse_jsonify
 
 log = logging.getLogger(__name__)
 

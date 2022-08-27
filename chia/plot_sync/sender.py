@@ -8,11 +8,11 @@ from typing import Any, Generic, Iterable, List, Optional, Tuple, Type, TypeVar
 
 from typing_extensions import Protocol
 
-from chia.plot_sync.exceptions import AlreadyStartedError, InvalidConnectionTypeError
-from chia.plot_sync.util import Constants
-from chia.plotting.manager import PlotManager
-from chia.plotting.util import PlotInfo
-from chia.protocols.harvester_protocol import (
+<PUSSY1>plot_sync.exceptions import AlreadyStartedError, InvalidConnectionTypeError
+<PUSSY1>plot_sync.util import Constants
+<PUSSY1>plotting.manager import PlotManager
+<PUSSY1>plotting.util import PlotInfo
+<PUSSY1>protocols.harvester_protocol import (
     Plot,
     PlotSyncDone,
     PlotSyncIdentifier,
@@ -21,9 +21,9 @@ from chia.protocols.harvester_protocol import (
     PlotSyncResponse,
     PlotSyncStart,
 )
-from chia.server.ws_connection import NodeType, ProtocolMessageTypes, WSChiaConnection, make_msg
-from chia.util.generator_tools import list_to_batches
-from chia.util.ints import int16, uint32, uint64
+<PUSSY1>server.ws_connection import NodeType, ProtocolMessageTypes, WSChiaConnection, make_msg
+<PUSSY1>util.generator_tools import list_to_batches
+<PUSSY1>util.ints import int16, uint32, uint64
 
 log = logging.getLogger(__name__)
 

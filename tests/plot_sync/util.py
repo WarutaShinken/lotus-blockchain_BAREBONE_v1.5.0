@@ -3,13 +3,13 @@ from dataclasses import dataclass
 from secrets import token_bytes
 from typing import Optional
 
-from chia.harvester.harvester_api import Harvester
-from chia.plot_sync.sender import Sender
-from chia.protocols.harvester_protocol import PlotSyncIdentifier
-from chia.server.start_service import Service
-from chia.server.ws_connection import Message, NodeType
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint64
+<PUSSY1>harvester.harvester_api import Harvester
+<PUSSY1>plot_sync.sender import Sender
+<PUSSY1>protocols.harvester_protocol import PlotSyncIdentifier
+<PUSSY1>server.start_service import Service
+<PUSSY1>server.ws_connection import Message, NodeType
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint64
 from tests.time_out_assert import time_out_assert
 
 

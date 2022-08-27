@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.hash import std_hash
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.hash import std_hash
 
 
 @dataclass(frozen=True)

@@ -3,16 +3,16 @@ from typing import Dict, List, Optional, Tuple, Any
 
 import zstd
 
-from chia.consensus.block_record import BlockRecord
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.full_block import FullBlock
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.weight_proof import SubEpochChallengeSegment, SubEpochSegments
-from chia.util.errors import Err
-from chia.util.db_wrapper import DBWrapper2
-from chia.util.ints import uint32
-from chia.util.lru_cache import LRUCache
-from chia.util.full_block_utils import generator_from_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.weight_proof import SubEpochChallengeSegment, SubEpochSegments
+<PUSSY1>util.errors import Err
+<PUSSY1>util.db_wrapper import DBWrapper2
+<PUSSY1>util.ints import uint32
+<PUSSY1>util.lru_cache import LRUCache
+<PUSSY1>util.full_block_utils import generator_from_block
 
 log = logging.getLogger(__name__)
 
@@ -54,7 +54,7 @@ class BlockStore:
                 await conn.execute("CREATE TABLE IF NOT EXISTS current_peak(key int PRIMARY KEY, hash blob)")
 
                 # If any of these indices are altered, they should also be altered
-                # in the chia/cmds/db_upgrade.py file
+                # in the <PUSSY3>cmds/db_upgrade.py file
                 await conn.execute("CREATE INDEX IF NOT EXISTS height on full_blocks(height)")
 
                 # Sub epoch segments for weight proofs
@@ -65,7 +65,7 @@ class BlockStore:
                 )
 
                 # If any of these indices are altered, they should also be altered
-                # in the chia/cmds/db_upgrade.py file
+                # in the <PUSSY3>cmds/db_upgrade.py file
                 await conn.execute(
                     "CREATE INDEX IF NOT EXISTS is_fully_compactified ON"
                     " full_blocks(is_fully_compactified, in_main_chain) WHERE in_main_chain=1"

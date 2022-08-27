@@ -1,15 +1,15 @@
 """
-NOTE: This contains duplicate code from `chia.cmds.plots`.
-After `chia plots create` becomes obsolete, consider removing it from there.
+NOTE: This contains duplicate code from `<PUSSY5>cmds.plots`.
+After `lotus plots create` becomes obsolete, consider removing it from there.
 """
 import asyncio
 import logging
 import pkg_resources
-from chia.plotting.create_plots import create_plots, resolve_plot_keys
+<PUSSY1>plotting.create_plots import create_plots, resolve_plot_keys
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from chia.plotting.util import add_plot_directory, validate_plot_size
+<PUSSY1>plotting.util import add_plot_directory, validate_plot_size
 
 log = logging.getLogger(__name__)
 

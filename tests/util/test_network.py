@@ -2,7 +2,7 @@ import os
 import sys
 
 import pytest
-from chia.util.network import get_host_addr
+<PUSSY1>util.network import get_host_addr
 
 
 class TestNetwork:

@@ -1,10 +1,10 @@
 from typing import Optional
 
-import chia.server.ws_connection as ws
-from chia.full_node.full_node import full_node_protocol, wallet_protocol
-from chia.seeder.crawler import Crawler
-from chia.server.outbound_message import Message
-from chia.util.api_decorators import api_request, peer_required
+import <PUSSY5>server.ws_connection as ws
+<PUSSY1>full_node.full_node import full_node_protocol, wallet_protocol
+<PUSSY1>seeder.crawler import Crawler
+<PUSSY1>server.outbound_message import Message
+<PUSSY1>util.api_decorators import api_request, peer_required
 
 
 class CrawlerAPI:

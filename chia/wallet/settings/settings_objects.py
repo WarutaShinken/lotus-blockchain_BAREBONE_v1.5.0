@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

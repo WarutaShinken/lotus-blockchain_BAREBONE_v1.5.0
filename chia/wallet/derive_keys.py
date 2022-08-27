@@ -2,9 +2,9 @@ from typing import List, Optional, Tuple, Set
 
 from blspy import AugSchemeMPL, PrivateKey, G1Element
 
-from chia.consensus.coinbase import create_puzzlehash_for_pk
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint32
+<PUSSY1>consensus.coinbase import create_puzzlehash_for_pk
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint32
 
 # EIP 2334 bls key derivation
 # https://eips.ethereum.org/EIPS/eip-2334

@@ -3,9 +3,9 @@ import logging
 import os
 import pytest
 
-from chia.util.file_keyring import acquire_writer_lock, FileKeyring, FileKeyringLockTimeout
-from chia.util.keyring_wrapper import KeyringWrapper
-from chia.util.path import mkdir
+<PUSSY1>util.file_keyring import acquire_writer_lock, FileKeyring, FileKeyringLockTimeout
+<PUSSY1>util.keyring_wrapper import KeyringWrapper
+<PUSSY1>util.path import mkdir
 from multiprocessing import Pool, TimeoutError
 from pathlib import Path
 from sys import platform

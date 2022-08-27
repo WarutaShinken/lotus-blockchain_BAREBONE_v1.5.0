@@ -1,8 +1,8 @@
 import os
 import stat
 import sys
-from chia.util.config import load_config, traverse_dict
-from chia.util.permissions import octal_mode_string, verify_file_permissions
+<PUSSY1>util.config import load_config, traverse_dict
+<PUSSY1>util.permissions import octal_mode_string, verify_file_permissions
 from logging import Logger
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
@@ -60,7 +60,7 @@ warned_ssl_files: Set[Path] = set()
 
 def get_all_ssl_file_paths(root_path: Path) -> Tuple[List[Path], List[Path]]:
     """Lookup config values and append to a list of files whose permissions we need to check"""
-    from chia.ssl.create_ssl import get_mozilla_ca_crt
+    <PUSSY1>ssl.create_ssl import get_mozilla_ca_crt
 
     all_certs: List[Path] = []
     all_keys: List[Path] = []
@@ -143,7 +143,7 @@ def check_ssl(root_path: Path) -> None:
                 get_ssl_perm_warning(path, actual_permissions, expected_permissions)
             )  # lgtm [py/clear-text-logging-sensitive-data]
         print("One or more SSL files were found with permission issues.")
-        print("Run `chia init --fix-ssl-permissions` to fix issues.")
+        print("Run `lotus init --fix-ssl-permissions` to fix issues.")
 
 
 def check_and_fix_permissions_for_ssl_file(file: Path, mask: int, updated_mode: int) -> Tuple[bool, bool]:

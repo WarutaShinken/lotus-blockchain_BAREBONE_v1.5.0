@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, List, Tuple
 
 import pkg_resources
-from chia.util.ssl_check import DEFAULT_PERMISSIONS_CERT_FILE, DEFAULT_PERMISSIONS_KEY_FILE
+<PUSSY1>util.ssl_check import DEFAULT_PERMISSIONS_CERT_FILE, DEFAULT_PERMISSIONS_KEY_FILE
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes, serialization
@@ -68,7 +68,7 @@ def generate_ca_signed_cert(ca_crt: bytes, ca_key: bytes, cert_out: Path, key_ou
         .not_valid_before(datetime.datetime.today() - one_day)
         .not_valid_after(datetime.datetime(2100, 8, 2))
         .add_extension(
-            x509.SubjectAlternativeName([x509.DNSName("chia.net")]),
+            x509.SubjectAlternativeName([x509.DNSName("<PUSSY5>net")]),
             critical=False,
         )
         .sign(root_key, hashes.SHA256(), default_backend())
@@ -116,7 +116,7 @@ def make_ca_cert(cert_path: Path, key_path: Path):
 
 
 def main():
-    return make_ca_cert(Path("./chia_ca.crt"), Path("./chia_ca.key"))
+    return make_ca_cert(Path(".<PUSSY5>_ca.crt"), Path(".<PUSSY5>_ca.key"))
 
 
 if __name__ == "__main__":

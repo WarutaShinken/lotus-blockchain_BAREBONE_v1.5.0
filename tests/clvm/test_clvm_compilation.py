@@ -3,57 +3,57 @@ from unittest import TestCase
 
 from clvm_tools.clvmc import compile_clvm
 
-from chia.types.blockchain_format.program import Program, SerializedProgram
+<PUSSY1>types.blockchain_format.program import Program, SerializedProgram
 
 wallet_program_files = set(
     [
-        "chia/wallet/puzzles/calculate_synthetic_public_key.clvm",
-        "chia/wallet/puzzles/cat_v2.clvm",
-        "chia/wallet/puzzles/chialisp_deserialisation.clvm",
-        "chia/wallet/puzzles/rom_bootstrap_generator.clvm",
-        "chia/wallet/puzzles/generator_for_single_coin.clvm",
-        "chia/wallet/puzzles/lock.inner.puzzle.clvm",
-        "chia/wallet/puzzles/p2_conditions.clvm",
-        "chia/wallet/puzzles/p2_delegated_conditions.clvm",
-        "chia/wallet/puzzles/p2_delegated_puzzle.clvm",
-        "chia/wallet/puzzles/p2_delegated_puzzle_or_hidden_puzzle.clvm",
-        "chia/wallet/puzzles/p2_m_of_n_delegate_direct.clvm",
-        "chia/wallet/puzzles/p2_puzzle_hash.clvm",
-        "chia/wallet/puzzles/rl_aggregation.clvm",
-        "chia/wallet/puzzles/rl.clvm",
-        "chia/wallet/puzzles/sha256tree_module.clvm",
-        "chia/wallet/puzzles/singleton_top_layer.clvm",
-        "chia/wallet/puzzles/did_innerpuz.clvm",
-        "chia/wallet/puzzles/decompress_puzzle.clvm",
-        "chia/wallet/puzzles/decompress_coin_spend_entry_with_prefix.clvm",
-        "chia/wallet/puzzles/decompress_coin_spend_entry.clvm",
-        "chia/wallet/puzzles/block_program_zero.clvm",
-        "chia/wallet/puzzles/test_generator_deserialize.clvm",
-        "chia/wallet/puzzles/test_multiple_generator_input_arguments.clvm",
-        "chia/wallet/puzzles/p2_singleton.clvm",
-        "chia/wallet/puzzles/pool_waitingroom_innerpuz.clvm",
-        "chia/wallet/puzzles/pool_member_innerpuz.clvm",
-        "chia/wallet/puzzles/singleton_launcher.clvm",
-        "chia/wallet/puzzles/p2_singleton_or_delayed_puzhash.clvm",
-        "chia/wallet/puzzles/genesis_by_puzzle_hash.clvm",
-        "chia/wallet/puzzles/everything_with_signature.clvm",
-        "chia/wallet/puzzles/delegated_tail.clvm",
-        "chia/wallet/puzzles/settlement_payments.clvm",
-        "chia/wallet/puzzles/genesis_by_coin_id.clvm",
-        "chia/wallet/puzzles/singleton_top_layer_v1_1.clvm",
-        "chia/wallet/puzzles/nft_metadata_updater_default.clvm",
-        "chia/wallet/puzzles/nft_metadata_updater_updateable.clvm",
-        "chia/wallet/puzzles/nft_state_layer.clvm",
-        "chia/wallet/puzzles/nft_ownership_layer.clvm",
-        "chia/wallet/puzzles/nft_ownership_transfer_program_one_way_claim_with_royalties.clvm",
+        "<PUSSY3>wallet/puzzles/calculate_synthetic_public_key.clvm",
+        "<PUSSY3>wallet/puzzles/cat_v2.clvm",
+        "<PUSSY3>wallet/puzzles<PUSSY5>lisp_deserialisation.clvm",
+        "<PUSSY3>wallet/puzzles/rom_bootstrap_generator.clvm",
+        "<PUSSY3>wallet/puzzles/generator_for_single_coin.clvm",
+        "<PUSSY3>wallet/puzzles/lock.inner.puzzle.clvm",
+        "<PUSSY3>wallet/puzzles/p2_conditions.clvm",
+        "<PUSSY3>wallet/puzzles/p2_delegated_conditions.clvm",
+        "<PUSSY3>wallet/puzzles/p2_delegated_puzzle.clvm",
+        "<PUSSY3>wallet/puzzles/p2_delegated_puzzle_or_hidden_puzzle.clvm",
+        "<PUSSY3>wallet/puzzles/p2_m_of_n_delegate_direct.clvm",
+        "<PUSSY3>wallet/puzzles/p2_puzzle_hash.clvm",
+        "<PUSSY3>wallet/puzzles/rl_aggregation.clvm",
+        "<PUSSY3>wallet/puzzles/rl.clvm",
+        "<PUSSY3>wallet/puzzles/sha256tree_module.clvm",
+        "<PUSSY3>wallet/puzzles/singleton_top_layer.clvm",
+        "<PUSSY3>wallet/puzzles/did_innerpuz.clvm",
+        "<PUSSY3>wallet/puzzles/decompress_puzzle.clvm",
+        "<PUSSY3>wallet/puzzles/decompress_coin_spend_entry_with_prefix.clvm",
+        "<PUSSY3>wallet/puzzles/decompress_coin_spend_entry.clvm",
+        "<PUSSY3>wallet/puzzles/block_program_zero.clvm",
+        "<PUSSY3>wallet/puzzles/test_generator_deserialize.clvm",
+        "<PUSSY3>wallet/puzzles/test_multiple_generator_input_arguments.clvm",
+        "<PUSSY3>wallet/puzzles/p2_singleton.clvm",
+        "<PUSSY3>wallet/puzzles/pool_waitingroom_innerpuz.clvm",
+        "<PUSSY3>wallet/puzzles/pool_member_innerpuz.clvm",
+        "<PUSSY3>wallet/puzzles/singleton_launcher.clvm",
+        "<PUSSY3>wallet/puzzles/p2_singleton_or_delayed_puzhash.clvm",
+        "<PUSSY3>wallet/puzzles/genesis_by_puzzle_hash.clvm",
+        "<PUSSY3>wallet/puzzles/everything_with_signature.clvm",
+        "<PUSSY3>wallet/puzzles/delegated_tail.clvm",
+        "<PUSSY3>wallet/puzzles/settlement_payments.clvm",
+        "<PUSSY3>wallet/puzzles/genesis_by_coin_id.clvm",
+        "<PUSSY3>wallet/puzzles/singleton_top_layer_v1_1.clvm",
+        "<PUSSY3>wallet/puzzles/nft_metadata_updater_default.clvm",
+        "<PUSSY3>wallet/puzzles/nft_metadata_updater_updateable.clvm",
+        "<PUSSY3>wallet/puzzles/nft_state_layer.clvm",
+        "<PUSSY3>wallet/puzzles/nft_ownership_layer.clvm",
+        "<PUSSY3>wallet/puzzles/nft_ownership_transfer_program_one_way_claim_with_royalties.clvm",
     ]
 )
 
 clvm_include_files = set(
-    ["chia/wallet/puzzles/create-lock-puzzlehash.clvm", "chia/wallet/puzzles/condition_codes.clvm"]
+    ["<PUSSY3>wallet/puzzles/create-lock-puzzlehash.clvm", "<PUSSY3>wallet/puzzles/condition_codes.clvm"]
 )
 
-CLVM_PROGRAM_ROOT = "chia/wallet/puzzles"
+CLVM_PROGRAM_ROOT = "<PUSSY3>wallet/puzzles"
 
 
 def list_files(dir, glob):
@@ -80,7 +80,7 @@ class TestClvmCompilation(TestCase):
 
     def test_all_programs_listed(self):
         """
-        Checks to see if a new .clvm file was added to chia/wallet/puzzles, but not added to `wallet_program_files`
+        Checks to see if a new .clvm file was added to <PUSSY3>wallet/puzzles, but not added to `wallet_program_files`
         """
         existing_files = list_files(CLVM_PROGRAM_ROOT, "*.clvm")
         existing_file_paths = set([Path(x).relative_to(CLVM_PROGRAM_ROOT) for x in existing_files])

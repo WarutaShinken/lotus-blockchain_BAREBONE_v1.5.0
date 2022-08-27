@@ -11,19 +11,19 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import pytest
 from blspy import G1Element
 
-from chia.farmer.farmer_api import Farmer
-from chia.harvester.harvester_api import Harvester
-from chia.plot_sync.receiver import Receiver
-from chia.plot_sync.sender import Sender
-from chia.plot_sync.util import Constants
-from chia.plotting.manager import PlotManager
-from chia.plotting.util import PlotInfo
-from chia.protocols.harvester_protocol import PlotSyncError, PlotSyncResponse
-from chia.server.start_service import Service
-from chia.server.ws_connection import ProtocolMessageTypes, WSChiaConnection, make_msg
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.generator_tools import list_to_batches
-from chia.util.ints import int16, uint64
+<PUSSY1>farmer.farmer_api import Farmer
+<PUSSY1>harvester.harvester_api import Harvester
+<PUSSY1>plot_sync.receiver import Receiver
+<PUSSY1>plot_sync.sender import Sender
+<PUSSY1>plot_sync.util import Constants
+<PUSSY1>plotting.manager import PlotManager
+<PUSSY1>plotting.util import PlotInfo
+<PUSSY1>protocols.harvester_protocol import PlotSyncError, PlotSyncResponse
+<PUSSY1>server.start_service import Service
+<PUSSY1>server.ws_connection import ProtocolMessageTypes, WSChiaConnection, make_msg
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.generator_tools import list_to_batches
+<PUSSY1>util.ints import int16, uint64
 from tests.plot_sync.util import start_harvester_service
 from tests.time_out_assert import time_out_assert
 

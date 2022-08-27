@@ -1,8 +1,8 @@
 from typing import Tuple
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.util.ints import uint128
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>util.ints import uint128
 
 
 def get_prev_transaction_block(

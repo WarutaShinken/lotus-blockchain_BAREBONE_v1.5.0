@@ -10,24 +10,24 @@ import time
 from pprint import pprint
 from typing import Any, List, Dict, Optional, Callable
 
-from chia.cmds.units import units
-from chia.cmds.wallet_funcs import print_balance, wallet_coin_unit
-from chia.pools.pool_config import load_pool_config, PoolWalletConfig, update_pool_config
-from chia.pools.pool_wallet_info import PoolWalletInfo, PoolSingletonState
-from chia.protocols.pool_protocol import POOL_PROTOCOL_VERSION
-from chia.rpc.farmer_rpc_client import FarmerRpcClient
-from chia.rpc.wallet_rpc_client import WalletRpcClient
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.server.server import ssl_context_for_root
-from chia.ssl.create_ssl import get_mozilla_ca_crt
-from chia.util.bech32m import encode_puzzle_hash, decode_puzzle_hash
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.config import load_config
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.ints import uint16, uint32, uint64
-from chia.cmds.cmds_util import transaction_submitted_msg, transaction_status_msg
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.wallet_types import WalletType
+<PUSSY1>cmds.units import units
+<PUSSY1>cmds.wallet_funcs import print_balance, wallet_coin_unit
+<PUSSY1>pools.pool_config import load_pool_config, PoolWalletConfig, update_pool_config
+<PUSSY1>pools.pool_wallet_info import PoolWalletInfo, PoolSingletonState
+<PUSSY1>protocols.pool_protocol import POOL_PROTOCOL_VERSION
+<PUSSY1>rpc.farmer_rpc_client import FarmerRpcClient
+<PUSSY1>rpc.wallet_rpc_client import WalletRpcClient
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>server.server import ssl_context_for_root
+<PUSSY1>ssl.create_ssl import get_mozilla_ca_crt
+<PUSSY1>util.bech32m import encode_puzzle_hash, decode_puzzle_hash
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.config import load_config
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>util.ints import uint16, uint32, uint64
+<PUSSY1>cmds.cmds_util import transaction_submitted_msg, transaction_status_msg
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.wallet_types import WalletType
 
 
 async def create_pool_args(pool_url: str) -> Dict:
@@ -104,7 +104,7 @@ async def create(args: dict, wallet_client: WalletRpcClient, fingerprint: int) -
                     print(transaction_status_msg(fingerprint, tx_record.name))
                     return None
         except Exception as e:
-            print(f"Error creating plot NFT: {e}\n    Please start both farmer and wallet with:  chia start -r farmer")
+            print(f"Error creating plot NFT: {e}\n    Please start both farmer and wallet with:  lotus start -r farmer")
         return
     print("Aborting.")
 
@@ -186,7 +186,7 @@ async def show(args: dict, wallet_client: WalletRpcClient, fingerprint: int) -> 
         if isinstance(e, aiohttp.ClientConnectorError):
             print(
                 f"Connection error. Check if farmer is running at {farmer_rpc_port}."
-                f" You can run the farmer by:\n    chia start farmer-only"
+                f" You can run the farmer by:\n    lotus start farmer-only"
             )
         else:
             print(f"Exception from 'wallet' {e}")
@@ -248,7 +248,7 @@ async def get_login_link(launcher_id_str: str) -> None:
         if isinstance(e, aiohttp.ClientConnectorError):
             print(
                 f"Connection error. Check if farmer is running at {farmer_rpc_port}."
-                f" You can run the farmer by:\n    chia start farmer-only"
+                f" You can run the farmer by:\n    lotus start farmer-only"
             )
         else:
             print(f"Exception from 'farmer' {e}")

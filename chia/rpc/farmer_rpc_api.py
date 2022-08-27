@@ -4,14 +4,14 @@ from typing import Any, Callable, Dict, List, Optional
 
 from typing_extensions import Protocol
 
-from chia.farmer.farmer import Farmer
-from chia.plot_sync.receiver import Receiver
-from chia.protocols.harvester_protocol import Plot
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.paginator import Paginator
-from chia.util.streamable import dataclass_from_dict
-from chia.util.ws_message import WsRpcMessage, create_payload_dict
+<PUSSY1>farmer.farmer import Farmer
+<PUSSY1>plot_sync.receiver import Receiver
+<PUSSY1>protocols.harvester_protocol import Plot
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.paginator import Paginator
+<PUSSY1>util.streamable import dataclass_from_dict
+<PUSSY1>util.ws_message import WsRpcMessage, create_payload_dict
 
 
 class PaginatedRequestData(Protocol):

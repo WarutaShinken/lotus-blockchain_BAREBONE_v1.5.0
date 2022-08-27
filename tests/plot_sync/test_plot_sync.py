@@ -9,21 +9,21 @@ import pytest
 import pytest_asyncio
 from blspy import G1Element
 
-from chia.farmer.farmer_api import Farmer
-from chia.harvester.harvester_api import Harvester
-from chia.plot_sync.delta import Delta, PathListDelta, PlotListDelta
-from chia.plot_sync.receiver import Receiver
-from chia.plot_sync.sender import Sender
-from chia.plot_sync.util import Constants, State
-from chia.plotting.manager import PlotManager
-from chia.plotting.util import add_plot_directory, remove_plot_directory
-from chia.protocols.harvester_protocol import Plot
-from chia.server.start_service import Service
-from chia.server.ws_connection import ProtocolMessageTypes
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.config import create_default_chia_config, lock_and_load_config, save_config
-from chia.util.ints import uint8, uint64
-from chia.util.streamable import _T_Streamable
+<PUSSY1>farmer.farmer_api import Farmer
+<PUSSY1>harvester.harvester_api import Harvester
+<PUSSY1>plot_sync.delta import Delta, PathListDelta, PlotListDelta
+<PUSSY1>plot_sync.receiver import Receiver
+<PUSSY1>plot_sync.sender import Sender
+<PUSSY1>plot_sync.util import Constants, State
+<PUSSY1>plotting.manager import PlotManager
+<PUSSY1>plotting.util import add_plot_directory, remove_plot_directory
+<PUSSY1>protocols.harvester_protocol import Plot
+<PUSSY1>server.start_service import Service
+<PUSSY1>server.ws_connection import ProtocolMessageTypes
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.config import create_default_chia_config, lock_and_load_config, save_config
+<PUSSY1>util.ints import uint8, uint64
+<PUSSY1>util.streamable import _T_Streamable
 from tests.block_tools import BlockTools
 from tests.plot_sync.util import start_harvester_service
 from tests.plotting.test_plot_manager import MockPlotInfo, TestDirectory

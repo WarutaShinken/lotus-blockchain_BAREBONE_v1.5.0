@@ -1,16 +1,16 @@
 import logging
 from typing import List, Optional, Tuple, Union
 
-from chia.consensus.constants import ConsensusConstants
-from chia.protocols import timelord_protocol
-from chia.timelord.iters_from_block import iters_from_block
-from chia.timelord.types import Chain, StateType
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.slots import ChallengeBlockInfo
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>protocols import timelord_protocol
+<PUSSY1>timelord.iters_from_block import iters_from_block
+<PUSSY1>timelord.types import Chain, StateType
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.slots import ChallengeBlockInfo
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
 
 log = logging.getLogger(__name__)
 

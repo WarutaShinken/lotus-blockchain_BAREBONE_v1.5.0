@@ -2,9 +2,9 @@ import asyncio
 
 from typing import Optional
 
-from chia.server.server import ChiaServer
-from chia.types.peer_info import PeerInfo
-from chia.util.network import get_host_addr
+<PUSSY1>server.server import ChiaServer
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.network import get_host_addr
 
 
 def start_reconnect_task(server: ChiaServer, peer_info_arg: PeerInfo, log, auth: bool, prefer_ipv6: Optional[bool]):

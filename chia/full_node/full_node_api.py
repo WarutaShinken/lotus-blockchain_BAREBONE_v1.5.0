@@ -8,44 +8,44 @@ from typing import Dict, List, Optional, Tuple, Set
 from blspy import AugSchemeMPL, G2Element
 from chiabip158 import PyBIP158
 
-import chia.server.ws_connection as ws
-from chia.consensus.block_creation import create_unfinished_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.pot_iterations import calculate_ip_iters, calculate_iterations_quality, calculate_sp_iters
-from chia.full_node.bundle_tools import best_solution_generator_from_template, simple_solution_generator
-from chia.full_node.full_node import FullNode
-from chia.full_node.mempool_check_conditions import get_puzzle_and_solution_for_coin
-from chia.full_node.signage_point import SignagePoint
-from chia.protocols import farmer_protocol, full_node_protocol, introducer_protocol, timelord_protocol, wallet_protocol
-from chia.protocols.full_node_protocol import RejectBlock, RejectBlocks
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.protocols.wallet_protocol import (
+import <PUSSY5>server.ws_connection as ws
+<PUSSY1>consensus.block_creation import create_unfinished_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.pot_iterations import calculate_ip_iters, calculate_iterations_quality, calculate_sp_iters
+<PUSSY1>full_node.bundle_tools import best_solution_generator_from_template, simple_solution_generator
+<PUSSY1>full_node.full_node import FullNode
+<PUSSY1>full_node.mempool_check_conditions import get_puzzle_and_solution_for_coin
+<PUSSY1>full_node.signage_point import SignagePoint
+<PUSSY1>protocols import farmer_protocol, full_node_protocol, introducer_protocol, timelord_protocol, wallet_protocol
+<PUSSY1>protocols.full_node_protocol import RejectBlock, RejectBlocks
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>protocols.wallet_protocol import (
     PuzzleSolutionResponse,
     RejectHeaderBlocks,
     RejectHeaderRequest,
     CoinState,
     RespondSESInfo,
 )
-from chia.server.outbound_message import Message, make_msg
-from chia.types.blockchain_format.coin import Coin, hash_coin_ids
-from chia.types.blockchain_format.pool_target import PoolTarget
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.coin_record import CoinRecord
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.mempool_item import MempoolItem
-from chia.types.peer_info import PeerInfo
-from chia.types.transaction_queue_entry import TransactionQueueEntry
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.api_decorators import api_request, peer_required, bytes_required, execute_task, reply_type
-from chia.util.generator_tools import get_block_header
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint32, uint64, uint128
-from chia.util.merkle_set import MerkleSet
+<PUSSY1>server.outbound_message import Message, make_msg
+<PUSSY1>types.blockchain_format.coin import Coin, hash_coin_ids
+<PUSSY1>types.blockchain_format.pool_target import PoolTarget
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.mempool_item import MempoolItem
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>types.transaction_queue_entry import TransactionQueueEntry
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.api_decorators import api_request, peer_required, bytes_required, execute_task, reply_type
+<PUSSY1>util.generator_tools import get_block_header
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>util.merkle_set import MerkleSet
 
 
 class FullNodeAPI:

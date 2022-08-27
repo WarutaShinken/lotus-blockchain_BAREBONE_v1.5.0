@@ -2,10 +2,10 @@ import argparse
 import binascii
 import os
 from enum import Enum
-from chia.plotters.bladebit import get_bladebit_install_info, plot_bladebit
-from chia.plotters.chiapos import get_chiapos_install_info, plot_chia
-from chia.plotters.madmax import get_madmax_install_info, plot_madmax
-from chia.plotters.install_plotter import install_plotter
+<PUSSY1>plotters.bladebit import get_bladebit_install_info, plot_bladebit
+<PUSSY1>plotters.chiapos import get_chiapos_install_info, plot_chia
+<PUSSY1>plotters.madmax import get_madmax_install_info, plot_madmax
+<PUSSY1>plotters.install_plotter import install_plotter
 from pathlib import Path
 from typing import Any, Dict, Optional
 

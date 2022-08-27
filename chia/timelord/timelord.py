@@ -12,31 +12,31 @@ from typing import Any, Callable, Dict, List, Optional, Set, Tuple
 
 from chiavdf import create_discriminant, prove
 
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.pot_iterations import calculate_sp_iters, is_overflow_block
-from chia.protocols import timelord_protocol
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.server.outbound_message import NodeType, make_msg
-from chia.server.server import ChiaServer
-from chia.timelord.iters_from_block import iters_from_block
-from chia.timelord.timelord_state import LastState
-from chia.timelord.types import Chain, IterationType, StateType
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.reward_chain_block import RewardChainBlock
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.slots import (
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.pot_iterations import calculate_sp_iters, is_overflow_block
+<PUSSY1>protocols import timelord_protocol
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>server.outbound_message import NodeType, make_msg
+<PUSSY1>server.server import ChiaServer
+<PUSSY1>timelord.iters_from_block import iters_from_block
+<PUSSY1>timelord.timelord_state import LastState
+<PUSSY1>timelord.types import Chain, IterationType, StateType
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.reward_chain_block import RewardChainBlock
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.slots import (
     ChallengeChainSubSlot,
     InfusedChallengeChainSubSlot,
     RewardChainSubSlot,
     SubSlotProofs,
 )
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.util.config import process_config_start_method
-from chia.util.ints import uint8, uint16, uint32, uint64, uint128
-from chia.util.setproctitle import getproctitle, setproctitle
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>util.config import process_config_start_method
+<PUSSY1>util.ints import uint8, uint16, uint32, uint64, uint128
+<PUSSY1>util.setproctitle import getproctitle, setproctitle
+<PUSSY1>util.streamable import Streamable, streamable
 
 log = logging.getLogger(__name__)
 

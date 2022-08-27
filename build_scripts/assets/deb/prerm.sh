@@ -3,5 +3,5 @@
 
 set -e
 
-unlink /usr/bin/chia || true
-unlink /opt/chia || true
+unlink /usr/bin<PUSSY5> || true
+unlink /opt<PUSSY5> || true

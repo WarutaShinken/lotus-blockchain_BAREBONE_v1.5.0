@@ -4,18 +4,18 @@ from typing import List
 import pytest
 from blspy import AugSchemeMPL
 
-from chia.consensus.pot_iterations import is_overflow_block
-from chia.full_node.signage_point import SignagePoint
-from chia.protocols import full_node_protocol
-from chia.rpc.full_node_rpc_api import FullNodeRpcApi
-from chia.rpc.full_node_rpc_client import FullNodeRpcClient
-from chia.rpc.rpc_server import NodeType, start_rpc_server
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
-from chia.types.full_block import FullBlock
-from chia.types.spend_bundle import SpendBundle
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint16
+<PUSSY1>consensus.pot_iterations import is_overflow_block
+<PUSSY1>full_node.signage_point import SignagePoint
+<PUSSY1>protocols import full_node_protocol
+<PUSSY1>rpc.full_node_rpc_api import FullNodeRpcApi
+<PUSSY1>rpc.full_node_rpc_client import FullNodeRpcClient
+<PUSSY1>rpc.rpc_server import NodeType, start_rpc_server
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint16
 from tests.block_tools import get_signage_point
 from tests.blockchain.blockchain_test_utils import _validate_and_add_block
 from tests.connection_utils import connect_and_get_peer

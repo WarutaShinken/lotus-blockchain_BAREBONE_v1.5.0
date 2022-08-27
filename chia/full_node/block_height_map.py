@@ -1,14 +1,14 @@
 import logging
 from typing import Dict, List, Optional, Tuple
-from chia.util.ints import uint32
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>util.ints import uint32
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
 from pathlib import Path
 import aiofiles
 from dataclasses import dataclass
-from chia.util.streamable import Streamable, streamable
-from chia.util.files import write_file_async
-from chia.util.db_wrapper import DBWrapper2
+<PUSSY1>util.streamable import Streamable, streamable
+<PUSSY1>util.files import write_file_async
+<PUSSY1>util.db_wrapper import DBWrapper2
 
 log = logging.getLogger(__name__)
 

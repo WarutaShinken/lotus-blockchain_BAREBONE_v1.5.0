@@ -1,14 +1,14 @@
 from dataclasses import dataclass
 from typing import List, Optional, Tuple
 
-from chia.types.blockchain_format.foliage import Foliage
-from chia.types.blockchain_format.reward_chain_block import RewardChainBlock, RewardChainBlockUnfinished
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.util.ints import uint8, uint32, uint64, uint128
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.foliage import Foliage
+<PUSSY1>types.blockchain_format.reward_chain_block import RewardChainBlock, RewardChainBlockUnfinished
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>util.streamable import Streamable, streamable
 
 """
 Protocol between timelord and full node.

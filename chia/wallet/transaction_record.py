@@ -1,15 +1,15 @@
 from dataclasses import dataclass
 from typing import List, Optional, Tuple, Dict
 
-from chia.consensus.coinbase import pool_parent_id, farmer_parent_id
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.spend_bundle import SpendBundle
-from chia.util.bech32m import encode_puzzle_hash, decode_puzzle_hash
-from chia.util.ints import uint8, uint32, uint64
-from chia.util.streamable import Streamable, streamable
-from chia.wallet.util.transaction_type import TransactionType
+<PUSSY1>consensus.coinbase import pool_parent_id, farmer_parent_id
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.bech32m import encode_puzzle_hash, decode_puzzle_hash
+<PUSSY1>util.ints import uint8, uint32, uint64
+<PUSSY1>util.streamable import Streamable, streamable
+<PUSSY1>wallet.util.transaction_type import TransactionType
 
 
 @streamable

@@ -6,7 +6,7 @@ is returned literally.
 """
 
 
-from chia.types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.program import Program
 
 from .load_clvm import load_clvm
 

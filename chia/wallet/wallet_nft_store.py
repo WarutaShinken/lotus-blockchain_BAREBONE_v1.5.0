@@ -3,13 +3,13 @@ from typing import List, Optional, Type, TypeVar
 
 import aiosqlite
 
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.db_wrapper import DBWrapper
-from chia.util.ints import uint32
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.nft_wallet.nft_info import DEFAULT_STATUS, IN_TRANSACTION_STATUS, NFTCoinInfo
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.ints import uint32
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.nft_wallet.nft_info import DEFAULT_STATUS, IN_TRANSACTION_STATUS, NFTCoinInfo
 
 _T_WalletNftStore = TypeVar("_T_WalletNftStore", bound="WalletNftStore")
 

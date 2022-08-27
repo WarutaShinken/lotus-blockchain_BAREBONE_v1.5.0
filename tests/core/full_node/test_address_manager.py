@@ -4,10 +4,10 @@ from pathlib import Path
 
 import pytest
 
-from chia.server.address_manager import AddressManager, ExtendedPeerInfo
-from chia.server.address_manager_store import AddressManagerStore
-from chia.types.peer_info import PeerInfo, TimestampedPeerInfo
-from chia.util.ints import uint16, uint64
+<PUSSY1>server.address_manager import AddressManager, ExtendedPeerInfo
+<PUSSY1>server.address_manager_store import AddressManagerStore
+<PUSSY1>types.peer_info import PeerInfo, TimestampedPeerInfo
+<PUSSY1>util.ints import uint16, uint64
 
 
 class AddressManagerTest(AddressManager):

@@ -3,11 +3,11 @@ import colorama
 import os
 import sys
 
-from chia.daemon.client import acquire_connection_to_daemon
-from chia.util.keychain import Keychain, obtain_current_passphrase, supports_os_passphrase_storage
-from chia.util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE
-from chia.util.misc import prompt_yes_no
-from chia.util.ws_message import WsRpcMessage
+<PUSSY1>daemon.client import acquire_connection_to_daemon
+<PUSSY1>util.keychain import Keychain, obtain_current_passphrase, supports_os_passphrase_storage
+<PUSSY1>util.keyring_wrapper import DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE
+<PUSSY1>util.misc import prompt_yes_no
+<PUSSY1>util.ws_message import WsRpcMessage
 from getpass import getpass
 from io import TextIOWrapper
 from pathlib import Path
@@ -127,7 +127,7 @@ def read_passphrase_from_file(passphrase_file: TextIOWrapper) -> str:
 def initialize_passphrase() -> None:
     if Keychain.has_master_passphrase():
         print("Keyring is already protected by a passphrase")
-        print("\nUse 'chia passphrase set' or 'chia passphrase remove' to update or remove your passphrase")
+        print("\nUse 'lotus passphrase set' or 'lotus passphrase remove' to update or remove your passphrase")
         sys.exit(1)
 
     # We'll rely on Keyring initialization to leverage the cached passphrase for

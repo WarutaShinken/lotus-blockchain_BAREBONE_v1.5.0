@@ -1,1 +1,1 @@
-# Contains the v1.5.0 chia-blockchain base code, with the lotus fork customizations.
+# Contains the v1.5.0 <PUSSY2> base code, with the lotus fork customizations.

@@ -5,19 +5,19 @@ from typing import List, Optional
 import pytest
 import pytest_asyncio
 
-from chia.consensus.blockchain import ReceiveBlockResult
-from chia.consensus.find_fork_point import find_fork_point_in_chain
-from chia.consensus.multiprocess_validation import PreValidationResult
-from chia.consensus.pot_iterations import is_overflow_block
-from chia.full_node.full_node_store import FullNodeStore
-from chia.full_node.signage_point import SignagePoint
-from chia.protocols import timelord_protocol
-from chia.protocols.timelord_protocol import NewInfusionPointVDF
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.block_cache import BlockCache
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>consensus.blockchain import ReceiveBlockResult
+<PUSSY1>consensus.find_fork_point import find_fork_point_in_chain
+<PUSSY1>consensus.multiprocess_validation import PreValidationResult
+<PUSSY1>consensus.pot_iterations import is_overflow_block
+<PUSSY1>full_node.full_node_store import FullNodeStore
+<PUSSY1>full_node.signage_point import SignagePoint
+<PUSSY1>protocols import timelord_protocol
+<PUSSY1>protocols.timelord_protocol import NewInfusionPointVDF
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.block_cache import BlockCache
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
 from tests.block_tools import get_signage_point, create_block_tools_async
 from tests.blockchain.blockchain_test_utils import (
     _validate_and_add_block,

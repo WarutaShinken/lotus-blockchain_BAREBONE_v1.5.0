@@ -1,19 +1,19 @@
 import logging
 from typing import Dict, Optional, Tuple, List
-from chia.consensus.block_header_validation import validate_finished_header_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain import ReceiveBlockResult
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.find_fork_point import find_fork_point_in_chain
-from chia.consensus.full_block_to_block_record import block_to_block_record
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.header_block import HeaderBlock
-from chia.types.weight_proof import WeightProof
-from chia.util.errors import Err
-from chia.util.ints import uint32, uint64
-from chia.wallet.key_val_store import KeyValStore
-from chia.wallet.wallet_weight_proof_handler import WalletWeightProofHandler
+<PUSSY1>consensus.block_header_validation import validate_finished_header_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain import ReceiveBlockResult
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.find_fork_point import find_fork_point_in_chain
+<PUSSY1>consensus.full_block_to_block_record import block_to_block_record
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.weight_proof import WeightProof
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint32, uint64
+<PUSSY1>wallet.key_val_store import KeyValStore
+<PUSSY1>wallet.wallet_weight_proof_handler import WalletWeightProofHandler
 
 log = logging.getLogger(__name__)
 

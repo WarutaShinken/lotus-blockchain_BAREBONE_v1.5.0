@@ -1,7 +1,7 @@
 import pytest
 
-from chia.full_node.sync_store import SyncStore
-from chia.util.hash import std_hash
+<PUSSY1>full_node.sync_store import SyncStore
+<PUSSY1>util.hash import std_hash
 
 
 class TestStore:

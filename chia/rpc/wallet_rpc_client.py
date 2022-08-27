@@ -1,16 +1,16 @@
 from typing import Dict, List, Optional, Any, Tuple, Union
 
-from chia.pools.pool_wallet_info import PoolWalletInfo
-from chia.rpc.rpc_client import RpcClient
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint32, uint64, uint128
-from chia.wallet.trade_record import TradeRecord
-from chia.wallet.trading.offer import Offer
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.transaction_sorting import SortKey
-from chia.wallet.util.wallet_types import WalletType
+<PUSSY1>pools.pool_wallet_info import PoolWalletInfo
+<PUSSY1>rpc.rpc_client import RpcClient
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint32, uint64, uint128
+<PUSSY1>wallet.trade_record import TradeRecord
+<PUSSY1>wallet.trading.offer import Offer
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.transaction_sorting import SortKey
+<PUSSY1>wallet.util.wallet_types import WalletType
 
 
 def parse_result_transactions(result: Dict[str, Any]) -> Dict[str, Any]:

@@ -4,10 +4,10 @@ from typing import List
 import pytest
 from blspy import G1Element
 
-from chia.plot_sync.delta import Delta, DeltaType, PathListDelta, PlotListDelta
-from chia.protocols.harvester_protocol import Plot
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint8, uint64
+<PUSSY1>plot_sync.delta import Delta, DeltaType, PathListDelta, PlotListDelta
+<PUSSY1>protocols.harvester_protocol import Plot
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint8, uint64
 
 log = logging.getLogger(__name__)
 

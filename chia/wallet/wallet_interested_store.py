@@ -2,9 +2,9 @@ from typing import List, Tuple, Optional
 
 import aiosqlite
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.db_wrapper import DBWrapper
-from chia.util.ints import uint32
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.ints import uint32
 
 
 class WalletInterestedStore:

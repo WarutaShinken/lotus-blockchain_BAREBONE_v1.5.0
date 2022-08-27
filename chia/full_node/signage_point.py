@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

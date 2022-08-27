@@ -3,11 +3,11 @@ from secrets import token_bytes
 import aiosqlite
 import pytest
 
-from chia.types.blockchain_format.coin import Coin
-from chia.util.db_wrapper import DBWrapper
-from chia.util.ints import uint64
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.ints import uint64
 
-from chia.wallet.wallet_interested_store import WalletInterestedStore
+<PUSSY1>wallet.wallet_interested_store import WalletInterestedStore
 
 
 class TestWalletInterestedStore:

@@ -4,14 +4,14 @@ from typing import Dict, List, Optional, Tuple
 
 import aiosqlite
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.util.db_wrapper import DBWrapper
-from chia.util.errors import Err
-from chia.util.ints import uint8, uint32
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.transaction_sorting import SortKey
-from chia.wallet.util.transaction_type import TransactionType
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint8, uint32
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.transaction_sorting import SortKey
+<PUSSY1>wallet.util.transaction_type import TransactionType
 
 
 def filter_ok_mempool_status(sent_to: List[Tuple[str, uint8, Optional[str]]]) -> List[Tuple[str, uint8, Optional[str]]]:

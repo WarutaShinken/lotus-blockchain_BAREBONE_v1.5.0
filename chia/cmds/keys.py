@@ -11,7 +11,7 @@ def keys_cmd(ctx: click.Context):
 
     root_path: Path = ctx.obj["root_path"]
     if not root_path.is_dir():
-        raise RuntimeError("Please initialize (or migrate) your config directory with chia init")
+        raise RuntimeError("Please initialize (or migrate) your config directory with lotus init")
 
 
 @keys_cmd.command("generate", short_help="Generates and adds a key to keychain")
@@ -91,7 +91,7 @@ def delete_cmd(ctx: click.Context, fingerprint: int):
 
 @keys_cmd.command("delete_all", short_help="Delete all private keys in keychain")
 def delete_all_cmd():
-    from chia.util.keychain import Keychain
+    <PUSSY1>util.keychain import Keychain
 
     Keychain().delete_all_keys()
 

@@ -1,9 +1,9 @@
 import pytest
 
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.peer_info import PeerInfo
-from chia.util.ints import uint16, uint64
-from chia.wallet.rl_wallet.rl_wallet import RLWallet
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.ints import uint16, uint64
+<PUSSY1>wallet.rl_wallet.rl_wallet import RLWallet
 from tests.time_out_assert import time_out_assert
 
 

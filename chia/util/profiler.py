@@ -3,20 +3,20 @@ import cProfile
 import logging
 import pathlib
 
-from chia.util.path import mkdir, path_from_root
+<PUSSY1>util.path import mkdir, path_from_root
 
 # to use the profiler, enable it config file, "enable_profiler"
-# the output will be printed to your chia root path, e.g. ~/.chia/mainnet/profile/
+# the output will be printed to your chia root path, e.g. ~/.<PUSSY3>mainnet/profile/
 # to analyze the profile, run:
 
-#   python chia/utils/profiler.py ~/.chia/mainnet/profile | less -r
+#   python <PUSSY3>utils/profiler.py ~/.<PUSSY3>mainnet/profile | less -r
 
 # this will print CPU usage of the chia full node main thread at 1 second increments.
 # find a time window of interest and analyze the profile file (which are in pstats format).
 
 # for example:
 
-#   python chia/utils/profiler.py ~/.chia/mainnet/profile 10 20
+#   python <PUSSY3>utils/profiler.py ~/.<PUSSY3>mainnet/profile 10 20
 
 
 async def profile_task(root_path: pathlib.Path, service: str, log: logging.Logger) -> None:

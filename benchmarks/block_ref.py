@@ -9,16 +9,16 @@ from typing import List, Optional
 import aiosqlite
 import click
 
-from chia.consensus.blockchain import Blockchain
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.hint_store import HintStore
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.db_version import lookup_db_version
-from chia.util.db_wrapper import DBWrapper2
-from chia.util.ints import uint32
+<PUSSY1>consensus.blockchain import Blockchain
+<PUSSY1>consensus.default_constants import DEFAULT_CONSTANTS
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.hint_store import HintStore
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.db_version import lookup_db_version
+<PUSSY1>util.db_wrapper import DBWrapper2
+<PUSSY1>util.ints import uint32
 
 # the first transaction block. Each byte in transaction_height_delta is the
 # number of blocks to skip forward to get to the next transaction block

@@ -5,33 +5,33 @@ from typing import Any, Dict, List, Optional, Tuple
 import aiohttp
 from blspy import AugSchemeMPL, G2Element, PrivateKey
 
-import chia.server.ws_connection as ws
+import <PUSSY5>server.ws_connection as ws
 from chia import __version__
-from chia.consensus.network_type import NetworkType
-from chia.consensus.pot_iterations import calculate_iterations_quality, calculate_sp_interval_iters
-from chia.farmer.farmer import Farmer
-from chia.protocols import farmer_protocol, harvester_protocol
-from chia.protocols.harvester_protocol import (
+<PUSSY1>consensus.network_type import NetworkType
+<PUSSY1>consensus.pot_iterations import calculate_iterations_quality, calculate_sp_interval_iters
+<PUSSY1>farmer.farmer import Farmer
+<PUSSY1>protocols import farmer_protocol, harvester_protocol
+<PUSSY1>protocols.harvester_protocol import (
     PlotSyncDone,
     PlotSyncPathList,
     PlotSyncPlotList,
     PlotSyncStart,
     PoolDifficulty,
 )
-from chia.protocols.pool_protocol import (
+<PUSSY1>protocols.pool_protocol import (
     PoolErrorCode,
     PostPartialPayload,
     PostPartialRequest,
     get_current_authentication_token,
 )
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.server.outbound_message import NodeType, make_msg
-from chia.server.server import ssl_context_for_root
-from chia.ssl.create_ssl import get_mozilla_ca_crt
-from chia.types.blockchain_format.pool_target import PoolTarget
-from chia.types.blockchain_format.proof_of_space import ProofOfSpace
-from chia.util.api_decorators import api_request, peer_required
-from chia.util.ints import uint32, uint64
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>server.outbound_message import NodeType, make_msg
+<PUSSY1>server.server import ssl_context_for_root
+<PUSSY1>ssl.create_ssl import get_mozilla_ca_crt
+<PUSSY1>types.blockchain_format.pool_target import PoolTarget
+<PUSSY1>types.blockchain_format.proof_of_space import ProofOfSpace
+<PUSSY1>util.api_decorators import api_request, peer_required
+<PUSSY1>util.ints import uint32, uint64
 
 
 def strip_old_entries(pairs: List[Tuple[float, Any]], before: float) -> List[Tuple[float, Any]]:

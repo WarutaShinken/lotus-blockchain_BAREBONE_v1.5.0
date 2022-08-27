@@ -4,25 +4,25 @@ from typing import Dict, List, Optional, Tuple
 import aiosqlite
 import pytest
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.consensus.full_block_to_block_record import block_to_block_record
-from chia.full_node.block_store import BlockStore
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.util.block_cache import BlockCache
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.default_constants import DEFAULT_CONSTANTS
+<PUSSY1>consensus.full_block_to_block_record import block_to_block_record
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>util.block_cache import BlockCache
 from tests.block_tools import test_constants
-from chia.util.generator_tools import get_block_header
+<PUSSY1>util.generator_tools import get_block_header
 
-from chia.consensus.pot_iterations import calculate_iterations_quality
-from chia.full_node.weight_proof import (
+<PUSSY1>consensus.pot_iterations import calculate_iterations_quality
+<PUSSY1>full_node.weight_proof import (
     WeightProofHandler,
     _map_sub_epoch_summaries,
     _validate_summaries_weight,
 )
-from chia.types.full_block import FullBlock
-from chia.types.header_block import HeaderBlock
-from chia.util.ints import uint32, uint64
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>util.ints import uint32, uint64
 
 
 def count_sub_epochs(blockchain, last_hash) -> int:

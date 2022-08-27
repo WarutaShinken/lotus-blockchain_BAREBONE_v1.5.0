@@ -1,7 +1,7 @@
 {
   "dest": "final_installer/",
-  "bin": "chia-blockchain",
-  "name": "chia-blockchain",
+  "bin": "<PUSSY2>",
+  "name": "<PUSSY2>",
   "scripts": {
     "postinst": "assets/deb/postinst.sh",
     "prerm": "assets/deb/prerm.sh"

@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import List, Optional, Tuple
 
-from chia.types.blockchain_format.sized_bytes import bytes32, bytes48
-from chia.util.ints import uint32, uint64
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32, bytes48
+<PUSSY1>util.ints import uint32, uint64
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 # the Spend and SpendBundleConditions classes are mirrors of native types, returned by

@@ -1,12 +1,12 @@
 from dataclasses import dataclass
 from typing import List, Optional, Tuple, Dict, Any
 
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint8, uint32, uint64
-from chia.util.streamable import Streamable, streamable
-from chia.wallet.trading.offer import Offer
-from chia.wallet.trading.trade_status import TradeStatus
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint8, uint32, uint64
+<PUSSY1>util.streamable import Streamable, streamable
+<PUSSY1>wallet.trading.offer import Offer
+<PUSSY1>wallet.trading.trade_status import TradeStatus
 
 
 @streamable

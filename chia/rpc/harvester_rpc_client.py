@@ -1,6 +1,6 @@
 from typing import Any, Dict, List
 
-from chia.rpc.rpc_client import RpcClient
+<PUSSY1>rpc.rpc_client import RpcClient
 
 
 class HarvesterRpcClient(RpcClient):

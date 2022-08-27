@@ -17,78 +17,78 @@ from typing import Callable, Dict, List, Optional, Tuple, Any, Union
 from blspy import AugSchemeMPL, G1Element, G2Element, PrivateKey
 from chiabip158 import PyBIP158
 
-from chia.cmds.init_funcs import create_all_ssl, create_default_chia_config
-from chia.daemon.keychain_proxy import connect_to_keychain_and_validate, wrap_local_keychain
-from chia.full_node.bundle_tools import (
+<PUSSY1>cmds.init_funcs import create_all_ssl, create_default_chia_config
+<PUSSY1>daemon.keychain_proxy import connect_to_keychain_and_validate, wrap_local_keychain
+<PUSSY1>full_node.bundle_tools import (
     best_solution_generator_from_template,
     detect_potential_template_generator,
     simple_solution_generator,
 )
-from chia.util.errors import Err
-from chia.full_node.generator import setup_generator_args
-from chia.full_node.mempool_check_conditions import GENERATOR_MOD
-from chia.plotting.create_plots import create_plots, PlotKeys
-from chia.plotting.util import add_plot_directory
-from chia.consensus.block_creation import unfinished_block_to_full_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.coinbase import create_puzzlehash_for_pk, create_farmer_coin, create_pool_coin
-from chia.consensus.condition_costs import ConditionCost
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.consensus.deficit import calculate_deficit
-from chia.consensus.full_block_to_block_record import block_to_block_record
-from chia.consensus.make_sub_epoch_summary import next_sub_epoch_summary
-from chia.consensus.pot_iterations import (
+<PUSSY1>util.errors import Err
+<PUSSY1>full_node.generator import setup_generator_args
+<PUSSY1>full_node.mempool_check_conditions import GENERATOR_MOD
+<PUSSY1>plotting.create_plots import create_plots, PlotKeys
+<PUSSY1>plotting.util import add_plot_directory
+<PUSSY1>consensus.block_creation import unfinished_block_to_full_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.coinbase import create_puzzlehash_for_pk, create_farmer_coin, create_pool_coin
+<PUSSY1>consensus.condition_costs import ConditionCost
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.default_constants import DEFAULT_CONSTANTS
+<PUSSY1>consensus.deficit import calculate_deficit
+<PUSSY1>consensus.full_block_to_block_record import block_to_block_record
+<PUSSY1>consensus.make_sub_epoch_summary import next_sub_epoch_summary
+<PUSSY1>consensus.pot_iterations import (
     calculate_ip_iters,
     calculate_iterations_quality,
     calculate_sp_interval_iters,
     calculate_sp_iters,
     is_overflow_block,
 )
-from chia.consensus.vdf_info_computation import get_signage_point_vdf_info
-from chia.full_node.signage_point import SignagePoint
-from chia.plotting.util import PlotsRefreshParameter, PlotRefreshResult, PlotRefreshEvents, parse_plot_info
-from chia.plotting.manager import PlotManager
-from chia.server.server import ssl_context_for_client
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.coin import Coin, hash_coin_ids
-from chia.types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
-from chia.types.blockchain_format.pool_target import PoolTarget
-from chia.types.blockchain_format.program import INFINITE_COST
-from chia.types.blockchain_format.proof_of_space import ProofOfSpace
-from chia.types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.slots import (
+<PUSSY1>consensus.vdf_info_computation import get_signage_point_vdf_info
+<PUSSY1>full_node.signage_point import SignagePoint
+<PUSSY1>plotting.util import PlotsRefreshParameter, PlotRefreshResult, PlotRefreshEvents, parse_plot_info
+<PUSSY1>plotting.manager import PlotManager
+<PUSSY1>server.server import ssl_context_for_client
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.coin import Coin, hash_coin_ids
+<PUSSY1>types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
+<PUSSY1>types.blockchain_format.pool_target import PoolTarget
+<PUSSY1>types.blockchain_format.program import INFINITE_COST
+<PUSSY1>types.blockchain_format.proof_of_space import ProofOfSpace
+<PUSSY1>types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.slots import (
     ChallengeChainSubSlot,
     InfusedChallengeChainSubSlot,
     RewardChainSubSlot,
     SubSlotProofs,
 )
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator, CompressorArg
-from chia.types.spend_bundle import SpendBundle
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.bech32m import encode_puzzle_hash
-from chia.util.block_cache import BlockCache
-from chia.util.config import load_config, lock_config, save_config, override_config
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint16, uint32, uint64, uint128
-from chia.util.keychain import Keychain, bytes_to_mnemonic
-from chia.util.prev_transaction_block import get_prev_transaction_block
-from chia.util.path import mkdir
-from chia.util.vdf_prover import get_vdf_info_and_proof
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator, CompressorArg
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.bech32m import encode_puzzle_hash
+<PUSSY1>util.block_cache import BlockCache
+<PUSSY1>util.config import load_config, lock_config, save_config, override_config
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint16, uint32, uint64, uint128
+<PUSSY1>util.keychain import Keychain, bytes_to_mnemonic
+<PUSSY1>util.prev_transaction_block import get_prev_transaction_block
+<PUSSY1>util.path import mkdir
+<PUSSY1>util.vdf_prover import get_vdf_info_and_proof
 from tests.time_out_assert import time_out_assert_custom_interval
 from tests.wallet_tools import WalletTool
 from tests.util.socket import find_available_listen_port
 from tests.util.ssl_certs import get_next_nodes_certs_and_keys, get_next_private_ca_cert_and_key
-from chia.wallet.derive_keys import (
+<PUSSY1>wallet.derive_keys import (
     master_sk_to_farmer_sk,
     master_sk_to_local_sk,
     master_sk_to_pool_sk,
@@ -244,7 +244,7 @@ class BlockTools:
 
         self.farmer_pubkeys: List[G1Element] = [master_sk_to_farmer_sk(sk).get_g1() for sk in self.all_sks]
         if len(self.pool_pubkeys) == 0 or len(self.farmer_pubkeys) == 0:
-            raise RuntimeError("Keys not generated. Run `chia generate keys`")
+            raise RuntimeError("Keys not generated. Run `lotus generate keys`")
 
         self.plot_manager.set_public_keys(self.farmer_pubkeys, self.pool_pubkeys)
 

@@ -9,16 +9,16 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import aiosqlite
 
-import chia.server.ws_connection as ws
-from chia.consensus.constants import ConsensusConstants
-from chia.full_node.coin_store import CoinStore
-from chia.protocols import full_node_protocol
-from chia.seeder.crawl_store import CrawlStore
-from chia.seeder.peer_record import PeerRecord, PeerReliability
-from chia.server.server import ChiaServer
-from chia.types.peer_info import PeerInfo
-from chia.util.path import mkdir, path_from_root
-from chia.util.ints import uint32, uint64
+import <PUSSY5>server.ws_connection as ws
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>protocols import full_node_protocol
+<PUSSY1>seeder.crawl_store import CrawlStore
+<PUSSY1>seeder.peer_record import PeerRecord, PeerReliability
+<PUSSY1>server.server import ChiaServer
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.path import mkdir, path_from_root
+<PUSSY1>util.ints import uint32, uint64
 
 log = logging.getLogger(__name__)
 

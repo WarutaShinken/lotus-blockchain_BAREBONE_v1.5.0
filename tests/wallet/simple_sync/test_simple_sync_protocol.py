@@ -6,22 +6,22 @@ import pytest
 from clvm.casts import int_to_bytes
 from colorlog import getLogger
 
-from chia.consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
-from chia.protocols import wallet_protocol
-from chia.protocols.full_node_protocol import RespondTransaction
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.protocols.wallet_protocol import RespondToCoinUpdates, CoinStateUpdate, RespondToPhUpdates
-from chia.server.outbound_message import NodeType
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
-from chia.types.blockchain_format.coin import Coin
-from chia.types.coin_record import CoinRecord
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.condition_with_args import ConditionWithArgs
-from chia.types.peer_info import PeerInfo
-from chia.types.spend_bundle import SpendBundle
-from chia.util.ints import uint16, uint32, uint64
-from chia.wallet.wallet import Wallet
-from chia.wallet.wallet_state_manager import WalletStateManager
+<PUSSY1>consensus.block_rewards import calculate_pool_reward, calculate_base_farmer_reward
+<PUSSY1>protocols import wallet_protocol
+<PUSSY1>protocols.full_node_protocol import RespondTransaction
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>protocols.wallet_protocol import RespondToCoinUpdates, CoinStateUpdate, RespondToPhUpdates
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.condition_with_args import ConditionWithArgs
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.ints import uint16, uint32, uint64
+<PUSSY1>wallet.wallet import Wallet
+<PUSSY1>wallet.wallet_state_manager import WalletStateManager
 from tests.connection_utils import add_dummy_connection
 from tests.pools.test_pool_rpc import wallet_is_synced
 from tests.time_out_assert import time_out_assert
@@ -196,7 +196,7 @@ class TestSimpleSyncProtocol:
             await full_node_api.farm_new_transaction_block(FarmNewBlockProtocol(puzzle_hash))
 
         # Let's make sure the wallet can handle a non ephemeral launcher
-        from chia.wallet.puzzles.singleton_top_layer import SINGLETON_LAUNCHER_HASH
+        <PUSSY1>wallet.puzzles.singleton_top_layer import SINGLETON_LAUNCHER_HASH
 
         await time_out_assert(10, wallet_is_synced, True, wallet_node, full_node_api)
         tx_record = await wallet.generate_signed_transaction(uint64(10), SINGLETON_LAUNCHER_HASH, uint64(0))

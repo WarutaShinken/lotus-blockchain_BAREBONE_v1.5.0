@@ -7,8 +7,8 @@ import logging
 
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
-from chia.plotting.create_plots import resolve_plot_keys
-from chia.plotters.plotters_util import run_plotter, run_command
+<PUSSY1>plotting.create_plots import resolve_plot_keys
+<PUSSY1>plotters.plotters_util import run_plotter, run_command
 
 log = logging.getLogger(__name__)
 

@@ -15,7 +15,7 @@ This roughly corresponds to bitcoin's taproot.
 
 Note:
 
-p2_delegated_puzzle_or_hidden_puzzle is essentially the "standard coin" in chia.
+p2_delegated_puzzle_or_hidden_puzzle is essentially the "standard coin" in <PUSSY5>
 DEFAULT_HIDDEN_PUZZLE_HASH from this puzzle is used with
 calculate_synthetic_secret_key in the wallet's standard pk_to_sk finder.
 
@@ -28,7 +28,7 @@ following mechanism:
   level a set of auxiliary sk/pk pairs which are used for specific coins. These
   can be used for signing in AGG_SIG_ME, but the standard coin uses a key further
   derived from one of these via calculate_synthetic_secret_key as described in
-  https://chialisp.com/docs/standard_transaction. Therefore, when a wallet needs
+  <PUSSY4>lisp.com/docs/standard_transaction. Therefore, when a wallet needs
   to find a secret key for signing based on a public key, it needs to try repeating
   this derivation as well and see if the G1Element (pk) associated with any of the
   derived secret keys matches the pk requested by the coin.
@@ -61,8 +61,8 @@ from typing import Union
 from blspy import G1Element, PrivateKey
 from clvm.casts import int_from_bytes
 
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
 
 from .load_clvm import load_clvm
 from .p2_conditions import puzzle_for_conditions

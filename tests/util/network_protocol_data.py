@@ -1,33 +1,33 @@
 # flake8: noqa
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint8, uint16, uint32, uint64, uint128
-from chia.types.blockchain_format.proof_of_space import ProofOfSpace
-from chia.types.blockchain_format.pool_target import PoolTarget
-from chia.types.coin_spend import CoinSpend
-from chia.types.blockchain_format.coin import Coin
-from chia.types.spend_bundle import SpendBundle
-from chia.types.blockchain_format.program import Program, SerializedProgram
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.weight_proof import WeightProof, SubEpochData, SubEpochChallengeSegment, SubSlotData, RecentChainData
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint8, uint16, uint32, uint64, uint128
+<PUSSY1>types.blockchain_format.proof_of_space import ProofOfSpace
+<PUSSY1>types.blockchain_format.pool_target import PoolTarget
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.blockchain_format.program import Program, SerializedProgram
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.weight_proof import WeightProof, SubEpochData, SubEpochChallengeSegment, SubSlotData, RecentChainData
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
 from blspy import G1Element, G2Element
-from chia.types.header_block import HeaderBlock
-from chia.types.full_block import FullBlock
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.types.blockchain_format.slots import (
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>types.blockchain_format.slots import (
     ChallengeChainSubSlot,
     InfusedChallengeChainSubSlot,
     RewardChainSubSlot,
     SubSlotProofs,
 )
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.peer_info import TimestampedPeerInfo
-from chia.types.blockchain_format.reward_chain_block import RewardChainBlock
-from chia.types.blockchain_format.foliage import Foliage, FoliageTransactionBlock, FoliageBlockData, TransactionsInfo
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.peer_info import TimestampedPeerInfo
+<PUSSY1>types.blockchain_format.reward_chain_block import RewardChainBlock
+<PUSSY1>types.blockchain_format.foliage import Foliage, FoliageTransactionBlock, FoliageBlockData, TransactionsInfo
 
-from chia.protocols import (
+<PUSSY1>protocols import (
     farmer_protocol,
     full_node_protocol,
     harvester_protocol,

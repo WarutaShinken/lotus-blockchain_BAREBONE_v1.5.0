@@ -6,15 +6,15 @@ from typing import Any, Dict, List, Optional, TextIO
 import click
 from aiohttp import ClientResponseError
 
-from chia.util.config import load_config
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.ints import uint16
+<PUSSY1>util.config import load_config
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>util.ints import uint16
 
 services: List[str] = ["crawler", "farmer", "full_node", "harvester", "timelord", "wallet"]
 
 
 async def call_endpoint(service: str, endpoint: str, request: Dict[str, Any], config: Dict[str, Any]) -> Dict[str, Any]:
-    from chia.rpc.rpc_client import RpcClient
+    <PUSSY1>rpc.rpc_client import RpcClient
 
     port: uint16
     if service == "crawler":

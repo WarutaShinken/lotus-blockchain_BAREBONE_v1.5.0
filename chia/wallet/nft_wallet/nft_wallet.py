@@ -6,39 +6,39 @@ from typing import Any, Dict, List, Optional, Set, Tuple, Type, TypeVar
 
 from blspy import AugSchemeMPL, G2Element
 
-from chia.protocols.wallet_protocol import CoinState
-from chia.server.outbound_message import NodeType
-from chia.server.ws_connection import WSChiaConnection
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.types.spend_bundle import SpendBundle
-from chia.util.condition_tools import conditions_dict_for_solution, pkm_pairs_for_conditions_dict
-from chia.util.ints import uint8, uint16, uint32, uint64, uint128
-from chia.wallet.derivation_record import DerivationRecord
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.nft_wallet import nft_puzzles
-from chia.wallet.nft_wallet.nft_info import NFTCoinInfo, NFTWalletInfo
-from chia.wallet.nft_wallet.nft_puzzles import NFT_METADATA_UPDATER, create_ownership_layer_puzzle, get_metadata_and_phs
-from chia.wallet.nft_wallet.uncurry_nft import UncurriedNFT
-from chia.wallet.outer_puzzles import AssetType, construct_puzzle, match_puzzle, solve_puzzle
-from chia.wallet.payment import Payment
-from chia.wallet.puzzle_drivers import PuzzleInfo, Solver
-from chia.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
+<PUSSY1>protocols.wallet_protocol import CoinState
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.condition_tools import conditions_dict_for_solution, pkm_pairs_for_conditions_dict
+<PUSSY1>util.ints import uint8, uint16, uint32, uint64, uint128
+<PUSSY1>wallet.derivation_record import DerivationRecord
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.nft_wallet import nft_puzzles
+<PUSSY1>wallet.nft_wallet.nft_info import NFTCoinInfo, NFTWalletInfo
+<PUSSY1>wallet.nft_wallet.nft_puzzles import NFT_METADATA_UPDATER, create_ownership_layer_puzzle, get_metadata_and_phs
+<PUSSY1>wallet.nft_wallet.uncurry_nft import UncurriedNFT
+<PUSSY1>wallet.outer_puzzles import AssetType, construct_puzzle, match_puzzle, solve_puzzle
+<PUSSY1>wallet.payment import Payment
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo, Solver
+<PUSSY1>wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
     DEFAULT_HIDDEN_PUZZLE_HASH,
     calculate_synthetic_secret_key,
     puzzle_for_pk,
 )
-from chia.wallet.trading.offer import OFFER_MOD, NotarizedPayment, Offer
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.compute_memos import compute_memos
-from chia.wallet.util.debug_spend_bundle import disassemble
-from chia.wallet.util.transaction_type import TransactionType
-from chia.wallet.util.wallet_types import AmountWithPuzzlehash, WalletType
-from chia.wallet.wallet import Wallet
-from chia.wallet.wallet_info import WalletInfo
+<PUSSY1>wallet.trading.offer import OFFER_MOD, NotarizedPayment, Offer
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.compute_memos import compute_memos
+<PUSSY1>wallet.util.debug_spend_bundle import disassemble
+<PUSSY1>wallet.util.transaction_type import TransactionType
+<PUSSY1>wallet.util.wallet_types import AmountWithPuzzlehash, WalletType
+<PUSSY1>wallet.wallet import Wallet
+<PUSSY1>wallet.wallet_info import WalletInfo
 
 _T_NFTWallet = TypeVar("_T_NFTWallet", bound="NFTWallet")
 

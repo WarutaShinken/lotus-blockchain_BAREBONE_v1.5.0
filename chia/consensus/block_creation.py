@@ -8,29 +8,29 @@ from blspy import G1Element, G2Element
 from chia_rs import compute_merkle_set_root
 from chiabip158 import PyBIP158
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.coinbase import create_farmer_coin, create_pool_coin
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.cost_calculator import NPCResult
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from chia.full_node.signage_point import SignagePoint
-from chia.types.blockchain_format.coin import Coin, hash_coin_ids
-from chia.types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
-from chia.types.blockchain_format.pool_target import PoolTarget
-from chia.types.blockchain_format.proof_of_space import ProofOfSpace
-from chia.types.blockchain_format.reward_chain_block import RewardChainBlock, RewardChainBlockUnfinished
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint32, uint64, uint128
-from chia.util.prev_transaction_block import get_prev_transaction_block
-from chia.util.recursive_replace import recursive_replace
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.coinbase import create_farmer_coin, create_pool_coin
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions
+<PUSSY1>full_node.signage_point import SignagePoint
+<PUSSY1>types.blockchain_format.coin import Coin, hash_coin_ids
+<PUSSY1>types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
+<PUSSY1>types.blockchain_format.pool_target import PoolTarget
+<PUSSY1>types.blockchain_format.proof_of_space import ProofOfSpace
+<PUSSY1>types.blockchain_format.reward_chain_block import RewardChainBlock, RewardChainBlockUnfinished
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>util.prev_transaction_block import get_prev_transaction_block
+<PUSSY1>util.recursive_replace import recursive_replace
 
 log = logging.getLogger(__name__)
 

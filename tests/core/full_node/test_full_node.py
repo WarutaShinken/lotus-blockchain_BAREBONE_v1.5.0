@@ -9,35 +9,35 @@ import pytest
 from blspy import G2Element
 from clvm.casts import int_to_bytes
 
-from chia.consensus.pot_iterations import is_overflow_block
-from chia.full_node.bundle_tools import detect_potential_template_generator
-from chia.full_node.full_node_api import FullNodeAPI
-from chia.full_node.signage_point import SignagePoint
-from chia.protocols import full_node_protocol as fnp, full_node_protocol, wallet_protocol
-from chia.protocols import timelord_protocol
-from chia.protocols.full_node_protocol import RespondTransaction
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.protocols.wallet_protocol import SendTransaction, TransactionAck
-from chia.server.address_manager import AddressManager
-from chia.server.outbound_message import Message
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.program import Program, SerializedProgram
-from chia.types.blockchain_format.vdf import CompressibleVDFField, VDFProof
-from chia.types.coin_spend import CoinSpend
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.condition_with_args import ConditionWithArgs
-from chia.types.full_block import FullBlock
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.peer_info import PeerInfo, TimestampedPeerInfo
-from chia.types.spend_bundle import SpendBundle
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.errors import Err
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint16, uint32, uint64
-from chia.util.recursive_replace import recursive_replace
-from chia.util.vdf_prover import get_vdf_info_and_proof
-from chia.wallet.transaction_record import TransactionRecord
+<PUSSY1>consensus.pot_iterations import is_overflow_block
+<PUSSY1>full_node.bundle_tools import detect_potential_template_generator
+<PUSSY1>full_node.full_node_api import FullNodeAPI
+<PUSSY1>full_node.signage_point import SignagePoint
+<PUSSY1>protocols import full_node_protocol as fnp, full_node_protocol, wallet_protocol
+<PUSSY1>protocols import timelord_protocol
+<PUSSY1>protocols.full_node_protocol import RespondTransaction
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>protocols.wallet_protocol import SendTransaction, TransactionAck
+<PUSSY1>server.address_manager import AddressManager
+<PUSSY1>server.outbound_message import Message
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.program import Program, SerializedProgram
+<PUSSY1>types.blockchain_format.vdf import CompressibleVDFField, VDFProof
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.condition_with_args import ConditionWithArgs
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.peer_info import PeerInfo, TimestampedPeerInfo
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.errors import Err
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint16, uint32, uint64
+<PUSSY1>util.recursive_replace import recursive_replace
+<PUSSY1>util.vdf_prover import get_vdf_info_and_proof
+<PUSSY1>wallet.transaction_record import TransactionRecord
 from tests.block_tools import get_signage_point
 from tests.blockchain.blockchain_test_utils import (
     _validate_and_add_block,

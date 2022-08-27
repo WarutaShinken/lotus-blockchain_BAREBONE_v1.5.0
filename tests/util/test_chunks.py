@@ -1,4 +1,4 @@
-from chia.util.chunks import chunks
+<PUSSY1>util.chunks import chunks
 
 
 def test_chunks() -> None:

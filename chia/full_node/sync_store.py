@@ -3,8 +3,8 @@ import logging
 from collections import OrderedDict as orderedDict
 from typing import Dict, List, Optional, OrderedDict, Set, Tuple
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint32, uint128
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint32, uint128
 
 log = logging.getLogger(__name__)
 

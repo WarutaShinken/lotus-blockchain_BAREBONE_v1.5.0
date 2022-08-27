@@ -4,13 +4,13 @@ import aiohttp
 import pytest
 import pytest_asyncio
 
-from chia.protocols.shared_protocol import protocol_version
-from chia.server.outbound_message import NodeType
-from chia.server.server import ChiaServer, ssl_context_for_client
-from chia.server.ws_connection import WSChiaConnection
-from chia.ssl.create_ssl import generate_ca_signed_cert
-from chia.types.peer_info import PeerInfo
-from chia.util.ints import uint16
+<PUSSY1>protocols.shared_protocol import protocol_version
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>server.server import ChiaServer, ssl_context_for_client
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>ssl.create_ssl import generate_ca_signed_cert
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.ints import uint16
 from tests.block_tools import test_constants
 from tests.setup_nodes import setup_harvester_farmer
 

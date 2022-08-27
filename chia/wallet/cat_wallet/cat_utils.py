@@ -3,14 +3,14 @@ from typing import List, Tuple, Iterator
 
 from blspy import G2Element
 
-from chia.types.blockchain_format.coin import Coin, coin_as_list
-from chia.types.blockchain_format.program import Program, INFINITE_COST
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.spend_bundle import CoinSpend, SpendBundle
-from chia.util.condition_tools import conditions_dict_for_solution
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.puzzles.cat_loader import CAT_MOD
+<PUSSY1>types.blockchain_format.coin import Coin, coin_as_list
+<PUSSY1>types.blockchain_format.program import Program, INFINITE_COST
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.spend_bundle import CoinSpend, SpendBundle
+<PUSSY1>util.condition_tools import conditions_dict_for_solution
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.puzzles.cat_loader import CAT_MOD
 
 NULL_SIGNATURE = G2Element()
 

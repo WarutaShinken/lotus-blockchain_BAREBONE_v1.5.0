@@ -15,18 +15,18 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, TextIO, Tuple, cast
 
 from chia import __version__
-from chia.cmds.init_funcs import check_keys, chia_init
-from chia.cmds.passphrase_funcs import default_passphrase, using_default_passphrase
-from chia.daemon.keychain_server import KeychainServer, keychain_commands
-from chia.daemon.windows_signal import kill
-from chia.plotters.plotters import get_available_plotters
-from chia.plotting.util import add_plot_directory
-from chia.server.server import ssl_context_for_root, ssl_context_for_server
-from chia.ssl.create_ssl import get_mozilla_ca_crt
-from chia.util.chia_logging import initialize_logging
-from chia.util.config import load_config
-from chia.util.json_util import dict_to_json_str
-from chia.util.keychain import (
+<PUSSY1>cmds.init_funcs import check_keys, chia_init
+<PUSSY1>cmds.passphrase_funcs import default_passphrase, using_default_passphrase
+<PUSSY1>daemon.keychain_server import KeychainServer, keychain_commands
+<PUSSY1>daemon.windows_signal import kill
+<PUSSY1>plotters.plotters import get_available_plotters
+<PUSSY1>plotting.util import add_plot_directory
+<PUSSY1>server.server import ssl_context_for_root, ssl_context_for_server
+<PUSSY1>ssl.create_ssl import get_mozilla_ca_crt
+<PUSSY1>util.chia_logging import initialize_logging
+<PUSSY1>util.config import load_config
+<PUSSY1>util.json_util import dict_to_json_str
+<PUSSY1>util.keychain import (
     Keychain,
     KeyringCurrentPassphraseIsInvalid,
     KeyringRequiresMigration,
@@ -34,10 +34,10 @@ from chia.util.keychain import (
     supports_keyring_passphrase,
     supports_os_passphrase_storage,
 )
-from chia.util.path import mkdir
-from chia.util.service_groups import validate_service
-from chia.util.setproctitle import setproctitle
-from chia.util.ws_message import WsRpcMessage, create_payload, format_response
+<PUSSY1>util.path import mkdir
+<PUSSY1>util.service_groups import validate_service
+<PUSSY1>util.setproctitle import setproctitle
+<PUSSY1>util.ws_message import WsRpcMessage, create_payload, format_response
 
 io_pool_exc = ThreadPoolExecutor()
 
@@ -420,7 +420,7 @@ class WebSocketServer:
                     else:
                         self.log.debug("Skipping legacy key migration (previously attempted).")
                 except Exception:
-                    self.log.exception("Failed to migrate keys silently. Run `chia keys migrate` manually.")
+                    self.log.exception("Failed to migrate keys silently. Run `lotus keys migrate` manually.")
 
                 # Inform the GUI of keyring status changes
                 self.keyring_status_changed(await self.keyring_status(), "wallet_ui")
@@ -1427,8 +1427,8 @@ def run_daemon(root_path: Path, wait_for_unlock: bool = False) -> int:
 
 
 def main() -> int:
-    from chia.util.default_root import DEFAULT_ROOT_PATH
-    from chia.util.keychain import Keychain
+    <PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+    <PUSSY1>util.keychain import Keychain
 
     wait_for_unlock = "--wait-for-unlock" in sys.argv[1:] and Keychain.is_keyring_locked()
     return run_daemon(DEFAULT_ROOT_PATH, wait_for_unlock)

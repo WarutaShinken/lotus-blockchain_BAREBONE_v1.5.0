@@ -1,6 +1,6 @@
 #
 # Install helper code to manage inserting the correct version for the GUI
-# Gets the version from the result of "chia version"
+# Gets the version from the result of "lotus version"
 # Converts to proper symver format so NPM doesn't complain
 # Adds the version info to the package.json file
 #
@@ -69,5 +69,5 @@ def update_version(package_json_path: str):
 
 
 if __name__ == "__main__":
-    update_version(f"{os.path.dirname(__file__)}/chia-blockchain-gui/package.json")
-    update_version(f"{os.path.dirname(__file__)}/chia-blockchain-gui/packages/gui/package.json")
+    update_version(f"{os.path.dirname(__file__)}/<PUSSY2>-gui/package.json")
+    update_version(f"{os.path.dirname(__file__)}/<PUSSY2>-gui/packages/gui/package.json")

@@ -3,8 +3,8 @@ import time
 from dataclasses import dataclass, field
 from typing import Any, Callable, Collection, Coroutine, Dict, List, Optional
 
-from chia.plot_sync.delta import Delta, PathListDelta, PlotListDelta
-from chia.plot_sync.exceptions import (
+<PUSSY1>plot_sync.delta import Delta, PathListDelta, PlotListDelta
+<PUSSY1>plot_sync.exceptions import (
     InvalidIdentifierError,
     InvalidLastSyncIdError,
     PlotAlreadyAvailableError,
@@ -12,8 +12,8 @@ from chia.plot_sync.exceptions import (
     PlotSyncException,
     SyncIdsMatchError,
 )
-from chia.plot_sync.util import ErrorCodes, State
-from chia.protocols.harvester_protocol import (
+<PUSSY1>plot_sync.util import ErrorCodes, State
+<PUSSY1>protocols.harvester_protocol import (
     Plot,
     PlotSyncDone,
     PlotSyncError,
@@ -23,11 +23,11 @@ from chia.protocols.harvester_protocol import (
     PlotSyncResponse,
     PlotSyncStart,
 )
-from chia.server.ws_connection import ProtocolMessageTypes, WSChiaConnection, make_msg
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import int16, uint32, uint64
-from chia.util.misc import get_list_or_len
-from chia.util.streamable import _T_Streamable
+<PUSSY1>server.ws_connection import ProtocolMessageTypes, WSChiaConnection, make_msg
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import int16, uint32, uint64
+<PUSSY1>util.misc import get_list_or_len
+<PUSSY1>util.streamable import _T_Streamable
 
 log = logging.getLogger(__name__)
 

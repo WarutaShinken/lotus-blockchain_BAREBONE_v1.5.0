@@ -3,9 +3,9 @@ from typing import Dict, Optional
 
 import aiosqlite
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.db_wrapper import DBWrapper
-from chia.wallet.lineage_proof import LineageProof
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>wallet.lineage_proof import LineageProof
 
 log = logging.getLogger(__name__)
 

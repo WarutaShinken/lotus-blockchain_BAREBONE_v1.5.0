@@ -4,30 +4,30 @@ from typing import Awaitable, Callable, Dict, List, Optional, Set, Tuple, Union
 
 from chiabip158 import PyBIP158
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from chia.consensus.block_root_validation import validate_block_merkle_roots
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.coinbase import create_farmer_coin, create_pool_coin
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.cost_calculator import NPCResult
-from chia.consensus.find_fork_point import find_fork_point_in_chain
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions, mempool_check_time_locks
-from chia.types.block_protocol import BlockInfo
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32, bytes48
-from chia.types.coin_record import CoinRecord
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util import cached_bls
-from chia.util.condition_tools import pkm_pairs
-from chia.util.errors import Err
-from chia.util.generator_tools import tx_removals_and_additions
-from chia.util.hash import std_hash
-from chia.util.ints import uint32, uint64
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+<PUSSY1>consensus.block_root_validation import validate_block_merkle_roots
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.coinbase import create_farmer_coin, create_pool_coin
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>consensus.find_fork_point import find_fork_point_in_chain
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions, mempool_check_time_locks
+<PUSSY1>types.block_protocol import BlockInfo
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32, bytes48
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util import cached_bls
+<PUSSY1>util.condition_tools import pkm_pairs
+<PUSSY1>util.errors import Err
+<PUSSY1>util.generator_tools import tx_removals_and_additions
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint32, uint64
 
 log = logging.getLogger(__name__)
 

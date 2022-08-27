@@ -8,7 +8,7 @@ import pytest
 import random
 import yaml
 
-from chia.util.config import (
+<PUSSY1>util.config import (
     config_path_for_filename,
     create_default_chia_config,
     initial_config_file,
@@ -17,7 +17,7 @@ from chia.util.config import (
     lock_config,
     save_config,
 )
-from chia.util.path import mkdir
+<PUSSY1>util.path import mkdir
 from multiprocessing import Pool, Queue, TimeoutError
 from pathlib import Path
 from threading import Thread

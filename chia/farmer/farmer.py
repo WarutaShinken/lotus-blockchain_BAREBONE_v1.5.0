@@ -9,19 +9,19 @@ from typing import Any, Callable, Dict, List, Optional, Set, Tuple
 import aiohttp
 from blspy import AugSchemeMPL, G1Element, G2Element, PrivateKey
 
-import chia.server.ws_connection as ws  # lgtm [py/import-and-import-from]
-from chia.consensus.constants import ConsensusConstants
-from chia.daemon.keychain_proxy import (
+import <PUSSY5>server.ws_connection as ws  # lgtm [py/import-and-import-from]
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>daemon.keychain_proxy import (
     KeychainProxy,
     KeychainProxyConnectionFailure,
     connect_to_keychain_and_validate,
     wrap_local_keychain,
 )
-from chia.plot_sync.delta import Delta
-from chia.plot_sync.receiver import Receiver
-from chia.pools.pool_config import PoolWalletConfig, add_auth_key, load_pool_config
-from chia.protocols import farmer_protocol, harvester_protocol
-from chia.protocols.pool_protocol import (
+<PUSSY1>plot_sync.delta import Delta
+<PUSSY1>plot_sync.receiver import Receiver
+<PUSSY1>pools.pool_config import PoolWalletConfig, add_auth_key, load_pool_config
+<PUSSY1>protocols import farmer_protocol, harvester_protocol
+<PUSSY1>protocols.pool_protocol import (
     AuthenticationPayload,
     ErrorResponse,
     GetFarmerResponse,
@@ -32,27 +32,27 @@ from chia.protocols.pool_protocol import (
     PutFarmerRequest,
     get_current_authentication_token,
 )
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.server.outbound_message import NodeType, make_msg
-from chia.server.server import ssl_context_for_root
-from chia.server.ws_connection import WSChiaConnection
-from chia.ssl.create_ssl import get_mozilla_ca_crt
-from chia.types.blockchain_format.proof_of_space import ProofOfSpace
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.bech32m import decode_puzzle_hash
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.config import config_path_for_filename, load_config, lock_and_load_config, save_config
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint16, uint32, uint64
-from chia.util.keychain import Keychain
-from chia.wallet.derive_keys import (
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>server.outbound_message import NodeType, make_msg
+<PUSSY1>server.server import ssl_context_for_root
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>ssl.create_ssl import get_mozilla_ca_crt
+<PUSSY1>types.blockchain_format.proof_of_space import ProofOfSpace
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.bech32m import decode_puzzle_hash
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.config import config_path_for_filename, load_config, lock_and_load_config, save_config
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint16, uint32, uint64
+<PUSSY1>util.keychain import Keychain
+<PUSSY1>wallet.derive_keys import (
     find_authentication_sk,
     find_owner_sk,
     master_sk_to_farmer_sk,
     master_sk_to_pool_sk,
     match_address_to_sk,
 )
-from chia.wallet.puzzles.singleton_top_layer import SINGLETON_MOD
+<PUSSY1>wallet.puzzles.singleton_top_layer import SINGLETON_MOD
 
 singleton_mod_hash = SINGLETON_MOD.get_tree_hash()
 
@@ -133,7 +133,7 @@ class Farmer:
         return await keychain_proxy.get_all_private_keys()
 
     async def setup_keys(self) -> bool:
-        no_keys_error_str = "No keys exist. Please run 'chia keys generate' or open the UI."
+        no_keys_error_str = "No keys exist. Please run 'lotus keys generate' or open the UI."
         self.all_root_sks: List[PrivateKey] = [sk for sk, _ in await self.get_all_private_keys()]
         self._private_keys = [master_sk_to_farmer_sk(sk) for sk in self.all_root_sks] + [
             master_sk_to_pool_sk(sk) for sk in self.all_root_sks

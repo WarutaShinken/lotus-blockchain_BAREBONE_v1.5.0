@@ -3,7 +3,7 @@ from typing import List, Type
 
 import pytest
 
-from chia.util.paginator import InvalidPageSizeError, InvalidPageSizeLimit, PageOutOfBoundsError, Paginator
+<PUSSY1>util.paginator import InvalidPageSizeError, InvalidPageSizeLimit, PageOutOfBoundsError, Paginator
 
 
 @pytest.mark.parametrize(

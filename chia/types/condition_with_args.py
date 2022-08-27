@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import List
 
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

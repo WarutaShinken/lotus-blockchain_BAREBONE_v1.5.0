@@ -10,20 +10,20 @@ from typing import Any, Callable, Dict, Iterator, List, Optional, Set, Tuple
 from blspy import AugSchemeMPL, PrivateKey
 from packaging.version import Version
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain import ReceiveBlockResult
-from chia.consensus.constants import ConsensusConstants
-from chia.daemon.keychain_proxy import (
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain import ReceiveBlockResult
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>daemon.keychain_proxy import (
     KeychainProxy,
     KeychainProxyConnectionFailure,
     KeyringIsEmpty,
     connect_to_keychain_and_validate,
     wrap_local_keychain,
 )
-from chia.protocols import wallet_protocol
-from chia.protocols.full_node_protocol import RequestProofOfWeight, RespondProofOfWeight
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.protocols.wallet_protocol import (
+<PUSSY1>protocols import wallet_protocol
+<PUSSY1>protocols.full_node_protocol import RequestProofOfWeight, RespondProofOfWeight
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>protocols.wallet_protocol import (
     CoinState,
     RequestHeaderBlocks,
     RequestSESInfo,
@@ -32,30 +32,30 @@ from chia.protocols.wallet_protocol import (
     RespondToCoinUpdates,
     RespondToPhUpdates,
 )
-from chia.server.node_discovery import WalletPeers
-from chia.server.outbound_message import Message, NodeType, make_msg
-from chia.server.peer_store_resolver import PeerStoreResolver
-from chia.server.server import ChiaServer
-from chia.server.ws_connection import WSChiaConnection
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.coin_spend import CoinSpend
-from chia.types.header_block import HeaderBlock
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.peer_info import PeerInfo
-from chia.types.weight_proof import SubEpochData, WeightProof
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.chunks import chunks
-from chia.util.config import WALLET_PEERS_PATH_KEY_DEPRECATED
-from chia.util.ints import uint32, uint64
-from chia.util.keychain import Keychain, KeyringIsLocked
-from chia.util.path import mkdir, path_from_root
-from chia.util.profiler import profile_task
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.new_peak_queue import NewPeakItem, NewPeakQueue, NewPeakQueueTypes
-from chia.wallet.util.peer_request_cache import PeerRequestCache, can_use_peer_request_cache
-from chia.wallet.util.wallet_sync_utils import (
+<PUSSY1>server.node_discovery import WalletPeers
+<PUSSY1>server.outbound_message import Message, NodeType, make_msg
+<PUSSY1>server.peer_store_resolver import PeerStoreResolver
+<PUSSY1>server.server import ChiaServer
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>types.weight_proof import SubEpochData, WeightProof
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.chunks import chunks
+<PUSSY1>util.config import WALLET_PEERS_PATH_KEY_DEPRECATED
+<PUSSY1>util.ints import uint32, uint64
+<PUSSY1>util.keychain import Keychain, KeyringIsLocked
+<PUSSY1>util.path import mkdir, path_from_root
+<PUSSY1>util.profiler import profile_task
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.new_peak_queue import NewPeakItem, NewPeakQueue, NewPeakQueueTypes
+<PUSSY1>wallet.util.peer_request_cache import PeerRequestCache, can_use_peer_request_cache
+<PUSSY1>wallet.util.wallet_sync_utils import (
     fetch_header_blocks_in_range,
     fetch_last_tx_from_peer,
     last_change_height_cs,
@@ -64,9 +64,9 @@ from chia.wallet.util.wallet_sync_utils import (
     subscribe_to_coin_updates,
     subscribe_to_phs,
 )
-from chia.wallet.wallet_action import WalletAction
-from chia.wallet.wallet_coin_record import WalletCoinRecord
-from chia.wallet.wallet_state_manager import WalletStateManager
+<PUSSY1>wallet.wallet_action import WalletAction
+<PUSSY1>wallet.wallet_coin_record import WalletCoinRecord
+<PUSSY1>wallet.wallet_state_manager import WalletStateManager
 
 
 def get_wallet_db_path(root_path: Path, config: Dict[str, Any], key_fingerprint: str) -> Path:
@@ -184,7 +184,7 @@ class WalletNode:
             keychain_proxy = await self.ensure_keychain_proxy()
             key = await keychain_proxy.get_key_for_fingerprint(fingerprint)
         except KeyringIsEmpty:
-            self.log.warning("No keys present. Create keys with the UI, or with the 'chia keys' program.")
+            self.log.warning("No keys present. Create keys with the UI, or with the 'lotus keys' program.")
             return None
         except KeyringIsLocked:
             self.log.warning("Keyring is locked")
@@ -440,7 +440,7 @@ class WalletNode:
                     default_peers_file_path="wallet/db/wallet_peers.dat",
                 ),
                 self.config["introducer_peer"],
-                self.config.get("dns_servers", ["dns-introducer.chia.net"]),
+                self.config.get("dns_servers", ["dns-introducer.<PUSSY5>net"]),
                 self.config["peer_connect_interval"],
                 network_name,
                 None,

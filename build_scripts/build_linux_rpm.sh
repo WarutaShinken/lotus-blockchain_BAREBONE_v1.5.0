@@ -8,10 +8,10 @@ if [ ! "$1" ]; then
 elif [ "$1" = "amd64" ]; then
 	#PLATFORM="$1"
 	REDHAT_PLATFORM="x86_64"
-	DIR_NAME="chia-blockchain-linux-x64"
+	DIR_NAME="<PUSSY2>-linux-x64"
 else
 	#PLATFORM="$1"
-	DIR_NAME="chia-blockchain-linux-arm64"
+	DIR_NAME="<PUSSY2>-linux-arm64"
 fi
 
 # If the env variable NOTARIZE and the username and password variables are
@@ -35,7 +35,7 @@ rm -rf dist
 mkdir dist
 
 echo "Create executables with pyinstaller"
-SPEC_FILE=$(python -c 'import chia; print(chia.PYINSTALLER_SPEC_PATH)')
+SPEC_FILE=$(python -c 'import chia; print(<PUSSY5>PYINSTALLER_SPEC_PATH)')
 pyinstaller --log-level=INFO "$SPEC_FILE"
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
@@ -44,11 +44,11 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 fi
 
 # Builds CLI only rpm
-CLI_RPM_BASE="chia-blockchain-cli-$CHIA_INSTALLER_VERSION-1.$REDHAT_PLATFORM"
-mkdir -p "dist/$CLI_RPM_BASE/opt/chia"
+CLI_RPM_BASE="<PUSSY2>-cli-$CHIA_INSTALLER_VERSION-1.$REDHAT_PLATFORM"
+mkdir -p "dist/$CLI_RPM_BASE/opt<PUSSY5>"
 mkdir -p "dist/$CLI_RPM_BASE/usr/bin"
-cp -r dist/daemon/* "dist/$CLI_RPM_BASE/opt/chia/"
-ln -s ../../opt/chia/chia "dist/$CLI_RPM_BASE/usr/bin/chia"
+cp -r dist/daemon/* "dist/$CLI_RPM_BASE/opt/<PUSSY3>"
+ln -s ../../opt/<PUSSY3>chia "dist/$CLI_RPM_BASE/usr/bin<PUSSY5>"
 # This is built into the base build image
 # shellcheck disable=SC1091
 . /etc/profile.d/rvm.sh
@@ -59,7 +59,7 @@ rvm use ruby-3
 fpm -s dir -t rpm \
   -C "dist/$CLI_RPM_BASE" \
   -p "dist/$CLI_RPM_BASE.rpm" \
-  --name chia-blockchain-cli \
+  --name <PUSSY2>-cli \
   --license Apache-2.0 \
   --version "$CHIA_INSTALLER_VERSION" \
   --architecture "$REDHAT_PLATFORM" \
@@ -68,9 +68,9 @@ fpm -s dir -t rpm \
   .
 # CLI only rpm done
 
-cp -r dist/daemon ../chia-blockchain-gui/packages/gui
+cp -r dist/daemon ../<PUSSY2>-gui/packages/gui
 cd .. || exit
-cd chia-blockchain-gui || exit
+cd <PUSSY2>-gui || exit
 
 echo "npm build"
 lerna clean -y
@@ -87,13 +87,13 @@ fi
 # Change to the gui package
 cd packages/gui || exit
 
-# sets the version for chia-blockchain in package.json
+# sets the version for <PUSSY2> in package.json
 cp package.json package.json.orig
 jq --arg VER "$CHIA_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
-electron-packager . chia-blockchain --asar.unpack="**/daemon/**" --platform=linux \
---icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=net.chia.blockchain \
---appVersion=$CHIA_INSTALLER_VERSION --executable-name=chia-blockchain
+electron-packager . <PUSSY2> --asar.unpack="**/daemon/**" --platform=linux \
+--icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=net.<PUSSY5>blockchain \
+--appVersion=$CHIA_INSTALLER_VERSION --executable-name=<PUSSY2>
 LAST_EXIT_CODE=$?
 
 # reset the package.json to the original
@@ -108,9 +108,9 @@ mv $DIR_NAME ../../../build_scripts/dist/
 cd ../../../build_scripts || exit
 
 if [ "$REDHAT_PLATFORM" = "x86_64" ]; then
-	echo "Create chia-blockchain-$CHIA_INSTALLER_VERSION.rpm"
+	echo "Create <PUSSY2>-$CHIA_INSTALLER_VERSION.rpm"
 
-	# Disables build links from the generated rpm so that we dont conflict with other packages. See https://github.com/Chia-Network/chia-blockchain/issues/3846
+	# Disables build links from the generated rpm so that we dont conflict with other packages. See https://github.com/Chia-Network/<PUSSY2>/issues/3846
 	# shellcheck disable=SC2086
 	sed -i '1s/^/%define _build_id_links none\n%global _enable_debug_package 0\n%global debug_package %{nil}\n%global __os_install_post \/usr\/lib\/rpm\/brp-compress %{nil}\n/' "$GLOBAL_NPM_ROOT/electron-installer-redhat/resources/spec.ejs"
 
@@ -126,7 +126,7 @@ if [ "$REDHAT_PLATFORM" = "x86_64" ]; then
 
   electron-installer-redhat --src dist/$DIR_NAME/ --dest final_installer/ \
   --arch "$REDHAT_PLATFORM" --options.version $CHIA_INSTALLER_VERSION \
-  --license ../LICENSE --options.bin chia-blockchain --options.name chia-blockchain
+  --license ../LICENSE --options.bin <PUSSY2> --options.name <PUSSY2>
   LAST_EXIT_CODE=$?
   if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	  echo >&2 "electron-installer-redhat failed!"

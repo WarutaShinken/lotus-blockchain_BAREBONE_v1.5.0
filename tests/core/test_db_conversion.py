@@ -7,15 +7,15 @@ from typing import List, Tuple
 from tests.setup_nodes import test_constants
 from tests.util.temp_file import TempFile
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint64
-from chia.cmds.db_upgrade_func import convert_v1_to_v2
-from chia.util.db_wrapper import DBWrapper2
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.hint_store import HintStore
-from chia.consensus.blockchain import Blockchain
-from chia.consensus.multiprocess_validation import PreValidationResult
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint64
+<PUSSY1>cmds.db_upgrade_func import convert_v1_to_v2
+<PUSSY1>util.db_wrapper import DBWrapper2
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.hint_store import HintStore
+<PUSSY1>consensus.blockchain import Blockchain
+<PUSSY1>consensus.multiprocess_validation import PreValidationResult
 
 
 def rand_bytes(num) -> bytes:

@@ -1,10 +1,10 @@
 from dataclasses import dataclass
 from typing import Optional, Any, List
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.program import Program
-from chia.util.ints import uint64
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>util.ints import uint64
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

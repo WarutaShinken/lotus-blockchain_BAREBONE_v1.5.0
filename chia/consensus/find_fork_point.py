@@ -1,8 +1,8 @@
 from typing import Union
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.types.header_block import HeaderBlock
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>types.header_block import HeaderBlock
 
 
 def find_fork_point_in_chain(

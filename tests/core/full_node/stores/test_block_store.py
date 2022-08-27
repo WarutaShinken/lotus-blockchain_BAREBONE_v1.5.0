@@ -7,15 +7,15 @@ import dataclasses
 import pytest
 from clvm.casts import int_to_bytes
 
-from chia.consensus.blockchain import Blockchain
-from chia.consensus.full_block_to_block_record import header_block_to_sub_block_record
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.hint_store import HintStore
-from chia.util.ints import uint8
-from chia.types.blockchain_format.vdf import VDFProof
-from chia.types.blockchain_format.program import SerializedProgram
+<PUSSY1>consensus.blockchain import Blockchain
+<PUSSY1>consensus.full_block_to_block_record import header_block_to_sub_block_record
+<PUSSY1>consensus.default_constants import DEFAULT_CONSTANTS
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.hint_store import HintStore
+<PUSSY1>util.ints import uint8
+<PUSSY1>types.blockchain_format.vdf import VDFProof
+<PUSSY1>types.blockchain_format.program import SerializedProgram
 from tests.blockchain.blockchain_test_utils import _validate_and_add_block
 from tests.util.db_connection import DBConnection
 from tests.setup_nodes import test_constants

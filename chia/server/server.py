@@ -18,20 +18,20 @@ from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes, serialization
 
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.protocols.protocol_state_machine import message_requires_reply
-from chia.protocols.protocol_timing import API_EXCEPTION_BAN_SECONDS, INVALID_PROTOCOL_BAN_SECONDS
-from chia.protocols.shared_protocol import protocol_version
-from chia.server.introducer_peers import IntroducerPeers
-from chia.server.outbound_message import Message, NodeType
-from chia.server.ssl_context import private_ssl_paths, public_ssl_paths
-from chia.server.ws_connection import WSChiaConnection
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.peer_info import PeerInfo
-from chia.util.errors import Err, ProtocolError
-from chia.util.ints import uint16
-from chia.util.network import is_in_network, is_localhost, select_port
-from chia.util.ssl_check import verify_ssl_certs_and_keys
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>protocols.protocol_state_machine import message_requires_reply
+<PUSSY1>protocols.protocol_timing import API_EXCEPTION_BAN_SECONDS, INVALID_PROTOCOL_BAN_SECONDS
+<PUSSY1>protocols.shared_protocol import protocol_version
+<PUSSY1>server.introducer_peers import IntroducerPeers
+<PUSSY1>server.outbound_message import Message, NodeType
+<PUSSY1>server.ssl_context import private_ssl_paths, public_ssl_paths
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.peer_info import PeerInfo
+<PUSSY1>util.errors import Err, ProtocolError
+<PUSSY1>util.ints import uint16
+<PUSSY1>util.network import is_in_network, is_localhost, select_port
+<PUSSY1>util.ssl_check import verify_ssl_certs_and_keys
 
 max_message_size = 50 * 1024 * 1024  # 50MB
 
@@ -767,7 +767,7 @@ class ChiaServer:
         try:
             timeout = ClientTimeout(total=15)
             async with ClientSession(timeout=timeout) as session:
-                async with session.get("https://ip.chia.net/") as resp:
+                async with session.get("https://ip.<PUSSY5>net/") as resp:
                     if resp.status == 200:
                         ip = str(await resp.text())
                         ip = ip.rstrip()

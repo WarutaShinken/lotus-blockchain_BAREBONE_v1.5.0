@@ -3,9 +3,9 @@ from typing import Any, Dict, Optional, Tuple
 
 import click
 
-from chia.cmds.plotnft import validate_fee
-from chia.wallet.transaction_sorting import SortKey
-from chia.wallet.util.wallet_types import WalletType
+<PUSSY1>cmds.plotnft import validate_fee
+<PUSSY1>wallet.transaction_sorting import SortKey
+<PUSSY1>wallet.util.wallet_types import WalletType
 
 
 @click.group("wallet", short_help="Manage your wallet")

@@ -1,13 +1,13 @@
 from dataclasses import dataclass
 from typing import List
 
-from chia.consensus.cost_calculator import NPCResult
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.spend_bundle import SpendBundle
-from chia.util.ints import uint64
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.ints import uint64
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

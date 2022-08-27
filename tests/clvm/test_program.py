@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from chia.types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.program import Program
 from clvm.EvalError import EvalError
 from clvm_tools.curry import uncurry
 from clvm.operators import KEYWORD_TO_ATOM

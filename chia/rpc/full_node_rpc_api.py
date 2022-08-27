@@ -1,22 +1,22 @@
 from typing import Any, Callable, Dict, List, Optional
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.pos_quality import UI_ACTUAL_SPACE_CONSTANT_FACTOR
-from chia.full_node.full_node import FullNode
-from chia.full_node.mempool_check_conditions import get_puzzle_and_solution_for_coin
-from chia.types.blockchain_format.program import Program, SerializedProgram
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_record import CoinRecord
-from chia.types.coin_spend import CoinSpend
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.spend_bundle import SpendBundle
-from chia.types.unfinished_header_block import UnfinishedHeaderBlock
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.ints import uint32, uint64, uint128
-from chia.util.log_exceptions import log_exceptions
-from chia.util.ws_message import WsRpcMessage, create_payload_dict
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.pos_quality import UI_ACTUAL_SPACE_CONSTANT_FACTOR
+<PUSSY1>full_node.full_node import FullNode
+<PUSSY1>full_node.mempool_check_conditions import get_puzzle_and_solution_for_coin
+<PUSSY1>types.blockchain_format.program import Program, SerializedProgram
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.unfinished_header_block import UnfinishedHeaderBlock
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.ints import uint32, uint64, uint128
+<PUSSY1>util.log_exceptions import log_exceptions
+<PUSSY1>util.ws_message import WsRpcMessage, create_payload_dict
 
 
 def coin_record_dict_backwards_compat(coin_record: Dict[str, Any]):

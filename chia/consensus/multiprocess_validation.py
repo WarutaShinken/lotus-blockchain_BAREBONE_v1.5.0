@@ -7,30 +7,30 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional, Sequence, Tup
 
 from blspy import AugSchemeMPL, G1Element
 
-from chia.consensus.block_header_validation import validate_finished_header_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.constants import ConsensusConstants
-from chia.consensus.cost_calculator import NPCResult
-from chia.consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
-from chia.consensus.full_block_to_block_record import block_to_block_record
-from chia.consensus.get_block_challenge import get_block_challenge
-from chia.consensus.pot_iterations import calculate_iterations_quality, is_overflow_block
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from chia.types.block_protocol import BlockInfo
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.header_block import HeaderBlock
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.block_cache import BlockCache
-from chia.util.condition_tools import pkm_pairs
-from chia.util.errors import Err, ValidationError
-from chia.util.generator_tools import get_block_header, tx_removals_and_additions
-from chia.util.ints import uint16, uint32, uint64
-from chia.util.streamable import Streamable, dataclass_from_dict, streamable
+<PUSSY1>consensus.block_header_validation import validate_finished_header_block
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
+<PUSSY1>consensus.full_block_to_block_record import block_to_block_record
+<PUSSY1>consensus.get_block_challenge import get_block_challenge
+<PUSSY1>consensus.pot_iterations import calculate_iterations_quality, is_overflow_block
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions
+<PUSSY1>types.block_protocol import BlockInfo
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.sub_epoch_summary import SubEpochSummary
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.block_cache import BlockCache
+<PUSSY1>util.condition_tools import pkm_pairs
+<PUSSY1>util.errors import Err, ValidationError
+<PUSSY1>util.generator_tools import get_block_header, tx_removals_and_additions
+<PUSSY1>util.ints import uint16, uint32, uint64
+<PUSSY1>util.streamable import Streamable, dataclass_from_dict, streamable
 
 log = logging.getLogger(__name__)
 

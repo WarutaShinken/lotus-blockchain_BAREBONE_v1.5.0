@@ -6,45 +6,45 @@ from typing import Dict, List, Optional, Tuple, Callable
 from clvm.casts import int_to_bytes
 import pytest
 
-import chia.server.ws_connection as ws
+import <PUSSY5>server.ws_connection as ws
 
-from chia.full_node.mempool import Mempool
-from chia.full_node.full_node_api import FullNodeAPI
-from chia.protocols import full_node_protocol, wallet_protocol
-from chia.protocols.wallet_protocol import TransactionAck
-from chia.server.outbound_message import Message
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32, bytes48
-from chia.types.coin_spend import CoinSpend
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.condition_with_args import ConditionWithArgs
-from chia.types.spend_bundle import SpendBundle
-from chia.types.mempool_item import MempoolItem
-from chia.util.condition_tools import conditions_for_solution, pkm_pairs
-from chia.util.errors import Err
-from chia.util.ints import uint64, uint32
-from chia.util.hash import std_hash
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.util.api_decorators import api_request, peer_required, bytes_required
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from chia.full_node.pending_tx_cache import PendingTxCache
+<PUSSY1>full_node.mempool import Mempool
+<PUSSY1>full_node.full_node_api import FullNodeAPI
+<PUSSY1>protocols import full_node_protocol, wallet_protocol
+<PUSSY1>protocols.wallet_protocol import TransactionAck
+<PUSSY1>server.outbound_message import Message
+<PUSSY1>simulator.simulator_protocol import FarmNewBlockProtocol
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32, bytes48
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.condition_with_args import ConditionWithArgs
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.mempool_item import MempoolItem
+<PUSSY1>util.condition_tools import conditions_for_solution, pkm_pairs
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint64, uint32
+<PUSSY1>util.hash import std_hash
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>util.api_decorators import api_request, peer_required, bytes_required
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions
+<PUSSY1>full_node.pending_tx_cache import PendingTxCache
 from blspy import G2Element
 
-from chia.util.recursive_replace import recursive_replace
+<PUSSY1>util.recursive_replace import recursive_replace
 from tests.blockchain.blockchain_test_utils import _validate_and_add_block
 from tests.connection_utils import connect_and_get_peer, add_dummy_connection
 from tests.core.node_height import node_height_at_least
 from tests.time_out_assert import time_out_assert
-from chia.types.blockchain_format.program import Program, INFINITE_COST
-from chia.consensus.cost_calculator import NPCResult
-from chia.consensus.condition_costs import ConditionCost
-from chia.types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.program import Program, INFINITE_COST
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>consensus.condition_costs import ConditionCost
+<PUSSY1>types.blockchain_format.program import SerializedProgram
 from clvm_tools import binutils
-from chia.types.generator_types import BlockGenerator
+<PUSSY1>types.generator_types import BlockGenerator
 from blspy import G1Element
-from chia.types.spend_bundle_conditions import SpendBundleConditions, Spend
+<PUSSY1>types.spend_bundle_conditions import SpendBundleConditions, Spend
 
 from tests.util.misc import assert_runtime
 from tests.wallet_tools import WalletTool

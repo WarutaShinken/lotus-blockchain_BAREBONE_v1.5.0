@@ -1,13 +1,13 @@
 from dataclasses import dataclass
 from typing import List, Optional
 
-from chia.types.blockchain_format.foliage import Foliage, FoliageTransactionBlock, TransactionsInfo
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
-from chia.types.blockchain_format.vdf import VDFProof
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.util.ints import uint32
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.foliage import Foliage, FoliageTransactionBlock, TransactionsInfo
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
+<PUSSY1>types.blockchain_format.vdf import VDFProof
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>util.ints import uint32
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

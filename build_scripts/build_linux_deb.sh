@@ -7,10 +7,10 @@ if [ ! "$1" ]; then
 	exit 1
 elif [ "$1" = "amd64" ]; then
 	PLATFORM="$1"
-	DIR_NAME="chia-blockchain-linux-x64"
+	DIR_NAME="<PUSSY2>-linux-x64"
 else
 	PLATFORM="$1"
-	DIR_NAME="chia-blockchain-linux-arm64"
+	DIR_NAME="<PUSSY2>-linux-arm64"
 fi
 export PLATFORM
 
@@ -35,7 +35,7 @@ rm -rf dist
 mkdir dist
 
 echo "Create executables with pyinstaller"
-SPEC_FILE=$(python -c 'import chia; print(chia.PYINSTALLER_SPEC_PATH)')
+SPEC_FILE=$(python -c 'import chia; print(<PUSSY5>PYINSTALLER_SPEC_PATH)')
 pyinstaller --log-level=INFO "$SPEC_FILE"
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
@@ -46,19 +46,19 @@ fi
 # Builds CLI only .deb
 # need j2 for templating the control file
 pip install j2cli
-CLI_DEB_BASE="chia-blockchain-cli_$CHIA_INSTALLER_VERSION-1_$PLATFORM"
-mkdir -p "dist/$CLI_DEB_BASE/opt/chia"
+CLI_DEB_BASE="<PUSSY2>-cli_$CHIA_INSTALLER_VERSION-1_$PLATFORM"
+mkdir -p "dist/$CLI_DEB_BASE/opt<PUSSY5>"
 mkdir -p "dist/$CLI_DEB_BASE/usr/bin"
 mkdir -p "dist/$CLI_DEB_BASE/DEBIAN"
 j2 -o "dist/$CLI_DEB_BASE/DEBIAN/control" assets/deb/control.j2
-cp -r dist/daemon/* "dist/$CLI_DEB_BASE/opt/chia/"
-ln -s ../../opt/chia/chia "dist/$CLI_DEB_BASE/usr/bin/chia"
+cp -r dist/daemon/* "dist/$CLI_DEB_BASE/opt/<PUSSY3>"
+ln -s ../../opt/<PUSSY3>chia "dist/$CLI_DEB_BASE/usr/bin<PUSSY5>"
 dpkg-deb --build --root-owner-group "dist/$CLI_DEB_BASE"
 # CLI only .deb done
 
-cp -r dist/daemon ../chia-blockchain-gui/packages/gui
+cp -r dist/daemon ../<PUSSY2>-gui/packages/gui
 cd .. || exit
-cd chia-blockchain-gui || exit
+cd <PUSSY2>-gui || exit
 
 echo "npm build"
 lerna clean -y
@@ -75,13 +75,13 @@ fi
 # Change to the gui package
 cd packages/gui || exit
 
-# sets the version for chia-blockchain in package.json
+# sets the version for <PUSSY2> in package.json
 cp package.json package.json.orig
 jq --arg VER "$CHIA_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
-electron-packager . chia-blockchain --asar.unpack="**/daemon/**" --platform=linux \
---icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=net.chia.blockchain \
---appVersion=$CHIA_INSTALLER_VERSION --executable-name=chia-blockchain
+electron-packager . <PUSSY2> --asar.unpack="**/daemon/**" --platform=linux \
+--icon=src/assets/img/Chia.icns --overwrite --app-bundle-id=net.<PUSSY5>blockchain \
+--appVersion=$CHIA_INSTALLER_VERSION --executable-name=<PUSSY2>
 LAST_EXIT_CODE=$?
 
 # reset the package.json to the original

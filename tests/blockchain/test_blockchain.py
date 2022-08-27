@@ -9,35 +9,35 @@ import pytest
 from blspy import AugSchemeMPL, G2Element
 from clvm.casts import int_to_bytes
 
-from chia.consensus.block_header_validation import validate_finished_header_block
-from chia.consensus.block_rewards import calculate_base_farmer_reward
-from chia.consensus.blockchain import ReceiveBlockResult
-from chia.consensus.coinbase import create_farmer_coin
-from chia.consensus.multiprocess_validation import PreValidationResult
-from chia.consensus.pot_iterations import is_overflow_block
-from chia.full_node.bundle_tools import detect_potential_template_generator
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from chia.types.blockchain_format.classgroup import ClassgroupElement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.foliage import TransactionsInfo
-from chia.types.blockchain_format.program import SerializedProgram
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.slots import InfusedChallengeChainSubSlot
-from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.condition_with_args import ConditionWithArgs
-from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
-from chia.types.full_block import FullBlock
-from chia.types.generator_types import BlockGenerator
-from chia.types.spend_bundle import SpendBundle
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.generator_tools import get_block_header
+<PUSSY1>consensus.block_header_validation import validate_finished_header_block
+<PUSSY1>consensus.block_rewards import calculate_base_farmer_reward
+<PUSSY1>consensus.blockchain import ReceiveBlockResult
+<PUSSY1>consensus.coinbase import create_farmer_coin
+<PUSSY1>consensus.multiprocess_validation import PreValidationResult
+<PUSSY1>consensus.pot_iterations import is_overflow_block
+<PUSSY1>full_node.bundle_tools import detect_potential_template_generator
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions
+<PUSSY1>types.blockchain_format.classgroup import ClassgroupElement
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.foliage import TransactionsInfo
+<PUSSY1>types.blockchain_format.program import SerializedProgram
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.blockchain_format.slots import InfusedChallengeChainSubSlot
+<PUSSY1>types.blockchain_format.vdf import VDFInfo, VDFProof
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.condition_with_args import ConditionWithArgs
+<PUSSY1>types.end_of_slot_bundle import EndOfSubSlotBundle
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>util.generator_tools import get_block_header
 from tests.block_tools import create_block_tools_async, get_vdf_info_and_proof
-from chia.util.errors import Err
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint64, uint32
-from chia.util.merkle_set import MerkleSet
-from chia.util.recursive_replace import recursive_replace
+<PUSSY1>util.errors import Err
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint64, uint32
+<PUSSY1>util.merkle_set import MerkleSet
+<PUSSY1>util.recursive_replace import recursive_replace
 from tests.blockchain.blockchain_test_utils import (
     _validate_and_add_block,
     _validate_and_add_block_multi_error,
@@ -48,7 +48,7 @@ from tests.wallet_tools import WalletTool
 from tests.setup_nodes import test_constants
 from tests.util.blockchain import create_blockchain
 from tests.util.keyring import TempKeyring
-from chia.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
+<PUSSY1>wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
     DEFAULT_HIDDEN_PUZZLE_HASH,
     calculate_synthetic_secret_key,
 )

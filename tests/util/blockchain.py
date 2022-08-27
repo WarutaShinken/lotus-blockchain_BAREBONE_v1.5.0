@@ -6,15 +6,15 @@ from typing import List, Optional
 import aiosqlite
 import tempfile
 
-from chia.consensus.blockchain import Blockchain
-from chia.consensus.constants import ConsensusConstants
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.full_node.hint_store import HintStore
-from chia.types.full_block import FullBlock
-from chia.util.db_wrapper import DBWrapper2
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.path import mkdir
+<PUSSY1>consensus.blockchain import Blockchain
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>full_node.block_store import BlockStore
+<PUSSY1>full_node.coin_store import CoinStore
+<PUSSY1>full_node.hint_store import HintStore
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>util.db_wrapper import DBWrapper2
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>util.path import mkdir
 from tests.block_tools import BlockTools
 
 

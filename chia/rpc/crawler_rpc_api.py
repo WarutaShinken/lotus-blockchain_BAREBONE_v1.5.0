@@ -1,8 +1,8 @@
 import ipaddress
 from typing import Any, Callable, Dict, List, Optional
 
-from chia.seeder.crawler import Crawler
-from chia.util.ws_message import WsRpcMessage, create_payload_dict
+<PUSSY1>seeder.crawler import Crawler
+<PUSSY1>util.ws_message import WsRpcMessage, create_payload_dict
 
 
 class CrawlerRpcApi:

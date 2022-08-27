@@ -3,24 +3,24 @@ from typing import Any, Dict, Optional, List
 import pytest
 from blspy import G2Element
 
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.spend_bundle import SpendBundle
-from chia.util.ints import uint64
-from chia.wallet.cat_wallet.cat_utils import (
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.ints import uint64
+<PUSSY1>wallet.cat_wallet.cat_utils import (
     CAT_MOD,
     construct_cat_puzzle,
     SpendableCAT,
     unsigned_spend_bundle_for_spendable_cats,
 )
-from chia.wallet.outer_puzzles import AssetType
-from chia.wallet.puzzle_drivers import PuzzleInfo
-from chia.wallet.payment import Payment
-from chia.wallet.trading.offer import Offer, NotarizedPayment
+<PUSSY1>wallet.outer_puzzles import AssetType
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo
+<PUSSY1>wallet.payment import Payment
+<PUSSY1>wallet.trading.offer import Offer, NotarizedPayment
 from tests.clvm.benchmark_costs import cost_of_spend_bundle
 
 acs = Program.to(1)

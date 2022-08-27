@@ -3,8 +3,8 @@
       id: test-blocks-plots
       with:
         path: |
-          ${{ github.workspace }}/.chia/blocks
-          ${{ github.workspace }}/.chia/test-plots
+          ${{ github.workspace }}/.<PUSSY3>blocks
+          ${{ github.workspace }}/.<PUSSY3>test-plots
         key: 0.29.0
 
     - name: Checkout test blocks and plots

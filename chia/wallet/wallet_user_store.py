@@ -2,10 +2,10 @@ from typing import List, Optional
 
 import aiosqlite
 
-from chia.util.db_wrapper import DBWrapper
-from chia.util.ints import uint32
-from chia.wallet.util.wallet_types import WalletType
-from chia.wallet.wallet_info import WalletInfo
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.ints import uint32
+<PUSSY1>wallet.util.wallet_types import WalletType
+<PUSSY1>wallet.wallet_info import WalletInfo
 
 
 class WalletUserStore:

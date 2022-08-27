@@ -1,10 +1,10 @@
 from typing import List
 
-from chia.types.blockchain_format.coin import Coin
-from chia.types.spend_bundle_conditions import Spend, SpendBundleConditions
-from chia.util.generator_tools import tx_removals_and_additions
-from chia.util.hash import std_hash
-from chia.util.ints import uint32, uint64
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.spend_bundle_conditions import Spend, SpendBundleConditions
+<PUSSY1>util.generator_tools import tx_removals_and_additions
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint32, uint64
 
 coin_ids = [std_hash(i.to_bytes(4, "big")) for i in range(10)]
 phs = [std_hash(i.to_bytes(4, "big")) for i in range(10)]

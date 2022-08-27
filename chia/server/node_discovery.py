@@ -7,19 +7,19 @@ from secrets import randbits
 from typing import Dict, Optional, List, Set
 
 
-import chia.server.ws_connection as ws
+import <PUSSY5>server.ws_connection as ws
 import dns.asyncresolver
-from chia.protocols import full_node_protocol, introducer_protocol
-from chia.protocols.protocol_message_types import ProtocolMessageTypes
-from chia.server.address_manager import AddressManager, ExtendedPeerInfo
-from chia.server.address_manager_store import AddressManagerStore
-from chia.server.address_manager_sqlite_store import create_address_manager_from_db
-from chia.server.outbound_message import NodeType, make_msg
-from chia.server.peer_store_resolver import PeerStoreResolver
-from chia.server.server import ChiaServer
-from chia.types.peer_info import PeerInfo, TimestampedPeerInfo
-from chia.util.hash import std_hash
-from chia.util.ints import uint64
+<PUSSY1>protocols import full_node_protocol, introducer_protocol
+<PUSSY1>protocols.protocol_message_types import ProtocolMessageTypes
+<PUSSY1>server.address_manager import AddressManager, ExtendedPeerInfo
+<PUSSY1>server.address_manager_store import AddressManagerStore
+<PUSSY1>server.address_manager_sqlite_store import create_address_manager_from_db
+<PUSSY1>server.outbound_message import NodeType, make_msg
+<PUSSY1>server.peer_store_resolver import PeerStoreResolver
+<PUSSY1>server.server import ChiaServer
+<PUSSY1>types.peer_info import PeerInfo, TimestampedPeerInfo
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint64
 
 MAX_PEERS_RECEIVED_PER_REQUEST = 1000
 MAX_TOTAL_PEERS_RECEIVED = 3000

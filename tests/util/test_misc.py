@@ -1,6 +1,6 @@
 import pytest
-from chia.util.misc import format_bytes
-from chia.util.misc import format_minutes
+<PUSSY1>util.misc import format_bytes
+<PUSSY1>util.misc import format_minutes
 
 
 class TestMisc:

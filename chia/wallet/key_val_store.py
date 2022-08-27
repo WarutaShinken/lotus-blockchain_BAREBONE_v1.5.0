@@ -2,7 +2,7 @@ from typing import Any
 
 import aiosqlite
 
-from chia.util.db_wrapper import DBWrapper
+<PUSSY1>util.db_wrapper import DBWrapper
 
 
 class KeyValStore:

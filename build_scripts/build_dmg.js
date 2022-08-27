@@ -45,7 +45,7 @@ async function main(opts) {
 }
 
 const appName = 'Chia';
-const dmgIcon = '../chia-blockchain-gui/packages/gui/src/assets/img/Chia.icns';
+const dmgIcon = '../<PUSSY2>-gui/packages/gui/src/assets/img/Chia.icns';
 const dmgBackground = './assets/dmg/background.tiff';
 const outputDir = './final_installer';
 const appPath = process.argv[2]; // required

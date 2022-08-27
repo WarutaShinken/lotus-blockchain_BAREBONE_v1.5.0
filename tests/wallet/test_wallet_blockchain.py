@@ -4,14 +4,14 @@ from pathlib import Path
 import aiosqlite
 import pytest
 
-from chia.consensus.blockchain import ReceiveBlockResult
-from chia.protocols import full_node_protocol
-from chia.types.blockchain_format.vdf import VDFProof
-from chia.types.weight_proof import WeightProof
-from chia.util.db_wrapper import DBWrapper
-from chia.util.generator_tools import get_block_header
-from chia.wallet.key_val_store import KeyValStore
-from chia.wallet.wallet_blockchain import WalletBlockchain
+<PUSSY1>consensus.blockchain import ReceiveBlockResult
+<PUSSY1>protocols import full_node_protocol
+<PUSSY1>types.blockchain_format.vdf import VDFProof
+<PUSSY1>types.weight_proof import WeightProof
+<PUSSY1>util.db_wrapper import DBWrapper
+<PUSSY1>util.generator_tools import get_block_header
+<PUSSY1>wallet.key_val_store import KeyValStore
+<PUSSY1>wallet.wallet_blockchain import WalletBlockchain
 from tests.setup_nodes import test_constants
 
 

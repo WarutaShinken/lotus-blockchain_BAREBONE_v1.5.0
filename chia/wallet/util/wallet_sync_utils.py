@@ -4,9 +4,9 @@ import random
 from typing import List, Optional, Tuple, Union, Dict
 from chia_rs import compute_merkle_set_root
 
-from chia.consensus.constants import ConsensusConstants
-from chia.protocols import wallet_protocol
-from chia.protocols.wallet_protocol import (
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>protocols import wallet_protocol
+<PUSSY1>protocols.wallet_protocol import (
     RequestAdditions,
     RespondAdditions,
     RejectAdditionsRequest,
@@ -20,14 +20,14 @@ from chia.protocols.wallet_protocol import (
     RespondHeaderBlocks,
     RequestHeaderBlocks,
 )
-from chia.server.ws_connection import WSChiaConnection
-from chia.types.blockchain_format.coin import hash_coin_ids, Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.full_block import FullBlock
-from chia.types.header_block import HeaderBlock
-from chia.util.ints import uint32
-from chia.util.merkle_set import confirm_not_included_already_hashed, confirm_included_already_hashed, MerkleSet
-from chia.wallet.util.peer_request_cache import PeerRequestCache
+<PUSSY1>server.ws_connection import WSChiaConnection
+<PUSSY1>types.blockchain_format.coin import hash_coin_ids, Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>util.ints import uint32
+<PUSSY1>util.merkle_set import confirm_not_included_already_hashed, confirm_included_already_hashed, MerkleSet
+<PUSSY1>wallet.util.peer_request_cache import PeerRequestCache
 
 log = logging.getLogger(__name__)
 

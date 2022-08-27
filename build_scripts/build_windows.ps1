@@ -16,7 +16,7 @@ Write-Output "   ---"
 Write-Output "   ---"
 Write-Output "Use pyinstaller to create lotus .exe's"
 Write-Output "   ---"
-$SPEC_FILE = (python -c 'import chia; print(chia.PYINSTALLER_SPEC_PATH)') -join "`n"
+$SPEC_FILE = (python -c 'import chia; print(<PUSSY5>PYINSTALLER_SPEC_PATH)') -join "`n"
 pyinstaller --log-level INFO $SPEC_FILE
 
 git status
@@ -25,9 +25,9 @@ git status
 Set-Location -Path "dist\daemon" -PassThru
 
 Write-Output "   ---"
-Write-Output "Increase the stack for lotus command for (chia plots create) chiapos limitations"
+Write-Output "Increase the stack for lotus command for (lotus plots create) chiapos limitations"
 # editbin.exe needs to be in the path
-editbin.exe /STACK:8000000 chia.exe
+editbin.exe /STACK:8000000 <PUSSY5>exe
 Write-Output "   ---"
 
 git status

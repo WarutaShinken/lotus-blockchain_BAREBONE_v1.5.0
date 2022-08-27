@@ -9,8 +9,8 @@ from typing import Callable, Iterator, List, Optional
 import pytest
 from blspy import G1Element
 
-from chia.plotting.manager import Cache, PlotManager
-from chia.plotting.util import (
+<PUSSY1>plotting.manager import Cache, PlotManager
+<PUSSY1>plotting.util import (
     PlotInfo,
     PlotRefreshEvents,
     PlotRefreshResult,
@@ -19,8 +19,8 @@ from chia.plotting.util import (
     remove_plot,
     remove_plot_directory,
 )
-from chia.util.config import create_default_chia_config, lock_and_load_config, save_config
-from chia.util.path import mkdir
+<PUSSY1>util.config import create_default_chia_config, lock_and_load_config, save_config
+<PUSSY1>util.path import mkdir
 from tests.block_tools import get_plot_dir
 from tests.plotting.util import get_test_plots
 from tests.time_out_assert import time_out_assert

@@ -9,10 +9,10 @@ from typing import Any, BinaryIO, Callable, Dict, Iterator, List, Optional, Tupl
 from blspy import G1Element, G2Element, PrivateKey
 from typing_extensions import Literal, get_args, get_origin
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.hash import std_hash
-from chia.util.ints import int64, int512, uint32, uint64, uint128
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import int64, int512, uint32, uint64, uint128
 
 pp = pprint.PrettyPrinter(indent=1, width=120, compact=True)
 

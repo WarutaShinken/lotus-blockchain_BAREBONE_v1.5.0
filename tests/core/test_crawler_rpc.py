@@ -1,7 +1,7 @@
 import pytest
 
-from chia.rpc.crawler_rpc_api import CrawlerRpcApi
-from chia.seeder.crawler import Crawler
+<PUSSY1>rpc.crawler_rpc_api import CrawlerRpcApi
+<PUSSY1>seeder.crawler import Crawler
 
 
 class TestCrawlerRpc:

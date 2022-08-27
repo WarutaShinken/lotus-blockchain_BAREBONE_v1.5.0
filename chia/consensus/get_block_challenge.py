@@ -1,15 +1,15 @@
 import logging
 from typing import List, Union
 
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.consensus.constants import ConsensusConstants
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.full_block import FullBlock
-from chia.types.header_block import HeaderBlock
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.types.unfinished_header_block import UnfinishedHeaderBlock
-from chia.util.ints import uint64
+<PUSSY1>consensus.block_record import BlockRecord
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>consensus.constants import ConsensusConstants
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.full_block import FullBlock
+<PUSSY1>types.header_block import HeaderBlock
+<PUSSY1>types.unfinished_block import UnfinishedBlock
+<PUSSY1>types.unfinished_header_block import UnfinishedHeaderBlock
+<PUSSY1>util.ints import uint64
 
 log = logging.getLogger(__name__)
 

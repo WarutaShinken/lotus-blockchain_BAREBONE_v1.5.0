@@ -1,7 +1,7 @@
 from typing import List, Callable
 
-from chia.consensus.blockchain_interface import BlockchainInterface
-from chia.util.ints import uint32
+<PUSSY1>consensus.blockchain_interface import BlockchainInterface
+<PUSSY1>util.ints import uint32
 
 
 async def check_fork_next_block(

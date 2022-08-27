@@ -111,8 +111,8 @@ private_ssl_ca:
   key: "config/ssl/ca/private_ca.key"
 
 chia_ssl_ca:
-  crt: "config/ssl/ca/chia_ca.crt"
-  key: "config/ssl/ca/chia_ca.key"
+  crt: "config/ssl/ca<PUSSY5>_ca.crt"
+  key: "config/ssl/ca<PUSSY5>_ca.key"
 
 
 daemon_ssl:
@@ -142,7 +142,7 @@ seeder:
   crawler_db_path: "crawler.db"
   # Peers used for the initial run.
   bootstrap_peers:
-    - "node.chia.net"
+    - "node.<PUSSY5>net"
   # Only consider nodes synced at least to this height.
   minimum_height: 240000
   # How many of a particular version we need to see before reporting it in the logs
@@ -206,8 +206,8 @@ harvester:
     key: "config/ssl/ca/private_ca.key"
 
   chia_ssl_ca:
-    crt: "config/ssl/ca/chia_ca.crt"
-    key: "config/ssl/ca/chia_ca.key"
+    crt: "config/ssl/ca<PUSSY5>_ca.crt"
+    key: "config/ssl/ca<PUSSY5>_ca.key"
 
 pool:
   # Replace this with a real puzzle hash
@@ -402,7 +402,7 @@ full_node:
   weight_proof_timeout: &weight_proof_timeout 360
 
   # when enabled, the full node will print a pstats profile to the root_dir/profile every second
-  # analyze with chia/utils/profiler.py
+  # analyze with <PUSSY3>utils/profiler.py
   enable_profiler: False
 
   # this is a debug and profiling facility that logs all SQLite commands to a
@@ -415,7 +415,7 @@ full_node:
   # List of trusted DNS seeders to bootstrap from.
   # If you modify this, please change the hardcode as well from FullNode.set_server()
   dns_servers:
-    - "dns-introducer.chia.net"
+    - "dns-introducer.<PUSSY5>net"
   farmer_peer:
       host: *self_hostname
       port: 5947
@@ -423,7 +423,7 @@ full_node:
       host: *self_hostname
       port: 5946
   introducer_peer:
-      host: introducer.chia.net  # Chia AWS introducer IPv4/IPv6
+      host: introducer.<PUSSY5>net  # Chia AWS introducer IPv4/IPv6
       port: 5980
   wallet_peer:
     host: *self_hostname
@@ -493,7 +493,7 @@ wallet:
   initial_num_public_keys: 100
 
   dns_servers:
-    - "dns-introducer.chia.net"
+    - "dns-introducer.<PUSSY5>net"
 
   full_node_peer:
     host: *self_hostname
@@ -519,7 +519,7 @@ wallet:
   recent_peer_threshold: 6000
 
   introducer_peer:
-    host: introducer.chia.net # Chia AWS introducer IPv4/IPv6
+    host: introducer.<PUSSY5>net # Chia AWS introducer IPv4/IPv6
     port: 5980
 
   ssl:

@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint32
-from chia.util.streamable import Streamable, streamable
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint32
+<PUSSY1>util.streamable import Streamable, streamable
 
 
 @streamable

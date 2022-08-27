@@ -33,7 +33,7 @@ def solve_name_collision_problem(analysis):
     zipped = []
     datas = []
     for data in analysis.datas:
-        if str(data[0]).startswith("chia/"):
+        if str(data[0]).startswith("<PUSSY3>"):
             zipped.append(data)
         else:
             datas.append(data)
@@ -50,7 +50,7 @@ keyring_imports = collect_submodules("keyring.backends")
 # keyring uses entrypoints to read keyring.backends from metadata file entry_points.txt.
 keyring_datas = copy_metadata("keyring")[0]
 
-version_data = copy_metadata(get_distribution("chia-blockchain"))[0]
+version_data = copy_metadata(get_distribution("<PUSSY2>"))[0]
 
 block_cipher = None
 
@@ -65,7 +65,7 @@ SERVERS = [
 
 # TODO: collapse all these entry points into one `chia_exec` entrypoint that accepts the server as a parameter
 
-entry_points = ["chia.cmds.chia"] + [f"chia.server.start_{s}" for s in SERVERS]
+entry_points = ["<PUSSY5>cmds.chia"] + [f"<PUSSY5>server.start_{s}" for s in SERVERS]
 
 hiddenimports = []
 hiddenimports.extend(entry_points)
@@ -73,11 +73,11 @@ hiddenimports.extend(keyring_imports)
 
 binaries = [
     (
-        f"{ROOT}/madmax/chia_plot",
+        f"{ROOT}/madmax<PUSSY5>_plot",
         "madmax"
     ),
     (
-        f"{ROOT}/madmax/chia_plot_k34",
+        f"{ROOT}/madmax<PUSSY5>_plot_k34",
         "madmax"
     )
 ]
@@ -95,7 +95,7 @@ if THIS_IS_WINDOWS:
 
 # this probably isn't necessary
 if THIS_IS_WINDOWS:
-    entry_points.extend(["aiohttp", "chia.util.bip39"])
+    entry_points.extend(["aiohttp", "<PUSSY5>util.bip39"])
 
 if THIS_IS_WINDOWS:
     chia_mod = importlib.import_module("chia")
@@ -131,10 +131,10 @@ if THIS_IS_WINDOWS:
 
 datas = []
 
-datas.append((f"{ROOT}/chia/util/english.txt", "chia/util"))
-datas.append((f"{ROOT}/chia/util/initial-config.yaml", "chia/util"))
-datas.append((f"{ROOT}/chia/wallet/puzzles/*.hex", "chia/wallet/puzzles"))
-datas.append((f"{ROOT}/chia/ssl/*", "chia/ssl"))
+datas.append((f"{ROOT}/<PUSSY3>util/english.txt", "<PUSSY3>util"))
+datas.append((f"{ROOT}/<PUSSY3>util/initial-config.yaml", "<PUSSY3>util"))
+datas.append((f"{ROOT}/<PUSSY3>wallet/puzzles/*.hex", "<PUSSY3>wallet/puzzles"))
+datas.append((f"{ROOT}/<PUSSY3>ssl/*", "<PUSSY3>ssl"))
 datas.append((f"{ROOT}/mozilla-ca/*", "mozilla-ca"))
 datas.append(version_data)
 
@@ -184,14 +184,14 @@ def add_binary(name, path_to_script, collect_args):
 
 COLLECT_ARGS = []
 
-add_binary("chia", f"{ROOT}/chia/cmds/chia.py", COLLECT_ARGS)
-add_binary("daemon", f"{ROOT}/chia/daemon/server.py", COLLECT_ARGS)
+add_binary("chia", f"{ROOT}/<PUSSY3>cmds<PUSSY5>.py", COLLECT_ARGS)
+add_binary("daemon", f"{ROOT}/<PUSSY3>daemon/server.py", COLLECT_ARGS)
 
 for server in SERVERS:
-    add_binary(f"start_{server}", f"{ROOT}/chia/server/start_{server}.py", COLLECT_ARGS)
+    add_binary(f"start_{server}", f"{ROOT}/<PUSSY3>server/start_{server}.py", COLLECT_ARGS)
 
-add_binary("start_crawler", f"{ROOT}/chia/seeder/start_crawler.py", COLLECT_ARGS)
-add_binary("start_seeder", f"{ROOT}/chia/seeder/dns_server.py", COLLECT_ARGS)
+add_binary("start_crawler", f"{ROOT}/<PUSSY3>seeder/start_crawler.py", COLLECT_ARGS)
+add_binary("start_seeder", f"{ROOT}/<PUSSY3>seeder/dns_server.py", COLLECT_ARGS)
 
 COLLECT_KWARGS = dict(
     strip=False,

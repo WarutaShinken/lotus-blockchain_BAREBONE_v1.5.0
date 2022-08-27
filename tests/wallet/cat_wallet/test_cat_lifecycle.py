@@ -4,23 +4,23 @@ import pytest
 from blspy import PrivateKey, AugSchemeMPL, G2Element
 from clvm.casts import int_to_bytes
 
-from chia.clvm.spend_sim import SpendSim, SimClient
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.types.mempool_inclusion_status import MempoolInclusionStatus
-from chia.types.spend_bundle import SpendBundle
-from chia.util.errors import Err
-from chia.util.ints import uint64
-from chia.wallet.cat_wallet.cat_utils import (
+<PUSSY1>clvm.spend_sim import SpendSim, SimClient
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.mempool_inclusion_status import MempoolInclusionStatus
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.errors import Err
+<PUSSY1>util.ints import uint64
+<PUSSY1>wallet.cat_wallet.cat_utils import (
     CAT_MOD,
     SpendableCAT,
     construct_cat_puzzle,
     unsigned_spend_bundle_for_spendable_cats,
 )
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.puzzles.tails import (
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.puzzles.tails import (
     GenesisById,
     GenesisByPuzhash,
     EverythingWithSig,

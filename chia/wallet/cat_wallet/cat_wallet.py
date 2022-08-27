@@ -9,49 +9,49 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 from blspy import AugSchemeMPL, G2Element
 
-from chia.consensus.cost_calculator import NPCResult
-from chia.full_node.bundle_tools import simple_solution_generator
-from chia.full_node.mempool_check_conditions import get_name_puzzle_conditions
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.program import Program
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_spend import CoinSpend
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.generator_types import BlockGenerator
-from chia.types.spend_bundle import SpendBundle
-from chia.util.byte_types import hexstr_to_bytes
-from chia.util.condition_tools import conditions_dict_for_solution, pkm_pairs_for_conditions_dict
-from chia.util.hash import std_hash
-from chia.util.ints import uint8, uint32, uint64, uint128
-from chia.wallet.cat_wallet.cat_constants import DEFAULT_CATS
-from chia.wallet.cat_wallet.cat_info import CATInfo, LegacyCATInfo
-from chia.wallet.cat_wallet.cat_utils import (
+<PUSSY1>consensus.cost_calculator import NPCResult
+<PUSSY1>full_node.bundle_tools import simple_solution_generator
+<PUSSY1>full_node.mempool_check_conditions import get_name_puzzle_conditions
+<PUSSY1>types.announcement import Announcement
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.program import Program
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_spend import CoinSpend
+<PUSSY1>types.condition_opcodes import ConditionOpcode
+<PUSSY1>types.generator_types import BlockGenerator
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.byte_types import hexstr_to_bytes
+<PUSSY1>util.condition_tools import conditions_dict_for_solution, pkm_pairs_for_conditions_dict
+<PUSSY1>util.hash import std_hash
+<PUSSY1>util.ints import uint8, uint32, uint64, uint128
+<PUSSY1>wallet.cat_wallet.cat_constants import DEFAULT_CATS
+<PUSSY1>wallet.cat_wallet.cat_info import CATInfo, LegacyCATInfo
+<PUSSY1>wallet.cat_wallet.cat_utils import (
     CAT_MOD,
     SpendableCAT,
     construct_cat_puzzle,
     match_cat_puzzle,
     unsigned_spend_bundle_for_spendable_cats,
 )
-from chia.wallet.cat_wallet.lineage_store import CATLineageStore
-from chia.wallet.coin_selection import select_coins
-from chia.wallet.derivation_record import DerivationRecord
-from chia.wallet.lineage_proof import LineageProof
-from chia.wallet.outer_puzzles import AssetType
-from chia.wallet.puzzle_drivers import PuzzleInfo
-from chia.wallet.payment import Payment
-from chia.wallet.puzzles.tails import ALL_LIMITATIONS_PROGRAMS
-from chia.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
+<PUSSY1>wallet.cat_wallet.lineage_store import CATLineageStore
+<PUSSY1>wallet.coin_selection import select_coins
+<PUSSY1>wallet.derivation_record import DerivationRecord
+<PUSSY1>wallet.lineage_proof import LineageProof
+<PUSSY1>wallet.outer_puzzles import AssetType
+<PUSSY1>wallet.puzzle_drivers import PuzzleInfo
+<PUSSY1>wallet.payment import Payment
+<PUSSY1>wallet.puzzles.tails import ALL_LIMITATIONS_PROGRAMS
+<PUSSY1>wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
     DEFAULT_HIDDEN_PUZZLE_HASH,
     calculate_synthetic_secret_key,
 )
-from chia.wallet.transaction_record import TransactionRecord
-from chia.wallet.util.compute_memos import compute_memos
-from chia.wallet.util.transaction_type import TransactionType
-from chia.wallet.util.wallet_types import AmountWithPuzzlehash, WalletType
-from chia.wallet.wallet import Wallet
-from chia.wallet.wallet_coin_record import WalletCoinRecord
-from chia.wallet.wallet_info import WalletInfo
+<PUSSY1>wallet.transaction_record import TransactionRecord
+<PUSSY1>wallet.util.compute_memos import compute_memos
+<PUSSY1>wallet.util.transaction_type import TransactionType
+<PUSSY1>wallet.util.wallet_types import AmountWithPuzzlehash, WalletType
+<PUSSY1>wallet.wallet import Wallet
+<PUSSY1>wallet.wallet_coin_record import WalletCoinRecord
+<PUSSY1>wallet.wallet_info import WalletInfo
 
 # This should probably not live in this file but it's for experimental right now
 

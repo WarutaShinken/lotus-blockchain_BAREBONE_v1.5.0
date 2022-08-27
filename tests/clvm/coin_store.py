@@ -2,15 +2,15 @@ from collections import defaultdict
 from dataclasses import dataclass, replace
 from typing import Dict, Iterator, Optional
 
-from chia.full_node.mempool_check_conditions import mempool_check_time_locks, get_name_puzzle_conditions
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.coin_record import CoinRecord
-from chia.types.spend_bundle import SpendBundle
-from chia.util.ints import uint32, uint64
-from chia.full_node.bundle_tools import simple_solution_generator
-from chia.util.errors import Err
-from chia.consensus.cost_calculator import NPCResult
+<PUSSY1>full_node.mempool_check_conditions import mempool_check_time_locks, get_name_puzzle_conditions
+<PUSSY1>types.blockchain_format.coin import Coin
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>types.coin_record import CoinRecord
+<PUSSY1>types.spend_bundle import SpendBundle
+<PUSSY1>util.ints import uint32, uint64
+<PUSSY1>full_node.bundle_tools import simple_solution_generator
+<PUSSY1>util.errors import Err
+<PUSSY1>consensus.cost_calculator import NPCResult
 
 
 MAX_COST = 11000000000

@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint32
-from chia.util.streamable import Streamable, recurse_jsonify, streamable
+<PUSSY1>types.blockchain_format.sized_bytes import bytes32
+<PUSSY1>util.ints import uint32
+<PUSSY1>util.streamable import Streamable, recurse_jsonify, streamable
 
 
 def dict_with_types(d: Dict[str, Any]) -> Dict[str, Any]:

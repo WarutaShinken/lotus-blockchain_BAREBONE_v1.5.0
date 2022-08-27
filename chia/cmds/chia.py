@@ -2,29 +2,29 @@ from io import TextIOWrapper
 import click
 
 from chia import __version__
-from chia.cmds.configure import configure_cmd
-from chia.cmds.farm import farm_cmd
-from chia.cmds.init import init_cmd
-from chia.cmds.keys import keys_cmd
-from chia.cmds.netspace import netspace_cmd
-from chia.cmds.passphrase import passphrase_cmd
-from chia.cmds.plots import plots_cmd
-from chia.cmds.rpc import rpc_cmd
-from chia.cmds.show import show_cmd
-from chia.cmds.start import start_cmd
-from chia.cmds.stop import stop_cmd
-from chia.cmds.wallet import wallet_cmd
-from chia.cmds.plotnft import plotnft_cmd
-from chia.cmds.plotters import plotters_cmd
-from chia.cmds.db import db_cmd
-from chia.util.default_root import DEFAULT_KEYS_ROOT_PATH, DEFAULT_ROOT_PATH
-from chia.util.keychain import (
+<PUSSY1>cmds.configure import configure_cmd
+<PUSSY1>cmds.farm import farm_cmd
+<PUSSY1>cmds.init import init_cmd
+<PUSSY1>cmds.keys import keys_cmd
+<PUSSY1>cmds.netspace import netspace_cmd
+<PUSSY1>cmds.passphrase import passphrase_cmd
+<PUSSY1>cmds.plots import plots_cmd
+<PUSSY1>cmds.rpc import rpc_cmd
+<PUSSY1>cmds.show import show_cmd
+<PUSSY1>cmds.start import start_cmd
+<PUSSY1>cmds.stop import stop_cmd
+<PUSSY1>cmds.wallet import wallet_cmd
+<PUSSY1>cmds.plotnft import plotnft_cmd
+<PUSSY1>cmds.plotters import plotters_cmd
+<PUSSY1>cmds.db import db_cmd
+<PUSSY1>util.default_root import DEFAULT_KEYS_ROOT_PATH, DEFAULT_ROOT_PATH
+<PUSSY1>util.keychain import (
     Keychain,
     KeyringCurrentPassphraseIsInvalid,
     set_keys_root_path,
     supports_keyring_passphrase,
 )
-from chia.util.ssl_check import check_ssl
+<PUSSY1>util.ssl_check import check_ssl
 from typing import Optional
 
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
@@ -48,7 +48,7 @@ def monkey_patch_click() -> None:
 
 @click.group(
     help=f"\n  Manage chia blockchain infrastructure ({__version__})\n",
-    epilog="Try 'chia start node', 'chia netspace -d 192', or 'chia show -s'",
+    epilog="Try 'lotus start node', 'lotus netspace -d 192', or 'lotus show -s'",
     context_settings=CONTEXT_SETTINGS,
 )
 @click.option("--root-path", default=DEFAULT_ROOT_PATH, help="Config file root", type=click.Path(), show_default=True)
@@ -74,7 +74,7 @@ def cli(
         set_keys_root_path(Path(keys_root_path))
 
     if passphrase_file is not None:
-        from chia.cmds.passphrase_funcs import cache_passphrase, read_passphrase_from_file
+        <PUSSY1>cmds.passphrase_funcs import cache_passphrase, read_passphrase_from_file
         from sys import exit
 
         try:
@@ -96,7 +96,7 @@ def cli(
 
 
 if not supports_keyring_passphrase():
-    from chia.cmds.passphrase_funcs import remove_passphrase_options_from_cmd
+    <PUSSY1>cmds.passphrase_funcs import remove_passphrase_options_from_cmd
 
     # TODO: Remove once keyring passphrase management is rolled out to all platforms
     remove_passphrase_options_from_cmd(cli)
@@ -118,8 +118,8 @@ def version_cmd() -> None:
 @click.pass_context
 def run_daemon_cmd(ctx: click.Context, wait_for_unlock: bool) -> None:
     import asyncio
-    from chia.daemon.server import async_run_daemon
-    from chia.util.keychain import Keychain
+    <PUSSY1>daemon.server import async_run_daemon
+    <PUSSY1>util.keychain import Keychain
 
     wait_for_unlock = wait_for_unlock and Keychain.is_keyring_locked()
 

@@ -3,17 +3,17 @@ from pathlib import Path
 from multiprocessing import freeze_support
 from typing import Dict
 
-from chia.full_node.full_node import FullNode
-from chia.server.outbound_message import NodeType
-from chia.server.start_service import run_service
-from chia.simulator.SimulatorFullNodeRpcApi import SimulatorFullNodeRpcApi
-from chia.util.config import load_config_cli
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.path import mkdir, path_from_root
+<PUSSY1>full_node.full_node import FullNode
+<PUSSY1>server.outbound_message import NodeType
+<PUSSY1>server.start_service import run_service
+<PUSSY1>simulator.SimulatorFullNodeRpcApi import SimulatorFullNodeRpcApi
+<PUSSY1>util.config import load_config_cli
+<PUSSY1>util.default_root import DEFAULT_ROOT_PATH
+<PUSSY1>util.path import mkdir, path_from_root
 from tests.block_tools import BlockTools, create_block_tools, test_constants
 from tests.util.keyring import TempKeyring
 
-from chia.simulator.full_node_simulator import FullNodeSimulator
+<PUSSY1>simulator.full_node_simulator import FullNodeSimulator
 
 # See: https://bugs.python.org/issue29288
 "".encode("idna")
