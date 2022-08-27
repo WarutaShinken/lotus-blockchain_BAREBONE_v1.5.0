@@ -30,7 +30,6 @@ Rename-Item chia.exe lotus.exe
 Write-Output "   ---"
 
 git status
-Set-Location -Path "dist\daemon" -PassThru
 
 Write-Output "   ---"
 Write-Output "Increase the stack for lotus command for (chia plots create) chiapos limitations"
