@@ -26,7 +26,6 @@ Set-Location -Path "dist\daemon" -PassThru
 
 Write-Output "   ---"
 Write-Output "Rename chia.exe to lotus.exe"
-# editbin.exe needs to be in the path
 Rename-Item chia.exe lotus.exe
 Write-Output "   ---"
 
