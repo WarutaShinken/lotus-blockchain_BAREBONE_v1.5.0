@@ -209,6 +209,10 @@ harvester:
     crt: "config/ssl/ca/chia_ca.crt"
     key: "config/ssl/ca/chia_ca.key"
 
+  #The local plot filter. Set it to 5 for more rewards at the expense of heavier drive usage, or leave it as 9,
+  #the value used by most Chia forks. Leaving this undefined will cause it to use a value of 9.
+  #number_zero_bits_plot_filter: 5
+
 pool:
   # Replace this with a real puzzle hash
   # xch_target_address: txch102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg

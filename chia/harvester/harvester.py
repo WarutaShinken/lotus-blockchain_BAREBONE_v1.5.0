@@ -64,6 +64,12 @@ class Harvester:
         self.state_changed_callback: Optional[Callable] = None
         self.parallel_read: bool = config.get("parallel_read", True)
 
+        if "number_zero_bits_plot_filter" in config:
+            self.number_zero_bits_plot_filter = config["number_zero_bits_plot_filter"]
+        else:
+            self.number_zero_bits_plot_filter = 9
+
+
     async def _start(self):
         self._refresh_lock = asyncio.Lock()
         self.event_loop = asyncio.get_running_loop()
