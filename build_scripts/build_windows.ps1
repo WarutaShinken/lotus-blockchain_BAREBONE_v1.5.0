@@ -32,7 +32,7 @@ Write-Output "   ---"
 git status
 
 Write-Output "   ---"
-Write-Output "Increase the stack for lotus command for (chia plots create) chiapos limitations"
+Write-Output "Increase the stack for lotus command for (lotus plots create) chiapos limitations"
 # editbin.exe needs to be in the path
 editbin.exe /STACK:8000000 lotus.exe
 Write-Output "   ---"
