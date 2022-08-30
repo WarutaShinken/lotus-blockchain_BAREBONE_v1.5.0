@@ -54,9 +54,9 @@ jobs:
         python -m venv ..\venv
         . ..\venv\Scripts\Activate.ps1
         pip3 install setuptools_scm
-        $env:CHIA_VERSION = python .\build_scripts\installer-version.py -win
-        echo "$env:CHIA_VERSION"
-        echo "::set-output name=CHIA_VERSION::$env:CHIA_VERSION"
+        $env:LOTUS_VERSION = python .\build_scripts\installer-version.py -win
+        echo "$env:LOTUS_VERSION"
+        echo "::set-output name=LOTUS_VERSION::$env:LOTUS_VERSION"
         deactivate
 
       # Get the most recent release from chia-plotter-madmax
@@ -106,7 +106,7 @@ jobs:
 
     - name: Build Windows binaries with build_scripts\build_windows.ps1
       env:
-        CHIA_VERSION: ${{ steps.version_number.outputs.CHIA_VERSION }}
+        LOTUS_VERSION: ${{ steps.version_number.outputs.LOTUS_VERSION }}
       run: |
         $env:path="C:\Program` Files` (x86)\Microsoft` Visual` Studio\2019\Enterprise\SDK\ScopeCppSDK\vc15\VC\bin\;$env:path"
         $env:path="C:\Program` Files` (x86)\Windows` Kits\10\App` Certification` Kit;$env:path"
