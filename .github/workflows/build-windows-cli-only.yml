@@ -118,4 +118,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: lch-win-x64-cli
-        path: ${{ github.workspace }}\Chia-win32-x64\
+        path: ${{ github.workspace }}\Lotus-win32-x64\
