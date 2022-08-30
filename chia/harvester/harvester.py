@@ -69,7 +69,6 @@ class Harvester:
         else:
             self.number_zero_bits_plot_filter = 9
 
-
     async def _start(self):
         self._refresh_lock = asyncio.Lock()
         self.event_loop = asyncio.get_running_loop()
