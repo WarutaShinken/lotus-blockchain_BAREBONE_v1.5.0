@@ -6,7 +6,7 @@ from bitstring import BitArray
 from blspy import G1Element, AugSchemeMPL, PrivateKey
 from chiapos import Verifier
 
-from chia.consensus.constants import ConsensusConstants
+from chia.consensus.default_constants import DEFAULT_CONSTANTS
 from chia.types.blockchain_format.sized_bytes import bytes32
 from chia.util.hash import std_hash
 from chia.util.ints import uint8
@@ -76,7 +76,7 @@ class ProofOfSpace(Streamable):
         plot_id: bytes32,
         challenge_hash: bytes32,
         signage_point: bytes32,
-        number_zero_bits: int = constants.NUMBER_ZERO_BITS_PLOT_FILTER,
+        number_zero_bits: int = DEFAULT_CONSTANTS.NUMBER_ZERO_BITS_PLOT_FILTER,
     ) -> bool:
         plot_filter: BitArray = BitArray(
             ProofOfSpace.calculate_plot_filter_input(plot_id, challenge_hash, signage_point)
