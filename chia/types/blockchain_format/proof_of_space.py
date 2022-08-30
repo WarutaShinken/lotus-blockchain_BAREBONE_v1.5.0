@@ -76,7 +76,7 @@ class ProofOfSpace(Streamable):
         plot_id: bytes32,
         challenge_hash: bytes32,
         signage_point: bytes32,
-        number_zero_bits: int = ConsensusConstants.NUMBER_ZERO_BITS_PLOT_FILTER,
+        number_zero_bits: int = constants.NUMBER_ZERO_BITS_PLOT_FILTER,
     ) -> bool:
         plot_filter: BitArray = BitArray(
             ProofOfSpace.calculate_plot_filter_input(plot_id, challenge_hash, signage_point)
